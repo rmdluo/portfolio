@@ -1,0 +1,68 @@
+---
+import type { CardProps } from '../../types/CardProps';
+
+const { title, description, tags } = Astro.props as CardProps;
+---
+
+<div class="card">
+    <div class="content">
+        <h3 class="title">{title}</h3>
+        <p class="description">
+            {description}
+        </p>
+        <div class="tags">
+            {tags.map((tag: string) => (
+                <span class="tag">{tag}</span>
+            ))}
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        background: linear-gradient(83.21deg, rgba(50, 69, 255, 0.05) 0%, rgba(188, 82, 238, 0.05) 100%);
+        border-radius: 16px;
+        padding: 1.5rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        border: 1px solid rgba(50, 69, 255, 0.1);
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 20px rgba(50, 69, 255, 0.1);
+    }
+
+    .title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: #111827;
+    }
+
+    .description {
+        font-size: 1rem;
+        color: #6b7280;
+        margin-bottom: 1.5rem;
+        line-height: 1.5;
+    }
+
+    .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .tag {
+        background: linear-gradient(83.21deg, rgba(50, 69, 255, 0.1) 0%, rgba(188, 82, 238, 0.1) 100%);
+        padding: 0.25rem 0.75rem;
+        border-radius: 999px;
+        font-size: 0.875rem;
+        color: #111827;
+    }
+
+    @media (max-width: 768px) {
+        .card {
+            padding: 1.25rem;
+        }
+    }
+</style> 
