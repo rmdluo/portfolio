@@ -5,19 +5,29 @@ import type { CardProps } from '../types/CardProps';
 
 const projects: CardProps[] = [
     {
-        title: "Self-Implementing GANs",
-        description: "Generative Adversarial Networks that can implement their own architecture modifications during training.",
+        title: "Number Generation with GANs",
+        description: "A GAN model that learns to generate MNIST-like handwritten digits using PyTorch, with MLP-based generator and discriminator architectures, and extended to conditional GANs for digit-specific generation..",
         tags: ["ML", "PyTorch", "GANs"]
     },
     {
         title: "Q-Learning Snake AI",
-        description: "An AI agent that learns to play Snake using Q-learning reinforcement learning techniques.",
+        description: "An AI agent that learns to play Snake using deep Q-learning reinforcement learning techniques.",
         tags: ["RL", "Python", "Q-Learning"]
     },
     {
-        title: "Data Analytics Pipeline",
-        description: "System for ingesting, analyzing, and disseminating data with advanced processing capabilities.",
-        tags: ["Data", "Analytics", "Python"]
+        title: "Handwritten Digit Recognition",
+        description: "A simple CNN model that recognizes handwritten digits using TensorFlow. Very old project, so the files may not be up to date and hard to use.",
+        tags: ["ML", "TensorFlow", "CNNs"]
+    },
+    {
+        title: "ML-Based Face Censoring",
+        description: "A simple script that detects, then censors, faces in an image using a pre-trained YoloV3 model and MMDetection.",
+        tags: ["ML", "MMDetection", "YOLO"]
+    },
+    {
+        title: "Research Connection Visualizer",
+        description: "A simple script that visualizes the connections between researchers through their co-authorship. The resulting graph is constructed and rendered using NetworkX.",
+        tags: ["Data", "Visualization", "NetworkX"]
     }
 ];
 ---
