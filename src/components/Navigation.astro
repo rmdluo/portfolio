@@ -1,0 +1,243 @@
+---
+import { Image } from 'astro:assets';
+---
+
+<nav class="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-lg border-b border-slate-200/20 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+            <!-- Logo or Brand Name could go here -->
+            <div class="flex-shrink-0">
+                <span class="text-xl font-bold text-slate-800">Portfolio</span>
+            </div>
+
+            <!-- Desktop Navigation - Static -->
+            <div class="hidden md:flex space-x-8">
+                <a href="/" class="group relative px-3 py-2 text-slate-800 hover:text-blue-600 transition-all duration-300 ease-in-out hover:scale-105">
+                    <span class="relative z-10 text-base font-semibold tracking-wide">Home</span>
+                    <div class="absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 transform origin-left scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"></div>
+                </a>
+                <a href="/projects" class="group relative px-3 py-2 text-slate-800 hover:text-blue-600 transition-all duration-300 ease-in-out hover:scale-105">
+                    <span class="relative z-10 text-base font-semibold tracking-wide">Projects</span>
+                    <div class="absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 transform origin-left scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"></div>
+                </a>
+                <a href="/gallery" class="group relative px-3 py-2 text-slate-800 hover:text-blue-600 transition-all duration-300 ease-in-out hover:scale-105">
+                    <span class="relative z-10 text-base font-semibold tracking-wide">Gallery</span>
+                    <div class="absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 transform origin-left scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"></div>
+                </a>
+                <a href="/contact" class="group relative px-3 py-2 text-slate-800 hover:text-blue-600 transition-all duration-300 ease-in-out hover:scale-105">
+                    <span class="relative z-10 text-base font-semibold tracking-wide">Contact</span>
+                    <div class="absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 transform origin-left scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"></div>
+                </a>
+            </div>
+
+            <!-- Mobile Navigation Button -->
+            <div class="flex md:hidden relative z-50">
+                <button
+                    type="button"
+                    class="inline-flex items-center justify-center p-2 rounded-md text-slate-800 hover:text-blue-600 hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+                    aria-controls="mobile-menu"
+                    aria-expanded="false"
+                    id="mobile-menu-button"
+                >
+                    <span class="sr-only">Open main menu</span>
+                    <!-- Icon when menu is closed -->
+                    <svg
+                        class="block h-6 w-6 transition-transform duration-300 menu-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"
+                        />
+                    </svg>
+                    <!-- Icon when menu is open -->
+                    <svg
+                        class="hidden h-6 w-6 transition-transform duration-300 close-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12"
+                        />
+                    </svg>
+                </button>
+
+                <!-- Mobile Menu Dropdown -->
+                <div id="mobile-menu" class="absolute right-0 top-full mt-2 w-48 origin-top-right transform scale-95 opacity-0 pointer-events-none transition-all duration-200 bg-white rounded-lg shadow-lg">
+                    <div class="py-2 px-4">
+                        <a href="/" class="block py-2 text-sm font-medium text-slate-800 hover:text-blue-600 hover:bg-slate-50 rounded-md transition-colors">
+                            Home
+                        </a>
+                        <a href="/projects" class="block py-2 text-sm font-medium text-slate-800 hover:text-blue-600 hover:bg-slate-50 rounded-md transition-colors">
+                            Projects
+                        </a>
+                        <a href="/gallery" class="block py-2 text-sm font-medium text-slate-800 hover:text-blue-600 hover:bg-slate-50 rounded-md transition-colors">
+                            Gallery
+                        </a>
+                        <a href="/contact" class="block py-2 text-sm font-medium text-slate-800 hover:text-blue-600 hover:bg-slate-50 rounded-md transition-colors">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<style>
+    nav {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        padding: 1rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .nav-link {
+        position: relative;
+        text-decoration: none;
+        color: #2d3436;
+        font-size: 1.1rem;
+        font-weight: 500;
+        padding: 0.5rem 0;
+        transition: color 0.3s ease;
+    }
+
+    .nav-link span {
+        position: relative;
+        z-index: 1;
+    }
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: linear-gradient(90deg, #00c6fb 0%, #005bea 100%);
+        transition: width 0.3s ease;
+    }
+
+    .nav-link:hover {
+        color: #005bea;
+    }
+
+    .nav-link:hover::after {
+        width: 100%;
+    }
+
+    @media (max-width: 768px) {
+        .nav-container {
+            padding: 0 1rem;
+        }
+
+        .nav-links {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .nav-link {
+            font-size: 1rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .nav-links {
+            gap: 1rem;
+        }
+
+        .nav-link {
+            padding: 0.4rem 0;
+        }
+    }
+
+    /* Remove any conflicting mobile menu styles */
+    .mobile-menu-container,
+    #mobile-menu-overlay {
+        display: none;
+    }
+</style>
+
+<script>
+    const button = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    const menuIcon = button?.querySelector('.menu-icon') as HTMLElement;
+    const closeIcon = button?.querySelector('.close-icon') as HTMLElement;
+
+    const toggleMenu = (open: boolean) => {
+        if (!menu || !button) return;
+
+        if (open) {
+            menu.classList.remove('scale-95', 'opacity-0', 'pointer-events-none');
+            menu.classList.add('scale-100', 'opacity-100', 'pointer-events-auto');
+            document.body.classList.add('overflow-hidden');
+        } else {
+            menu.classList.add('scale-95', 'opacity-0', 'pointer-events-none');
+            menu.classList.remove('scale-100', 'opacity-100', 'pointer-events-auto');
+            document.body.classList.remove('overflow-hidden');
+        }
+
+        button.setAttribute('aria-expanded', open.toString());
+
+        if (menuIcon && closeIcon) {
+            if (!open) {
+                closeIcon.classList.add('hidden');
+                menuIcon.classList.remove('hidden');
+                menuIcon.style.transform = 'rotate(0deg)';
+            } else {
+                menuIcon.classList.add('hidden');
+                closeIcon.classList.remove('hidden');
+                closeIcon.style.transform = 'rotate(90deg)';
+            }
+        }
+    };
+
+    button?.addEventListener('click', () => {
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        toggleMenu(!expanded);
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (event) => {
+        if (button && menu && !button.contains(event.target as Node) && !menu.contains(event.target as Node)) {
+            toggleMenu(false);
+        }
+    });
+
+    // Close menu when pressing Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            toggleMenu(false);
+        }
+    });
+</script> 
