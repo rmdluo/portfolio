@@ -1,0 +1,119 @@
+<div class="projects-section">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <div class="project-content">
+                <h3 class="project-title">Self-Implementing GANs</h3>
+                <p class="project-description">
+                    Generative Adversarial Networks that can implement their own architecture modifications during training.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">ML</span>
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">GANs</span>
+                </div>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-content">
+                <h3 class="project-title">Q-Learning Snake AI</h3>
+                <p class="project-description">
+                    An AI agent that learns to play Snake using Q-learning reinforcement learning techniques.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">RL</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Q-Learning</span>
+                </div>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-content">
+                <h3 class="project-title">Data Analytics Pipeline</h3>
+                <p class="project-description">
+                    System for ingesting, analyzing, and disseminating data with advanced processing capabilities.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">Data</span>
+                    <span class="tag">Analytics</span>
+                    <span class="tag">Python</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .section-title {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        text-align: center;
+        background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .projects-section {
+        margin-top: 4rem;
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .project-card {
+        background: linear-gradient(83.21deg, rgba(50, 69, 255, 0.05) 0%, rgba(188, 82, 238, 0.05) 100%);
+        border-radius: 16px;
+        padding: 1.5rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        border: 1px solid rgba(50, 69, 255, 0.1);
+    }
+
+    .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 20px rgba(50, 69, 255, 0.1);
+    }
+
+    .project-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: #111827;
+    }
+
+    .project-description {
+        font-size: 1rem;
+        color: #6b7280;
+        margin-bottom: 1.5rem;
+        line-height: 1.5;
+    }
+
+    .project-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .tag {
+        background: linear-gradient(83.21deg, rgba(50, 69, 255, 0.1) 0%, rgba(188, 82, 238, 0.1) 100%);
+        padding: 0.25rem 0.75rem;
+        border-radius: 999px;
+        font-size: 0.875rem;
+        color: #111827;
+    }
+
+    @media (max-width: 768px) {
+        .projects-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .project-card {
+            padding: 1.25rem;
+        }
+    }
+</style> 
