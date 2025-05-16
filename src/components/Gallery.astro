@@ -15,69 +15,24 @@ const { images } = Astro.props;
 
 <style>
     .gallery {
-        --min-image-width: min(100%, 32rem);
-        --columns: auto-fit;
         display: grid;
-        grid-template-columns: repeat(var(--columns), minmax(var(--min-image-width), 1fr));
-        gap: 2rem;
-        padding: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(clamp(10rem, 15vw, 28rem), 1fr));
+        gap: clamp(1rem, 2vw, 2rem);
+        padding: clamp(1rem, 2vw, 2rem);
         width: 100%;
-        max-width: 1400px;
         margin: 0 auto;
+        justify-items: center;
     }
 
-    /* Center single image */
-    .gallery:has(:only-child) {
-        --columns: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    @media (max-width: 1200px) {
+    @media (min-width: 2000px) {
         .gallery {
-            --min-image-width: min(100%, 28rem);
-        }
-    }
-
-    @media (max-width: 768px) {
-        .gallery {
-            --min-image-width: min(100%, 24rem);
-            gap: 1.5rem;
-            padding: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(clamp(20rem, 20vw, 35rem), 1fr));
         }
     }
 
     @media (max-width: 640px) {
         .gallery {
-            --min-image-width: 100%;
-            padding: 1rem;
-            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(clamp(8rem, 40vw, 15rem), 1fr));
         }
     }
-</style>
-
-<script>
-    // Update gallery layout based on window size
-    function updateGalleryLayout() {
-        const gallery = document.querySelector('.gallery') as HTMLElement;
-        if (!gallery) return;
-
-        const width = window.innerWidth;
-        const container = gallery.getBoundingClientRect().width;
-        const minImageWidth = parseFloat(getComputedStyle(gallery).getPropertyValue('--min-image-width'));
-        
-        // Calculate optimal number of columns
-        const optimalColumns = Math.floor(container / minImageWidth);
-        
-        // Update columns if not single image
-        if (!gallery.querySelector(':only-child')) {
-            gallery.style.setProperty('--columns', `${optimalColumns}`);
-        }
-    }
-
-    // Initialize and add event listeners
-    updateGalleryLayout();
-    window.addEventListener('resize', updateGalleryLayout);
-    window.addEventListener('load', updateGalleryLayout);
-</script> 
+</style> 
