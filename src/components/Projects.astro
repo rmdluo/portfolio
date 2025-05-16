@@ -34,13 +34,15 @@ import type { ProjectCardProps } from '../types/ProjectCardProps';
 
     .projects-section {
         margin-top: 4rem;
+        max-width: 1200px;
+        margin: 4rem auto;
+        padding: 0 1rem;
     }
 
     .projects-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 2rem;
-        margin: 2rem;
     }
 
     @media (max-width: 768px) {
