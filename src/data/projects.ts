@@ -14,7 +14,7 @@ export const projects: ProjectCardProps[] = [
         description: "An AI agent that learns to play Snake using deep Q-learning reinforcement learning techniques.",
         tags: ["RL", "Python", "Q-Learning"],
         featured: true,
-        link: "https://github.com/rmdluo/RL-Snake",
+        link: "https://github.com/rmdluo/Snake-Q-Learning",
         internal_link: "/projects/rl-snake"
     },
     {
@@ -30,7 +30,7 @@ export const projects: ProjectCardProps[] = [
         description: "A simple script that detects, then censors, faces in an image using a pre-trained YoloV3 model and MMDetection.",
         tags: ["ML", "MMDetection", "YOLO"],
         featured: true,
-        link: "https://github.com/rmdluo/Face-Censoring",
+        link: "https://github.com/rmdluo/Face-Censor",
         internal_link: "/projects/face-censoring"
     },
     {
