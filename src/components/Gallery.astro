@@ -15,63 +15,45 @@ images.forEach((image: ImageCardProps, index: number) => {
 ---
 
 <div class="gallery">
-    {columns.map((column) => (
-        <div class="gallery-column">
-            {column.map((image: ImageCardProps) => (
-                <ImageCard 
-                    {...image}
-                    size="dynamic"
-                />
-            ))}
-        </div>
+    {images.map((image: ImageCardProps) => (
+        <ImageCard 
+            {...image}
+            size="dynamic"
+        />
     ))}
 </div>
 
 <style>
     .gallery {
-        display: flex;
-        gap: clamp(1rem, 2vw, 2rem);
+        column-count: 4;
+        column-gap: clamp(1rem, 2vw, 2rem);
         padding: clamp(1rem, 2vw, 2rem);
         width: 100%;
         margin: 0 auto;
         max-width: 1800px;
     }
 
-    .gallery-column {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        gap: clamp(1rem, 2vw, 2rem);
-    }
-
-    .gallery-column :global(.image-card) {
+    .gallery :global(.image-card) {
+        break-inside: avoid;
+        margin-bottom: clamp(1rem, 2vw, 2rem);
         width: 100% !important;
     }
 
     @media (max-width: 1400px) {
         .gallery {
-            --num-columns: 3;
-        }
-        .gallery-column:nth-child(4) {
-            display: none;
+            column-count: 3;
         }
     }
 
     @media (max-width: 1024px) {
         .gallery {
-            --num-columns: 2;
-        }
-        .gallery-column:nth-child(3) {
-            display: none;
+            column-count: 2;
         }
     }
 
     @media (max-width: 640px) {
         .gallery {
-            --num-columns: 1;
-        }
-        .gallery-column:nth-child(2) {
-            display: none;
+            column-count: 1;
         }
     }
 </style>
