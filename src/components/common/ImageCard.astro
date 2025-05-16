@@ -51,10 +51,13 @@ const className = sizeClass[size];
         <img src={src} alt={alt} class="modal-image" />
         <div class="modal-controls">
             {unedited_src && (
-                <label class="toggle-container">
-                    <input type="checkbox" class="toggle-unedited" />
-                    <span class="toggle-label">Show Unedited</span>
-                </label>
+                <div class="toggle-section">
+                    <label class="toggle-container">
+                        <input type="checkbox" class="toggle-unedited" />
+                        <span class="toggle-label">Show Unedited</span>
+                    </label>
+                    <p class="toggle-note">Press and hold image to preview unedited version</p>
+                </div>
             )}
             {caption && (
                 <p class="modal-caption">{caption}</p>
@@ -195,7 +198,10 @@ const className = sizeClass[size];
         opacity: 0;
         transform: scale(0.9) translateY(20px);
         transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-        padding-bottom: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
     }
 
     .fullscreen-modal.active {
@@ -214,7 +220,7 @@ const className = sizeClass[size];
 
     .modal-image {
         max-width: 100%;
-        max-height: 85vh;
+        max-height: 80vh;
         object-fit: contain;
         border-radius: 8px;
         box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
@@ -223,16 +229,15 @@ const className = sizeClass[size];
     }
 
     .modal-controls {
-        position: absolute;
-        bottom: 0;
-        left: 0;
+        position: relative;
         width: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 2rem;
-        padding: 1rem;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+        gap: 0rem;
+        /* padding: 1rem; */
+        background: transparent;
     }
 
     .toggle-container {
@@ -244,9 +249,9 @@ const className = sizeClass[size];
         cursor: pointer;
         opacity: 0.9;
         transition: opacity 0.2s ease;
-        padding: 0.5rem;
+        padding: 0.5rem 1rem;
         border-radius: 2rem;
-        background: rgba(0, 0, 0, 0.4);
+        background: rgba(0, 0, 0, 0.6);
     }
 
     .toggle-container:hover {
@@ -391,6 +396,21 @@ const className = sizeClass[size];
             right: 0;
         }
     }
+
+    .toggle-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .toggle-note {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.75rem;
+        text-align: center;
+        max-width: 200px;
+        line-height: 1.2;
+    }
 </style>
 
 <script>
@@ -422,6 +442,52 @@ const className = sizeClass[size];
         if (modalImg) {
             modalImg.dataset.editedSrc = modalImg.src;
             modalImg.dataset.uneditedSrc = img?.parentElement?.dataset.uneditedSrc || '';
+
+            // Add press and hold functionality
+            let pressTimer: ReturnType<typeof setTimeout>;
+            
+            const showUnedited = () => {
+                if (modalImg.dataset.uneditedSrc) {
+                    modalImg.src = modalImg.dataset.uneditedSrc;
+                }
+            };
+
+            const showEdited = () => {
+                if (modalImg.dataset.editedSrc) {
+                    modalImg.src = modalImg.dataset.editedSrc;
+                }
+            };
+
+            // Mouse events
+            modalImg.addEventListener('mousedown', () => {
+                pressTimer = setTimeout(showUnedited, 200);
+            });
+
+            modalImg.addEventListener('mouseup', () => {
+                clearTimeout(pressTimer);
+                showEdited();
+            });
+
+            modalImg.addEventListener('mouseleave', () => {
+                clearTimeout(pressTimer);
+                showEdited();
+            });
+
+            // Touch events
+            modalImg.addEventListener('touchstart', (e) => {
+                e.preventDefault(); // Prevent default touch behavior
+                pressTimer = setTimeout(showUnedited, 200);
+            });
+
+            modalImg.addEventListener('touchend', () => {
+                clearTimeout(pressTimer);
+                showEdited();
+            });
+
+            modalImg.addEventListener('touchcancel', () => {
+                clearTimeout(pressTimer);
+                showEdited();
+            });
         }
 
         // Handle toggle checkbox
