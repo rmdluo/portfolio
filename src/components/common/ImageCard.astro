@@ -1,0 +1,189 @@
+---
+interface Props {
+    src: string;
+    alt: string;
+    caption?: string;
+    aspectRatio?: "square" | "landscape" | "portrait" | "wide" | "ultrawide";
+    size?: "small" | "medium" | "large" | "full";
+}
+
+const { src, alt, caption, aspectRatio = "landscape", size = "medium" } = Astro.props;
+
+const aspectRatioPadding = {
+    square: "100%", // 1:1
+    landscape: "75%", // 4:3
+    portrait: "133.33%", // 3:4
+    wide: "56.25%", // 16:9
+    ultrawide: "42.85%" // 21:9
+}[aspectRatio];
+
+const sizeClass = {
+    small: "w-48", // 192px
+    medium: "w-72", // 288px
+    large: "w-96", // 384px
+    full: "w-full"
+}[size];
+---
+
+<div class={`image-card ${sizeClass}`}>
+    <div class="image-container" style={`padding-top: ${aspectRatioPadding};`}>
+        <img 
+            src={src} 
+            alt={alt}
+            loading="lazy"
+            class="image"
+        />
+    </div>
+    {caption && (
+        <p class="caption">{caption}</p>
+    )}
+</div>
+
+<style>
+    .image-card {
+        position: relative;
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Tailwind width classes */
+    .w-48 {
+        width: 12rem;
+    }
+
+    .w-72 {
+        width: 18rem;
+    }
+
+    .w-96 {
+        width: 24rem;
+    }
+
+    .w-full {
+        width: 100%;
+    }
+
+    .image-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+
+    .image-container {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .image-card:hover .image {
+        transform: scale(1.05);
+    }
+
+    .caption {
+        padding: 1rem;
+        font-size: 0.875rem;
+        color: #4B5563;
+        text-align: center;
+        background: white;
+    }
+
+    /* Glass effect on hover */
+    .image-container::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.05) 100%
+        );
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        pointer-events: none;
+    }
+
+    .image-card:hover .image-container::after {
+        opacity: 1;
+    }
+
+    /* Loading state */
+    .image-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0) 0,
+            rgba(255, 255, 255, 0.5) 50%,
+            rgba(255, 255, 255, 0) 100%
+        );
+        animation: shimmer 1.5s infinite;
+        transform: translateX(-100%);
+        z-index: 1;
+        opacity: 0.5;
+    }
+
+    .image-container.loaded::before {
+        display: none;
+    }
+
+    @keyframes shimmer {
+        100% {
+            transform: translateX(100%);
+        }
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 640px) {
+        .w-96 {
+            width: 100%;
+        }
+        
+        .w-72 {
+            width: 100%;
+        }
+
+        .w-48 {
+            width: 100%;
+        }
+    }
+</style>
+
+<script>
+    // Find all image containers
+    const containers = document.querySelectorAll('.image-container');
+    
+    containers.forEach(container => {
+        const img = container.querySelector('img');
+        if (img) {
+            // When image loads
+            img.onload = () => {
+                // Add loaded class to remove loading animation
+                container.classList.add('loaded');
+            };
+
+            // If image is already cached and loaded
+            if (img.complete) {
+                container.classList.add('loaded');
+            }
+        }
+    });
+</script> 
