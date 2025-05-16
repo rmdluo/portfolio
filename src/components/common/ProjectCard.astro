@@ -5,11 +5,11 @@ import HoverableCard from './HoverableCard.astro';
 const { title, description, tags, featured, link, internal_link } = Astro.props as ProjectCardProps;
 ---
 
-<a href={internal_link} target="_blank" rel="noopener noreferrer" class="project-card-link">
     <HoverableCard 
         title={title}
         description={description}
         tags={tags}
+        href={internal_link}
     >
     {link && (
         <div class="link-box">
@@ -24,7 +24,6 @@ const { title, description, tags, featured, link, internal_link } = Astro.props 
         </div>
     )}
     </HoverableCard>
-</a>
 
 <style>
     .project-card-link {

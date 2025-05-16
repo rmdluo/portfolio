@@ -2,10 +2,10 @@
 import Card from './Card.astro';
 import type { CardProps } from '../../types/CardProps';
 
-const { title, description, tags, class: className } = Astro.props as CardProps & { class?: string };
+const { title, description, tags, classes: classNames, href } = Astro.props as CardProps & { classes?: string[], onclick?: () => void };
 
 // Combine our classes with any passed in classes
-const combinedClasses = ['hoverable-card', className].filter(Boolean).join(' ');
+const combinedClasses = ['hoverable-card', ...(classNames || [])];
 ---
 
 <Card 
@@ -13,6 +13,7 @@ const combinedClasses = ['hoverable-card', className].filter(Boolean).join(' ');
     description={description}
     tags={tags}
     classes={[combinedClasses]}
+    href={href}
 >
     <slot />
 </Card>
