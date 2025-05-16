@@ -1,0 +1,65 @@
+---
+import type { ProjectCardProps } from '../../types/ProjectCardProps';
+import HoverableCard from './HoverableCard.astro';
+
+const { title, description, tags, featured, link, internal_link } = Astro.props as ProjectCardProps;
+---
+
+<a href={internal_link} target="_blank" rel="noopener noreferrer" class="project-card-link">
+    <HoverableCard 
+        title={title}
+        description={description}
+        tags={tags}
+    >
+    {link && (
+        <div class="link-box">
+            <a href={link} target="_blank" rel="noopener noreferrer" class="external-link">
+                View on GitHub
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+            </a>
+        </div>
+    )}
+    </HoverableCard>
+</a>
+
+<style>
+    .project-card-link {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+
+    .project-card-link:hover :global(.card) {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 20px rgba(50, 69, 255, 0.1);
+    }
+
+    .link-box {
+        margin-top: 1.5rem;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(50, 69, 255, 0.1);
+    }
+
+    .external-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.875rem;
+        color: #3245ff;
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+    .external-link:hover {
+        color: #bc52ee;
+    }
+
+    .external-link svg {
+        width: 0.875rem;
+        height: 0.875rem;
+    }
+</style> 

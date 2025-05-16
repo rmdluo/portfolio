@@ -1,45 +1,20 @@
 ---
-import Card from './common/Card.astro';
-
-import type { CardProps } from '../types/CardProps';
-
-const projects: CardProps[] = [
-    {
-        title: "Number Generation with GANs",
-        description: "A GAN model that learns to generate MNIST-like handwritten digits using PyTorch, with MLP-based generator and discriminator architectures, and extended to conditional GANs for digit-specific generation..",
-        tags: ["ML", "PyTorch", "GANs"]
-    },
-    {
-        title: "Q-Learning Snake AI",
-        description: "An AI agent that learns to play Snake using deep Q-learning reinforcement learning techniques.",
-        tags: ["RL", "Python", "Q-Learning"]
-    },
-    {
-        title: "Handwritten Digit Recognition",
-        description: "A simple CNN model that recognizes handwritten digits using TensorFlow. Very old project, so the files may not be up to date and hard to use.",
-        tags: ["ML", "TensorFlow", "CNNs"]
-    },
-    {
-        title: "ML-Based Face Censoring",
-        description: "A simple script that detects, then censors, faces in an image using a pre-trained YoloV3 model and MMDetection.",
-        tags: ["ML", "MMDetection", "YOLO"]
-    },
-    {
-        title: "Research Connection Visualizer",
-        description: "A simple script that visualizes the connections between researchers through their co-authorship. The resulting graph is constructed and rendered using NetworkX.",
-        tags: ["Data", "Visualization", "NetworkX"]
-    }
-];
+import ProjectCard from './common/ProjectCard.astro';
+import { projects } from '../data/projects';
+import type { ProjectCardProps } from '../types/ProjectCardProps';
 ---
 
 <div class="projects-section">
     <h2 class="section-title">Featured Projects</h2>
     <div class="projects-grid">
-        {projects.map((project: CardProps) => (
-            <Card 
+        {projects.filter(project => project.featured).map((project: ProjectCardProps) => (
+            <ProjectCard 
                 title={project.title}
                 description={project.description}
                 tags={project.tags}
+                featured={project.featured}
+                link={project.link}
+                internal_link={project.internal_link}
             />
         ))}
     </div>

@@ -1,10 +1,10 @@
 ---
 import type { CardProps } from '../../types/CardProps';
 
-const { title, description, tags } = Astro.props as CardProps;
+const { title, description, tags, classes: classNames } = Astro.props as CardProps & { classes?: string[] };
 ---
 
-<div class="card">
+<div class:list={["card", ...(classNames || [])]}>
     <div class="content">
         <h3 class="title">{title}</h3>
         <p class="description">
@@ -15,6 +15,7 @@ const { title, description, tags } = Astro.props as CardProps;
                 <span class="tag">{tag}</span>
             ))}
         </div>
+        <slot />
     </div>
 </div>
 
@@ -25,11 +26,6 @@ const { title, description, tags } = Astro.props as CardProps;
         padding: 1.5rem;
         transition: transform 0.2s ease, box-shadow 0.2s ease;
         border: 1px solid rgba(50, 69, 255, 0.1);
-    }
-
-    .card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 4px 20px rgba(50, 69, 255, 0.1);
     }
 
     .title {
