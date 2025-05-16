@@ -1,7 +1,7 @@
 ---
 import type { ImageCardProps, AspectRatio, Size } from '../../types/ImageCardProps';
 
-const { src, alt, caption, aspectRatio = "landscape", size = "medium" } = Astro.props as ImageCardProps;
+const { src, alt, caption, aspectRatio = "landscape", size = "medium", unedited_src } = Astro.props as ImageCardProps;
 
 import { Image } from '@astrojs/image/components';
 
@@ -26,7 +26,7 @@ const className = sizeClass[size];
 ---
 
 <div class={`image-card ${className}`} tabindex="0" role="button" aria-label={`View ${alt} in full screen`}>
-    <div class="image-container" style={`padding-top: ${padding};`}>
+    <div class="image-container" style={`padding-top: ${padding};`} data-unedited-src={unedited_src}>
         <img 
             src={src} 
             alt={alt}
@@ -49,9 +49,17 @@ const className = sizeClass[size];
     <div class="modal-overlay"></div>
     <div class="modal-content">
         <img src={src} alt={alt} class="modal-image" />
-        {caption && (
-            <p class="modal-caption">{caption}</p>
-        )}
+        <div class="modal-controls">
+            {unedited_src && (
+                <label class="toggle-container">
+                    <input type="checkbox" class="toggle-unedited" />
+                    <span class="toggle-label">Show Unedited</span>
+                </label>
+            )}
+            {caption && (
+                <p class="modal-caption">{caption}</p>
+            )}
+        </div>
         <button class="close-button" aria-label="Close full screen view">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -182,11 +190,12 @@ const className = sizeClass[size];
     .modal-content {
         position: relative;
         max-width: 90vw;
-        max-height: 90vh;
+        max-height: 85vh;
         margin: auto;
         opacity: 0;
         transform: scale(0.9) translateY(20px);
         transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        padding-bottom: 4rem;
     }
 
     .fullscreen-modal.active {
@@ -205,7 +214,7 @@ const className = sizeClass[size];
 
     .modal-image {
         max-width: 100%;
-        max-height: 90vh;
+        max-height: 85vh;
         object-fit: contain;
         border-radius: 8px;
         box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
@@ -213,23 +222,83 @@ const className = sizeClass[size];
         transition: transform 0.3s ease;
     }
 
-    .modal-caption {
+    .modal-controls {
         position: absolute;
-        bottom: -2rem;
+        bottom: 0;
         left: 0;
         width: 100%;
-        text-align: center;
-        color: white;
-        font-size: 1rem;
-        padding: 0.5rem;
-        opacity: 0;
-        transform: translateY(10px);
-        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
     }
 
-    .fullscreen-modal.active .modal-caption {
+    .toggle-container {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        color: white;
+        font-size: 0.875rem;
+        cursor: pointer;
+        opacity: 0.9;
+        transition: opacity 0.2s ease;
+        padding: 0.5rem;
+        border-radius: 2rem;
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    .toggle-container:hover {
         opacity: 1;
-        transform: translateY(0);
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    .toggle-unedited {
+        appearance: none;
+        width: 2.5rem;
+        height: 1.25rem;
+        border-radius: 1rem;
+        background: rgba(255, 255, 255, 0.3);
+        cursor: pointer;
+        position: relative;
+        transition: all 0.2s ease;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+
+    .toggle-unedited::after {
+        content: '';
+        position: absolute;
+        top: 0.125rem;
+        left: 0.125rem;
+        width: 0.875rem;
+        height: 0.875rem;
+        background: white;
+        border-radius: 50%;
+        transition: transform 0.2s ease;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .toggle-unedited:checked {
+        background: rgba(255, 255, 255, 0.9);
+        border-color: white;
+    }
+
+    .toggle-unedited:checked::after {
+        transform: translateX(1.25rem);
+    }
+
+    .toggle-label {
+        user-select: none;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .modal-caption {
+        position: static;
+        opacity: 1;
+        transform: none;
     }
 
     .close-button {
@@ -334,6 +403,8 @@ const className = sizeClass[size];
         const img = container?.querySelector('img');
         const modal = modals[index];
         const closeButton = modal?.querySelector('.close-button');
+        const modalImg = modal?.querySelector('.modal-image') as HTMLImageElement;
+        const toggleCheckbox = modal?.querySelector('.toggle-unedited') as HTMLInputElement;
         
         if (img) {
             // When image loads
@@ -347,10 +418,35 @@ const className = sizeClass[size];
             }
         }
 
+        // Store original and unedited src
+        if (modalImg) {
+            modalImg.dataset.editedSrc = modalImg.src;
+            modalImg.dataset.uneditedSrc = img?.parentElement?.dataset.uneditedSrc || '';
+        }
+
+        // Handle toggle checkbox
+        toggleCheckbox?.addEventListener('change', () => {
+            if (!modalImg) return;
+            
+            if (toggleCheckbox.checked) {
+                modalImg.src = modalImg.dataset.uneditedSrc || modalImg.src;
+            } else {
+                modalImg.src = modalImg.dataset.editedSrc || modalImg.src;
+            }
+        });
+
         // Open modal on card click or Enter/Space key
         const openModal = () => {
             modal?.classList.add('active');
             document.body.style.overflow = 'hidden';
+            
+            // Reset checkbox and image src when opening modal
+            if (toggleCheckbox) {
+                toggleCheckbox.checked = false;
+            }
+            if (modalImg) {
+                modalImg.src = modalImg.dataset.editedSrc || modalImg.src;
+            }
         };
 
         card.addEventListener('click', openModal);

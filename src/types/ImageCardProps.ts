@@ -7,4 +7,5 @@ export interface ImageCardProps {
     caption?: string;
     aspectRatio?: AspectRatio;
     size?: Size;
+    unedited_src?: string;
 }
