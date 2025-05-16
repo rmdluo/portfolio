@@ -13,46 +13,4 @@ export const images: ImageCardProps[] = [
         aspectRatio: "landscape",
         unedited_src: "/src/assets/gallery/before/IMG_2732_orig.jpg"
     },
-    {
-        src: "/src/assets/gallery/after/IMG_2727.jpg",
-        alt: "Gallery Image",
-        aspectRatio: "landscape",
-        unedited_src: "/src/assets/gallery/before/IMG_2727.jpg"
-    },
-    {
-        src: "/src/assets/gallery/after/IMG_2727.jpg",
-        alt: "Gallery Image",
-        aspectRatio: "landscape",
-        unedited_src: "/src/assets/gallery/before/IMG_2727.jpg"
-    },
-    {
-        src: "/src/assets/gallery/after/IMG_2727.jpg",
-        alt: "Gallery Image",
-        aspectRatio: "landscape",
-        unedited_src: "/src/assets/gallery/before/IMG_2727.jpg"
-    },
-    {
-        src: "/src/assets/gallery/after/IMG_2727.jpg",
-        alt: "Gallery Image",
-        aspectRatio: "landscape",
-        unedited_src: "/src/assets/gallery/before/IMG_2727.jpg"
-    },
-    {
-        src: "/src/assets/gallery/after/IMG_2727.jpg",
-        alt: "Gallery Image",
-        aspectRatio: "landscape",
-        unedited_src: "/src/assets/gallery/before/IMG_2727.jpg"
-    },
-    {
-        src: "/src/assets/gallery/after/IMG_2727.jpg",
-        alt: "Gallery Image",
-        aspectRatio: "landscape",
-        unedited_src: "/src/assets/gallery/before/IMG_2727.jpg"
-    },
-    {
-        src: "/src/assets/gallery/after/IMG_2727.jpg",
-        alt: "Gallery Image",
-        aspectRatio: "landscape",
-        unedited_src: "/src/assets/gallery/before/IMG_2727.jpg"
-    }
 ];

@@ -2,37 +2,151 @@
 import ImageCard from './common/ImageCard.astro';
 import type { ImageCardProps } from '../types/ImageCardProps';
 const { images } = Astro.props;
+
+// Create balanced columns
+const NUM_COLUMNS = 4;
+const columns: ImageCardProps[][] = Array.from({ length: NUM_COLUMNS }, () => []);
+
+// Distribute images across columns to maintain balance
+images.forEach((image: ImageCardProps, index: number) => {
+    const columnIndex = index % NUM_COLUMNS;
+    columns[columnIndex].push(image);
+});
 ---
 
 <div class="gallery">
-    {images.map((image: ImageCardProps) => (
-        <ImageCard 
-            {...image}
-            size="dynamic"
-        />
+    {columns.map((column) => (
+        <div class="gallery-column">
+            {column.map((image: ImageCardProps) => (
+                <ImageCard 
+                    {...image}
+                    size="dynamic"
+                />
+            ))}
+        </div>
     ))}
 </div>
 
 <style>
     .gallery {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(clamp(10rem, 15vw, 28rem), 1fr));
+        display: flex;
         gap: clamp(1rem, 2vw, 2rem);
         padding: clamp(1rem, 2vw, 2rem);
         width: 100%;
         margin: 0 auto;
-        justify-items: center;
+        max-width: 1800px;
     }
 
-    @media (min-width: 2000px) {
+    .gallery-column {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: clamp(1rem, 2vw, 2rem);
+    }
+
+    .gallery-column :global(.image-card) {
+        width: 100% !important;
+    }
+
+    @media (max-width: 1400px) {
         .gallery {
-            grid-template-columns: repeat(auto-fit, minmax(clamp(20rem, 20vw, 35rem), 1fr));
+            --num-columns: 3;
+        }
+        .gallery-column:nth-child(4) {
+            display: none;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .gallery {
+            --num-columns: 2;
+        }
+        .gallery-column:nth-child(3) {
+            display: none;
         }
     }
 
     @media (max-width: 640px) {
         .gallery {
-            grid-template-columns: repeat(auto-fit, minmax(clamp(8rem, 40vw, 15rem), 1fr));
+            --num-columns: 1;
+        }
+        .gallery-column:nth-child(2) {
+            display: none;
         }
     }
-</style> 
+</style>
+
+<script>
+    // Rebalance columns when images load
+    const gallery = document.querySelector('.gallery');
+    if (!gallery) return;
+
+    const columns = Array.from(gallery.querySelectorAll('.gallery-column'));
+    
+    // Function to get column heights
+    const getColumnHeights = () => {
+        return columns.map(col => col.getBoundingClientRect().height);
+    };
+
+    // Function to find shortest column
+    const getShortestColumnIndex = () => {
+        const heights = getColumnHeights();
+        return heights.indexOf(Math.min(...heights));
+    };
+
+    // Function to find tallest column
+    const getTallestColumnIndex = () => {
+        const heights = getColumnHeights();
+        return heights.indexOf(Math.max(...heights));
+    };
+
+    // Function to rebalance columns
+    const rebalanceColumns = () => {
+        let iterations = 0;
+        const maxIterations = 10; // Prevent infinite loops
+        
+        while (iterations < maxIterations) {
+            const tallestIndex = getTallestColumnIndex();
+            const shortestIndex = getShortestColumnIndex();
+            const heightDiff = getColumnHeights()[tallestIndex] - getColumnHeights()[shortestIndex];
+            
+            // Stop if difference is acceptable
+            if (heightDiff < 100) break;
+            
+            // Move last item from tallest to shortest column
+            const tallestColumn = columns[tallestIndex];
+            const shortestColumn = columns[shortestIndex];
+            
+            if (tallestColumn.children.length > 1) {
+                const lastItem = tallestColumn.lastElementChild;
+                if (lastItem) {
+                    shortestColumn.appendChild(lastItem);
+                }
+            }
+            
+            iterations++;
+        }
+    };
+
+    // Wait for all images to load
+    Promise.all(
+        Array.from(document.querySelectorAll<HTMLImageElement>('.gallery img'))
+            .map(img => {
+                if (img.complete) return Promise.resolve();
+                return new Promise(resolve => {
+                    img.onload = resolve;
+                    img.onerror = resolve;
+                });
+            })
+    ).then(() => {
+        // Initial balance
+        rebalanceColumns();
+        
+        // Rebalance on window resize
+        let resizeTimeout: ReturnType<typeof setTimeout>;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(rebalanceColumns, 100);
+        });
+    });
+</script> 

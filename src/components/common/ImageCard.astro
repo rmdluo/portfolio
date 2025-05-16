@@ -22,6 +22,8 @@ const className = sizeClass[size];
         <Picture  
             src={images[src]()} 
             alt={alt}
+            widths={[400, 800, 1200]}
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1400px) 33vw, 25vw"
         />
         <div class="expand-hint">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -85,10 +87,12 @@ const className = sizeClass[size];
         background: white;
         border-radius: 12px;
         overflow: hidden;
+        height: fit-content;
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         cursor: pointer;
         outline: none; /* Remove default focus outline */
+        display: block;
     }
 
     .image-card:focus-visible {
@@ -114,7 +118,6 @@ const className = sizeClass[size];
 
     .w-dynamic {
         width: 100%;
-        max-width: var(--min-image-width, 24rem);
     }
 
     .image-card:hover {
@@ -128,14 +131,15 @@ const className = sizeClass[size];
         overflow: hidden;
     }
 
-    .image {
-        position: absolute;
-        top: 0;
-        left: 0;
+    .image-container :global(img) {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+        height: auto;
+        display: block;
         transition: transform 0.3s ease;
+    }
+
+    .image-card:hover .image-container :global(img) {
+        transform: scale(1.05);
     }
 
     .expand-hint {
@@ -156,10 +160,6 @@ const className = sizeClass[size];
     .image-card:hover .expand-hint {
         opacity: 0.9;
         transform: scale(1);
-    }
-
-    .image-card:hover .image {
-        transform: scale(1.05);
     }
 
     .caption {
