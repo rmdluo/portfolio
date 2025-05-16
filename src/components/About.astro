@@ -11,13 +11,19 @@
                 <div class="text-header">
                     <p class="name">Raymond Luo</p>
                     <p class="tagline">Software Developer & (Pseudo) ML Engineer @ <a href="https://www.jhuapl.edu/" target="_blank" class="text-blue-500 hover:text-blue-600">JHUAPL</a></p>
-                    <div class="interests-section">
-                        <h3>Things I Love</h3>
-                        <div class="interests-grid">
-                            <div class="interest-item">🚀 Technology</div>
-                            <div class="interest-item">💻 Coding</div>
-                            <div class="interest-item">🎨 Design</div>
-                            <div class="interest-item">📚 Learning</div>
+                    <div class="skills-section">
+                        <h3>Technical Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">🐍 Python</div>
+                            <div class="skill-item">⚡ C/C++</div>
+                            <div class="skill-item">🔥 PyTorch</div>
+                            <div class="skill-item">🧠 Deep Learning</div>
+                            <div class="skill-item">🤖 Reinforcement Learning</div>
+                            <div class="skill-item">💻 Software Development</div>
+                            <div class="skill-item">🎨 GANs</div>
+                            <div class="skill-item">🌊 Diffusion Models</div>
+                            <div class="skill-item">🗄️ Database Design</div>
+                            <div class="skill-item">🐳 Docker</div>
                         </div>
                     </div>
                 </div>
@@ -154,18 +160,23 @@
         line-height: 1.7;
     }
 
-    .interests-section {
+    .skills-section {
         margin-top: auto;
         padding-top: 1rem;
-    }
-
-    .interests-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        gap: 0.75rem;
     }
 
-    .interest-item {
+    .skills-grid {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+        gap: 0.75rem;
+        align-items: stretch;
+        height: 100%;
+    }
+
+    .skill-item {
         background: linear-gradient(83.21deg, rgba(50, 69, 255, 0.1) 0%, rgba(188, 82, 238, 0.1) 100%);
         padding: 0.5rem;
         border-radius: 8px;
@@ -173,9 +184,15 @@
         font-size: 0.9rem;
         color: #111827;
         transition: transform 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
     }
 
-    .interest-item:hover {
+    .skill-item:hover {
         transform: translateY(-2px);
     }
 
@@ -211,6 +228,12 @@
 
         .interests-grid {
             grid-template-columns: repeat(2, 1fr);
+        }
+
+        .skills-grid {
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-flow: row;
         }
     }
 

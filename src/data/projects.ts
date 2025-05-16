@@ -3,7 +3,7 @@ import type { ProjectCardProps } from '../types/ProjectCardProps';
 export const projects: ProjectCardProps[] = [
     {
         title: "Number Generation with GANs",
-        description: "A GAN model that learns to generate MNIST-like handwritten digits using PyTorch, with MLP-based generator and discriminator architectures, and extended to conditional GANs for digit-specific generation..",
+        description: "A GAN model that learns to generate MNIST-like handwritten digits using PyTorch, with MLP-based generator and discriminator architectures, and extended to conditional GANs for digit-specific generation.",
         tags: ["ML", "PyTorch", "GANs"],
         featured: true,
         link: "https://github.com/rmdluo/GAN-Number-Generation",
