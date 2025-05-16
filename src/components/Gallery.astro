@@ -14,7 +14,7 @@ images.forEach((image: ImageCardProps, index: number) => {
 });
 ---
 
-<div class="gallery">
+<div class="gallery" id="gallery">
     {images.map((image: ImageCardProps) => (
         <ImageCard 
             {...image}
@@ -59,76 +59,32 @@ images.forEach((image: ImageCardProps, index: number) => {
 </style>
 
 <script>
-    // Rebalance columns when images load
-    const gallery = document.querySelector('.gallery');
-    if (!gallery) return;
+    // Only run this code on the client side
+    function initGallery() {
+        const gallery = document.querySelector<HTMLElement>('#gallery');
+        if (!gallery) return;
 
-    const columns = Array.from(gallery.querySelectorAll('.gallery-column'));
-    
-    // Function to get column heights
-    const getColumnHeights = () => {
-        return columns.map(col => col.getBoundingClientRect().height);
-    };
-
-    // Function to find shortest column
-    const getShortestColumnIndex = () => {
-        const heights = getColumnHeights();
-        return heights.indexOf(Math.min(...heights));
-    };
-
-    // Function to find tallest column
-    const getTallestColumnIndex = () => {
-        const heights = getColumnHeights();
-        return heights.indexOf(Math.max(...heights));
-    };
-
-    // Function to rebalance columns
-    const rebalanceColumns = () => {
-        let iterations = 0;
-        const maxIterations = 10; // Prevent infinite loops
+        // Wait for all images to load
+        const images = gallery.querySelectorAll<HTMLImageElement>('img');
         
-        while (iterations < maxIterations) {
-            const tallestIndex = getTallestColumnIndex();
-            const shortestIndex = getShortestColumnIndex();
-            const heightDiff = getColumnHeights()[tallestIndex] - getColumnHeights()[shortestIndex];
-            
-            // Stop if difference is acceptable
-            if (heightDiff < 100) break;
-            
-            // Move last item from tallest to shortest column
-            const tallestColumn = columns[tallestIndex];
-            const shortestColumn = columns[shortestIndex];
-            
-            if (tallestColumn.children.length > 1) {
-                const lastItem = tallestColumn.lastElementChild;
-                if (lastItem) {
-                    shortestColumn.appendChild(lastItem);
-                }
-            }
-            
-            iterations++;
-        }
-    };
-
-    // Wait for all images to load
-    Promise.all(
-        Array.from(document.querySelectorAll<HTMLImageElement>('.gallery img'))
-            .map(img => {
+        Promise.all(
+            Array.from(images).map(img => {
                 if (img.complete) return Promise.resolve();
                 return new Promise(resolve => {
                     img.onload = resolve;
                     img.onerror = resolve;
                 });
             })
-    ).then(() => {
-        // Initial balance
-        rebalanceColumns();
-        
-        // Rebalance on window resize
-        let resizeTimeout: ReturnType<typeof setTimeout>;
-        window.addEventListener('resize', () => {
-            clearTimeout(resizeTimeout);
-            resizeTimeout = setTimeout(rebalanceColumns, 100);
+        ).then(() => {
+            // All images are loaded
+            console.log('All gallery images loaded');
         });
-    });
+    }
+
+    // Run the initialization when the DOM is ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initGallery);
+    } else {
+        initGallery();
+    }
 </script> 
