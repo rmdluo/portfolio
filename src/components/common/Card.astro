@@ -7,14 +7,18 @@ const { title, description, tags, classes: classNames, href } = Astro.props as C
 <div class:list={["card", ...(classNames || [])]} data-href={href} style={href ? "cursor: pointer" : ""}>
     <div class="content">
         <h3 class="title">{title}</h3>
-        <p class="description">
-            {description}
-        </p>
-        <div class="tags">
-            {tags.map((tag: string) => (
-                <span class="tag">{tag}</span>
-            ))}
-        </div>
+        {description && (
+            <p class="description">
+                {description}
+            </p>
+        )}
+        {tags && tags.length > 0 && (
+            <div class="tags">
+                {tags.map((tag: string) => (
+                    <span class="tag">{tag}</span>
+                ))}
+            </div>
+        )}
         <slot />
     </div>
 </div>
