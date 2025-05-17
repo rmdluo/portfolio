@@ -4,7 +4,6 @@ import type { ImageCardProps, AspectRatio, Size } from '../../types/ImageCardPro
 import { Picture } from 'astro:assets';
 
 const { src, alt, caption, aspectRatio = "landscape", size = "medium", unedited_src } = Astro.props as ImageCardProps;
-const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/gallery/{before,after}/*.{jpeg,jpg,png,gif}');
 
 const sizeClass: Record<Size, string> = {
     small: "w-48", // 192px
@@ -20,10 +19,11 @@ const className = sizeClass[size];
 <div class={`image-card ${className}`} tabindex="0" role="button" aria-label={`View ${alt} in full screen`}>
     <div class="image-container" data-unedited-src={unedited_src}>
         <Picture  
-            src={images[src]()} 
+            src=`${import.meta.env.VITE_GALLERY_LINK}/${src}`
             alt={alt}
             widths={[400, 800, 1200]}
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1400px) 33vw, 25vw"
+            inferSize={true}
         />
         <div class="expand-hint">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -43,17 +43,19 @@ const className = sizeClass[size];
         <div class="modal-image-container">
             <div class="edited-image">
                 <Picture 
-                    src={images[src]()} 
+                    src={`${import.meta.env.VITE_GALLERY_LINK}/${src}`} 
                     alt={alt} 
-                    class="modal-image" 
+                    class="modal-image"
+                    inferSize={true}
                 />
             </div>
             {unedited_src && (
                 <div class="unedited-image">
                     <Picture 
-                        src={images[unedited_src]()} 
+                        src={`${import.meta.env.VITE_GALLERY_LINK}/${unedited_src}`} 
                         alt={`Unedited version of ${alt}`} 
-                        class="modal-image" 
+                        class="modal-image"
+                        inferSize={true}
                     />
                 </div>
             )}
