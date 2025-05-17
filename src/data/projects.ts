@@ -23,7 +23,7 @@ export const projects: ProjectCardProps[] = [
         tags: ["ML", "TensorFlow", "CNNs"],
         featured: true,
         link: "https://github.com/rmdluo/Digit-Recognition",
-        internal_link: "/projects/digit-recognition"
+        internal_link: ""
     },
     {
         title: "ML-Based Face Censoring",
@@ -31,7 +31,7 @@ export const projects: ProjectCardProps[] = [
         tags: ["ML", "MMDetection", "YOLO"],
         featured: true,
         link: "https://github.com/rmdluo/Face-Censor",
-        internal_link: "/projects/face-censoring"
+        internal_link: ""
     },
     {
         title: "Research Connection Visualizer",
@@ -39,6 +39,6 @@ export const projects: ProjectCardProps[] = [
         tags: ["Data", "Visualization", "NetworkX"],
         featured: true,
         link: "https://github.com/rmdluo/Research-Connections",
-        internal_link: "/projects/research-connections"
+        internal_link: ""
     }
 ]; 
