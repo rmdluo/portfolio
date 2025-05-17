@@ -1,0 +1,33 @@
+---
+import ProjectCard from './ProjectCard.astro';
+import type { ProjectCardProps } from '../../types/ProjectCardProps';
+
+const { projects } = Astro.props;
+---
+
+<div class="projects-grid">
+    {projects.map((project: ProjectCardProps) => (
+        <ProjectCard 
+            title={project.title}
+            description={project.description}
+            tags={project.tags}
+            featured={project.featured}
+            link={project.link}
+            internal_link={project.internal_link}
+        />
+    ))}
+</div>
+
+<style>
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+
+    @media (max-width: 768px) {
+        .projects-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>

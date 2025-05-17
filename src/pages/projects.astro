@@ -1,11 +1,13 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import ProjectsComponent from '../components/FeaturedProjects.astro';
+import FeaturedProjects from '../components/projects/FeaturedProjects.astro';
+import AllProjects from '../components/projects/AllProjects.astro';
 import { projects } from '../data/projects';
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <BaseLayout title="Projects">
-    <ProjectsComponent projects={projects} />
+    <FeaturedProjects projects={projects} />
+    <AllProjects projects={projects} />
 </BaseLayout>
