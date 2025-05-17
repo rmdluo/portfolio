@@ -2,16 +2,6 @@
 import ImageCard from './common/ImageCard.astro';
 import type { ImageCardProps } from '../types/ImageCardProps';
 const { images } = Astro.props;
-
-// Create balanced columns
-const NUM_COLUMNS = 4;
-const columns: ImageCardProps[][] = Array.from({ length: NUM_COLUMNS }, () => []);
-
-// Distribute images across columns to maintain balance
-images.forEach((image: ImageCardProps, index: number) => {
-    const columnIndex = index % NUM_COLUMNS;
-    columns[columnIndex].push(image);
-});
 ---
 
 <div class="gallery" id="gallery">
