@@ -1,16 +1,27 @@
+---
+import { Picture } from 'astro:assets';
+---
+
 <div class="about-container">
     <div class="about-content box">
         <div class="profile-section">
             <div class="header-content">
                 <div class="profile-image">
-                    <img src="/placeholder-profile.jpg" alt="Profile picture" />
-                    <div class="image-overlay">
-                        <p>Replace with your photo</p>
-                    </div>
+                    <Picture
+                        src="/src/assets/pfp.jpg"
+                        alt="Raymond standing by a pond with a bouquet of flowers and a teddy bear."
+                        width={400}
+                        height={400}
+                        sizes="(max-width: 768px) 200px, 250px"
+                        formats={['avif', 'webp']}
+                        loading="lazy"
+                        quality={80}
+                    />
                 </div>
                 <div class="text-header">
                     <p class="name">Raymond Luo</p>
                     <p class="tagline">Software Developer & (Pseudo) ML Engineer @ <a href="https://www.jhuapl.edu/" target="_blank" class="text-blue-500 hover:text-blue-600">JHUAPL</a></p>
+                    <p class="education">B.S. Information Systems & Computer Science @ <a href="https://www.cmu.edu/" target="_blank" class="text-blue-500 hover:text-blue-600">Carnegie Mellon University</a></p>
                     <div class="skills-section">
                         <h3>Technical Skills</h3>
                         <div class="skills-grid">
@@ -78,7 +89,7 @@
 
     .header-content {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         gap: 3rem;
         margin-bottom: 3rem;
         /* min-height: 250px; */
@@ -94,8 +105,8 @@
     }
 
     .profile-image {
-        width: 250px;
-        height: 250px;
+        width: 300px;
+        height: 300px;
         flex-shrink: 0;
         border-radius: 16px;
         overflow: hidden;
@@ -107,29 +118,6 @@
         height: 100%;
         object-fit: cover;
     }
-
-    /* .image-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: rgba(0, 0, 0, 0.5);
-        color: white;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-    } */
-
-    /* .profile-image:hover .image-overlay {
-        opacity: 1;
-    }
-
-    .profile-image:hover img {
-        transform: scale(1.05);
-    } */
 
     .name {
         font-size: 2.5rem;
@@ -147,6 +135,13 @@
         color: #6b7280;
         line-height: 1.4;
         margin-bottom: 0.5rem;
+    }
+
+    .education {
+        font-size: 1.1rem;
+        color: #6b7280;
+        line-height: 1.4;
+        margin-bottom: 1rem;
     }
 
     .description-text {
