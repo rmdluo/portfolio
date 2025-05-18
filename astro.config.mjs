@@ -8,8 +8,8 @@ export default defineConfig({
   },
 
   image: {
-    // Example: Allow remote image optimization from a single domain
-    domains: [import.meta.env.VITE_GALLERY_LINK],
+    // Allow remote image optimization from S3 and gallery domains
+    domains: ['rmdluo-portfolio.s3.us-east-1.amazonaws.com', import.meta.env.VITE_GALLERY_LINK],
   },
 
   adapter: vercel()
