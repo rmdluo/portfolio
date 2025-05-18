@@ -22,7 +22,7 @@ export const projects: ProjectCardProps[] = [
         description: "A simple CNN model that recognizes handwritten digits using TensorFlow. Very old project, so the files may not be up to date and hard to use.",
         tags: ["ML", "TensorFlow", "CNNs"],
         featured: true,
-        link: "https://github.com/rmdluo/Digit-Recognition",
+        link: "https://github.com/rmdluo/Digit-Recognizer",
         internal_link: ""
     },
     {
