@@ -8,8 +8,7 @@ export default defineConfig({
   },
 
   image: {
-    // Allow remote image optimization from S3 and gallery domains
-    domains: ['rmdluo-portfolio.s3.us-east-1.amazonaws.com', import.meta.env.VITE_GALLERY_LINK],
+    remotePatterns: [{ protocol: "https" }],
   },
 
   adapter: vercel()
