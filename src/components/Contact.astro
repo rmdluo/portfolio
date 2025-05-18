@@ -13,59 +13,22 @@ import HoverableCard from './common/HoverableCard.astro';
     </div>
 
     <!-- Contact Cards Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Primary Contact Methods -->
-      <div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
-        <!-- Email Card -->
-        <HoverableCard 
-          title="Email"
-          description="Get in touch via email"
-          tags={["Primary Contact"]}
-        >
-          <p class="text-lg text-gray-600 mt-4">
-            <a href="mailto:rmdluo@gmail.com" class="text-blue-500 hover:text-blue-600">rmdluo@gmail.com</a>
-          </p>
-        </HoverableCard>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Email Card -->
+      <HoverableCard 
+        title="Email"
+        description="Get in touch via email"
+        tags={["Primary Contact"]}
+      >
+        <p class="text-lg text-gray-600 mt-4">
+          <a href="mailto:rmdluo@gmail.com" class="text-blue-500 hover:text-blue-600">rmdluo@gmail.com</a>
+        </p>
+      </HoverableCard>
 
-        <!-- Phone Card -->
-        <HoverableCard 
-          title="Phone"
-          description="Call me directly"
-          tags={["Primary Contact"]}
-        >
-          <p class="text-lg text-gray-600 mt-4">
-            (301) 661-6011
-          </p>
-        </HoverableCard>
-
-        <!-- Location Card -->
-        <HoverableCard 
-          title="Location"
-          description="Where to find me"
-          tags={["Location"]}
-        >
-          <p class="text-lg text-gray-600 mt-4">
-            Based in Maryland, available anytime over Zoom
-          </p>
-        </HoverableCard>
-
-        <!-- Availability Card -->
-        <HoverableCard 
-          title="Availability"
-          description="Current work status"
-          tags={["Status"]}
-        >
-          <p class="text-lg text-gray-600 mt-4">
-            Working at JHUAPL, but open to chatting and working on side projects anytime!
-          </p>
-        </HoverableCard>
-      </div>
-
-      <!-- Social Links Card - Full Height -->
+      <!-- Social Links Card -->
       <HoverableCard 
         title="Connect on Social Media"
         description="Find me on social media!"
-        className="lg:row-span-2"
       >
         <div class="flex flex-col space-y-8 mt-4">
           <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-4 text-gray-600 hover:text-blue-600 transition-all duration-300 transform hover:scale-105">
@@ -81,6 +44,28 @@ import HoverableCard from './common/HoverableCard.astro';
             <span class="text-lg font-medium">GitHub</span>
           </a>
         </div>
+      </HoverableCard>
+
+      <!-- Location Card -->
+      <HoverableCard 
+        title="Location"
+        description="Where to find me"
+        tags={["Location"]}
+      >
+        <p class="text-lg text-gray-600 mt-4">
+          Based in Maryland, available anytime over Zoom
+        </p>
+      </HoverableCard>
+
+      <!-- Availability Card -->
+      <HoverableCard 
+        title="Availability"
+        description="Current work status"
+        tags={["Status"]}
+      >
+        <p class="text-lg text-gray-600 mt-4">
+          Working at JHUAPL, but open to chatting and working on side projects anytime!
+        </p>
       </HoverableCard>
     </div>
   </div>
