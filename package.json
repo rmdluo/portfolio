@@ -13,12 +13,12 @@
   "dependencies": {
     "@astrojs/vercel": "^8.1.4",
     "astro": "^5.7.13",
-    "sharp": "^0.34.1"
+    "sharp": "^0.34.1",
+    "@tailwindcss/vite": "^4.1.7"
   },
   "devDependencies": {
-    "@astrojs/tailwind": "^5.1.0",
     "@types/node": "^22.15.18",
-    "tailwindcss": "^3.4.1",
+    "tailwindcss": "^4.1.7",
     "typescript": "^5.8.3",
     "vercel": "^41.7.8"
   }
