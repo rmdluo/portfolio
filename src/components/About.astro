@@ -1,5 +1,6 @@
 ---
 import { Picture } from 'astro:assets';
+import pfp from '../assets/pfp.jpg';
 ---
 
 <div class="about-container">
@@ -8,7 +9,7 @@ import { Picture } from 'astro:assets';
             <div class="header-content">
                 <div class="profile-image">
                     <Picture
-                        src="/src/assets/pfp.jpg"
+                        src={pfp}
                         alt="Raymond standing by a pond with a bouquet of flowers and a teddy bear."
                         width={400}
                         height={400}

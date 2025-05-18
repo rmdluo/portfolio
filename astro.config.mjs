@@ -9,6 +9,7 @@ export default defineConfig({
 
   image: {
     remotePatterns: [{ protocol: "https" }],
+    domains: ['astro.build']
   },
 
   adapter: vercel()
