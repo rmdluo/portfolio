@@ -3,9 +3,7 @@ import tailwindcss from '@tailwindcss/vite';
 import vercel from '@astrojs/vercel';
 // https://astro.build/config
 export default defineConfig({
-  integrations: [image({ serviceEntryPoint: "@astrojs/image/sharp" })],,
-
-  output: "static",
+  integrations: [image({ serviceEntryPoint: "@astrojs/image/sharp" })],
   
   vite: {
     plugins: [tailwindcss()]
