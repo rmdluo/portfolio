@@ -10,7 +10,7 @@ export const images: ImageCardProps[] = [
     {
         src: "gallery/after/IMG_2732_edited.jpg",
         alt: "White flowers down from a branch",
-        aspectRatio: "landscape",
+        aspectRatio: "portrait",
         unedited_src: "gallery/before/IMG_2732_orig.jpg"
     },
     {
@@ -22,7 +22,13 @@ export const images: ImageCardProps[] = [
     {
         src: "gallery/after/IMG_2780_edited.jpg",
         alt: "A purple flower against the sky",
-        aspectRatio: "landscape",
+        aspectRatio: "portrait",
         unedited_src: "gallery/before/IMG_2780_orig.jpg"
+    },
+    {
+        src: "gallery/after/IMG_2778_edited.jpg",
+        alt: "Purple flowers",
+        aspectRatio: "landscape",
+        unedited_src: "gallery/before/IMG_2778_orig.jpg"
     }
 ];
