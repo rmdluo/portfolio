@@ -17,7 +17,7 @@ export const images: ImageCardProps[] = [
         src: "gallery/after/IMG_2712_edited.jpg",
         alt: "A bench in the woods",
         aspectRatio: "landscape",
-        unedited_src: "gallery/before/IMG_2712.jpg"
+        unedited_src: "gallery/before/IMG_2712_orig.jpg"
     },
     {
         src: "gallery/after/IMG_2780_edited.jpg",
