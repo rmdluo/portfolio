@@ -2,10 +2,10 @@ import type { ImageCardProps } from "../types/ImageCardProps";
 
 export const images: ImageCardProps[] = [
     {
-        src: "gallery/after/IMG_2727.jpg",
+        src: "gallery/after/IMG_2727_edited.jpg",
         alt: "River bend surrounded by trees",
         aspectRatio: "landscape",
-        unedited_src: "gallery/before/IMG_2727.jpg"
+        unedited_src: "gallery/before/IMG_2727_orig.jpg"
     },
     {
         src: "gallery/after/IMG_2732_edited.jpg",
@@ -19,4 +19,10 @@ export const images: ImageCardProps[] = [
         aspectRatio: "landscape",
         unedited_src: "gallery/before/IMG_2712.jpg"
     },
+    {
+        src: "gallery/after/IMG_2780_edited.jpg",
+        alt: "A purple flower against the sky",
+        aspectRatio: "landscape",
+        unedited_src: "gallery/before/IMG_2780_orig.jpg"
+    }
 ];
