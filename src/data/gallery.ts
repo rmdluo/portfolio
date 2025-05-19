@@ -20,7 +20,7 @@ export const images: ImageCardProps[] = [
         unedited_src: "gallery/before/IMG_2712_orig.jpg"
     },
     {
-        src: "gallery/after/IMG_2780_edit_2.jpg",
+        src: "gallery/after/IMG_2780_edited.jpg",
         alt: "A purple flower against the sky",
         aspectRatio: "landscape",
         unedited_src: "gallery/before/IMG_2780_orig.jpg"
