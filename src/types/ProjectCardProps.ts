@@ -7,4 +7,5 @@ export interface ProjectCardProps extends CardProps {
     featured: boolean;
     internal_link: string;
     link: string;
+    year: number;
 }

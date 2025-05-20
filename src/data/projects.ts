@@ -7,7 +7,8 @@ export const projects: ProjectCardProps[] = [
         tags: ["ML", "PyTorch", "GANs"],
         featured: true,
         link: "https://github.com/rmdluo/GAN-Number-Generation",
-        internal_link: "/projects/gan-number-generation"
+        internal_link: "/projects/gan-number-generation",
+        year: 2025
     },
     {
         title: "Q-Learning Snake AI",
@@ -15,7 +16,8 @@ export const projects: ProjectCardProps[] = [
         tags: ["RL", "Python", "Q-Learning"],
         featured: true,
         link: "https://github.com/rmdluo/Snake-Q-Learning",
-        internal_link: "/projects/rl-snake"
+        internal_link: "/projects/rl-snake",
+        year: 2025
     },
     {
         title: "Handwritten Digit Recognition",
@@ -23,7 +25,8 @@ export const projects: ProjectCardProps[] = [
         tags: ["ML", "TensorFlow", "CNNs"],
         featured: true,
         link: "https://github.com/rmdluo/Digit-Recognizer",
-        internal_link: ""
+        internal_link: "",
+        year: 2019
     },
     {
         title: "ML-Based Face Censoring",
@@ -31,7 +34,8 @@ export const projects: ProjectCardProps[] = [
         tags: ["ML", "MMDetection", "YOLO"],
         featured: true,
         link: "https://github.com/rmdluo/Face-Censor",
-        internal_link: ""
+        internal_link: "",
+        year: 2022
     },
     {
         title: "Research Connection Visualizer",
@@ -39,6 +43,7 @@ export const projects: ProjectCardProps[] = [
         tags: ["Data", "Visualization", "NetworkX"],
         featured: true,
         link: "https://github.com/rmdluo/Research-Connections",
-        internal_link: ""
+        internal_link: "",
+        year: 2022
     }
 ]; 
