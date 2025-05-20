@@ -21,7 +21,7 @@ export const projects: ProjectCardProps[] = [
     },
     {
         title: "IDL-WAR: Invisible Watermarking And Robustness",
-        description: "A group project for CMU's 11785 (PhD-level Intro to Deep Learning) that explores the robustness of image watermarking techniques when multiple of them are combined. This project was done in conjunction Dongjun Hwang, Sungwon Woo, and Tom Gao.",
+        description: "A group project for CMU's 11785 (PhD-level Intro to Deep Learning) that explores the robustness of image watermarking techniques when multiple of them are combined. This project was done in conjunction with Dongjun Hwang, Sungwon Woo, and Tom Gao.",
         tags: ["DL", "Watermarking", "Diffusion", "Encoder-Decoder Architectures"],
         featured: true,
         link: "https://github.com/tomputer-g/idl_war",
