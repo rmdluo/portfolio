@@ -29,7 +29,7 @@ In the conditional models, there is an additional one-hot encoded vector input, 
 - PyTorch-based implementation
 - MLP architecture for both generator and discriminator
 - Extension to conditional GANs for controlled digit generation
-- Training pipeline with adversarial loss functions
+- Training pipeline using BCE loss
 
 ## Results
 
