@@ -1,13 +1,65 @@
 ---
-import ProjectsGrid from './ProjectsGrid.astro';
+import type { ProjectCardProps } from '../../types/ProjectCardProps';
 
 const { projects } = Astro.props;
 ---
 
 <div class="projects-section">
     <h2 class="section-title">All Projects</h2>
-    <ProjectsGrid projects={projects} />
+    <div class="projects-list">
+        {projects.map((project: ProjectCardProps) => (
+            <article class="project-item hoverable-card" data-href={project.internal_link}>
+                <div class="project-header">
+                    <h3 class="project-title">
+                        {project.title}
+                        <span class="project-year">({project.year})</span>
+                    </h3>
+                    <div class="project-links">
+                        {project.link && (
+                            <a href={project.link} target="_blank" rel="noopener noreferrer" class="project-link">
+                                GitHub
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        )}
+                        {project.internal_link && (
+                            <a href={project.internal_link} class="project-link">
+                                Details
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        )}
+                    </div>
+                </div>
+                <p class="project-description">{project.description}</p>
+                <div class="project-tags">
+                    {project.tags.map((tag) => (
+                        <span class="tag">{tag}</span>
+                    ))}
+                </div>
+            </article>
+        ))}
+    </div>
 </div>
+
+<script>
+    document.querySelectorAll('.project-item[data-href]').forEach(card => {
+        card.addEventListener('click', (e: Event) => {
+            // Don't trigger card click if clicking on a link or button
+            const target = e.target as HTMLElement;
+            if (target.closest('a, button')) return;
+            
+            const href = card.getAttribute('data-href');
+            if (href) window.location.href = href;
+        });
+    });
+</script>
 
 <style>
     .section-title {
@@ -25,5 +77,108 @@ const { projects } = Astro.props;
         max-width: 1200px;
         margin: 2rem auto;
         padding: 0 1rem;
+    }
+
+    .projects-list {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .project-item {
+        background: linear-gradient(83.21deg, rgba(50, 69, 255, 0.05) 0%, rgba(188, 82, 238, 0.05) 100%);
+        border-radius: 16px;
+        padding: 1.5rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        border: 1px solid rgba(50, 69, 255, 0.1);
+        cursor: pointer;
+    }
+
+    .hoverable-card {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .hoverable-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 20px rgba(50, 69, 255, 0.1);
+    }
+
+    .project-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+    }
+
+    .project-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin: 0;
+        color: #111827;
+    }
+
+    .project-year {
+        font-size: 1rem;
+        color: #bc52ee;
+        margin-left: 0.5rem;
+    }
+
+    .project-links {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .project-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.875rem;
+        color: #3245ff;
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+    .project-link:hover {
+        color: #bc52ee;
+    }
+
+    .project-description {
+        font-size: 1rem;
+        color: #6b7280;
+        margin: 0.5rem 0 1.5rem;
+        line-height: 1.5;
+    }
+
+    .project-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .tag {
+        background: linear-gradient(83.21deg, rgba(50, 69, 255, 0.1) 0%, rgba(188, 82, 238, 0.1) 100%);
+        padding: 0.25rem 0.75rem;
+        border-radius: 999px;
+        font-size: 0.875rem;
+        color: #111827;
+    }
+
+    @media (max-width: 768px) {
+        .project-header {
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .project-links {
+            width: 100%;
+            justify-content: flex-start;
+        }
+
+        .project-item {
+            padding: 1.25rem;
+        }
     }
 </style> 
