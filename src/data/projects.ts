@@ -20,6 +20,15 @@ export const projects: ProjectCardProps[] = [
         year: 2025
     },
     {
+        title: "IDL-WAR: Invisible Watermarking And Robustness",
+        description: "A group project for CMU's 11785 (PhD-level Intro to Deep Learning) that explores the robustness of image watermarking techniques when multiple of them are combined. This project was done in conjunction Dongjun Hwang, Sungwon Woo, and Tom Gao.",
+        tags: ["DL", "Watermarking", "Diffusion", "Encoder-Decoder Architectures"],
+        featured: true,
+        link: "https://github.com/tomputer-g/idl_war",
+        internal_link: "",
+        year: 2024
+    },
+    {
         title: "Handwritten Digit Recognition",
         description: "A simple CNN model that recognizes handwritten digits using TensorFlow. Very old project, so the files may not be up to date and hard to use.",
         tags: ["ML", "TensorFlow", "CNNs"],
