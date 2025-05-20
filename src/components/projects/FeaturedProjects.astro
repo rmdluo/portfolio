@@ -3,12 +3,11 @@ import type { ProjectCardProps } from '../../types/ProjectCardProps';
 import ProjectsGrid from './ProjectsGrid.astro';
 
 const { projects } = Astro.props;
-console.log(projects);
 ---
 
 <div class="projects-section">
     <h2 class="section-title">Featured Projects</h2>
-    <ProjectsGrid projects={projects.filter((project: ProjectCardProps) => project.featured)} />
+    <ProjectsGrid projects={projects.filter((project: ProjectCardProps) => project.featured).sort((a: ProjectCardProps, b: ProjectCardProps) => b.year - a.year)} />
 </div>
 
 <style>

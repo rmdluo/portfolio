@@ -30,5 +30,17 @@ export const images: ImageCardProps[] = [
         alt: "Purple flowers",
         aspectRatio: "landscape",
         unedited_src: "gallery/before/IMG_2778_orig.jpg"
+    },
+    {
+        src: "gallery/after/IMG_2739_edited.jpg",
+        alt: "Light blue flowers",
+        aspectRatio: "landscape",
+        unedited_src: "gallery/before/IMG_2739_orig.jpg"
+    },
+    {
+        src: "gallery/after/IMG_2762_edited.jpg",
+        alt: "Thing I came across during a walk",
+        aspectRatio: "landscape",
+        unedited_src: "gallery/before/IMG_2762_orig.jpg"
     }
 ];

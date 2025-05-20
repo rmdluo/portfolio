@@ -7,7 +7,7 @@ const { projects } = Astro.props;
 <div class="projects-section">
     <h2 class="section-title">All Projects</h2>
     <div class="projects-list">
-        {projects.map((project: ProjectCardProps) => (
+        {projects.sort((a: ProjectCardProps, b: ProjectCardProps) => b.year - a.year).map((project: ProjectCardProps) => (
             <article class="project-item hoverable-card" data-href={project.internal_link}>
                 <div class="project-header">
                     <h3 class="project-title">
