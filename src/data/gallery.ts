@@ -50,15 +50,15 @@ export const images: ImageCardProps[] = [
         unedited_src: "gallery/before/IMG_2698_orig.jpg"
     },
     {
-        src: "gallery/after/IMG_2726_edited.jpg",
+        src: "gallery/after/IMG_2926_edited.jpg",
         alt: "A light purple/blue (I think, I'm colorblind) flower, shaped like a star",
         aspectRatio: "portrait",
-        unedited_src: "gallery/before/IMG_2726_orig.jpg"
+        unedited_src: "gallery/before/IMG_2926_orig.jpg"
     },
     {
-        src: "gallery/after/IMG_2727_edited.jpg",
+        src: "gallery/after/IMG_2927_edited.jpg",
         alt: "A deep purple flower, shaped like a star",
         aspectRatio: "portrait",
-        unedited_src: "gallery/before/IMG_2727_orig.jpg"
+        unedited_src: "gallery/before/IMG_2927_orig.jpg"
     }
 ];
