@@ -8,7 +8,6 @@ const { images } = Astro.props;
     {images.map((image: ImageCardProps) => (
         <ImageCard 
             {...image}
-            size="dynamic"
         />
     ))}
 </div>
