@@ -202,6 +202,12 @@ const { src, alt, caption, unedited_src } = Astro.props as ImageCardProps;
         transform: scale(1) translateY(0);
     }
 
+    /* Add padding to body when modal is active to prevent layout shift */
+    :global(body.modal-open) {
+        padding-right: var(--scrollbar-width, 0px);
+        overflow: hidden;
+    }
+
     .fullscreen-modal.active .modal-image-container,
     .fullscreen-modal.active .modal-controls,
     .fullscreen-modal.active .close-button {
@@ -535,6 +541,7 @@ const { src, alt, caption, unedited_src } = Astro.props as ImageCardProps;
         const openModal = () => {
             modal?.classList.add('active');
             document.body.style.overflow = 'hidden';
+            document.body.classList.add('modal-open');
             
             // Reset checkbox and show edited image when opening modal
             if (toggleCheckbox) {
@@ -581,8 +588,21 @@ const { src, alt, caption, unedited_src } = Astro.props as ImageCardProps;
                 modal.classList.remove('active');
                 setTimeout(() => {
                     document.body.style.overflow = '';
+                    document.body.classList.remove('modal-open');
                 }, 500); // Match the transition duration
             });
         }
     });
+
+    // Calculate scrollbar width and set CSS variable
+    function setScrollbarWidth() {
+        const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+        document.documentElement.style.setProperty('--scrollbar-width', `${scrollbarWidth}px`);
+    }
+
+    // Set initial scrollbar width
+    setScrollbarWidth();
+
+    // Update scrollbar width on window resize
+    window.addEventListener('resize', setScrollbarWidth);
 </script> 
