@@ -42,5 +42,23 @@ export const images: ImageCardProps[] = [
         alt: "Thing I came across during a walk",
         aspectRatio: "landscape",
         unedited_src: "gallery/before/IMG_2762_orig.jpg"
+    },
+    {
+        src: "gallery/after/IMG_2698_edited.jpg",
+        alt: "Just some daisies",
+        aspectRatio: "portrait",
+        unedited_src: "gallery/before/IMG_2698_orig.jpg"
+    },
+    {
+        src: "gallery/after/IMG_2726_edited.jpg",
+        alt: "A light purple/blue (I think, I'm colorblind) flower, shaped like a star",
+        aspectRatio: "portrait",
+        unedited_src: "gallery/before/IMG_2726_orig.jpg"
+    },
+    {
+        src: "gallery/after/IMG_2727_edited.jpg",
+        alt: "A deep purple flower, shaped like a star",
+        aspectRatio: "portrait",
+        unedited_src: "gallery/before/IMG_2727_orig.jpg"
     }
 ];
