@@ -562,9 +562,11 @@ const { src, alt, caption, unedited_src } = Astro.props as ImageCardProps;
         // Close modal on close button click
         closeButton?.addEventListener('click', () => {
             modal?.classList.remove('active');
+            document.body.classList.remove('modal-open');
+            // Wait for transition to complete before restoring overflow
             setTimeout(() => {
                 document.body.style.overflow = '';
-            }, 500); // Match the transition duration
+            }, 400); // Slightly longer than the transition duration
         });
 
         // Close modal when clicking outside the image
@@ -573,9 +575,11 @@ const { src, alt, caption, unedited_src } = Astro.props as ImageCardProps;
             // Only close if clicking on the modal or overlay
             if (target.classList.contains('fullscreen-modal') || target.classList.contains('modal-overlay')) {
                 modal.classList.remove('active');
+                document.body.classList.remove('modal-open');
+                // Wait for transition to complete before restoring overflow
                 setTimeout(() => {
                     document.body.style.overflow = '';
-                }, 500); // Match the transition duration
+                }, 400); // Slightly longer than the transition duration
             }
         });
     });
@@ -586,10 +590,11 @@ const { src, alt, caption, unedited_src } = Astro.props as ImageCardProps;
         if (keyEvent.key === 'Escape') {
             document.querySelectorAll('.fullscreen-modal.active').forEach(modal => {
                 modal.classList.remove('active');
+                document.body.classList.remove('modal-open');
+                // Wait for transition to complete before restoring overflow
                 setTimeout(() => {
                     document.body.style.overflow = '';
-                    document.body.classList.remove('modal-open');
-                }, 500); // Match the transition duration
+                }, 400); // Slightly longer than the transition duration
             });
         }
     });
