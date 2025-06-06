@@ -60,5 +60,10 @@ export const images: ImageCardProps[] = [
         src: "gallery/IMG_2943_edited.jpg",
         alt: "Gravel road leading to the Robert C. McDonell Campgrounds",
         unedited_src: "gallery/IMG_2943_orig.jpg"
+    },
+    {
+	src: "gallery/IMG_2972_edited.jpg",
+	alt: "Vibrantly red flowers I saw in Washington D.C.",
+	unedited_src: "gallery/IMG_2972_orig.jpg"
     }
 ];
