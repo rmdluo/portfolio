@@ -75,5 +75,10 @@ export const images: ImageCardProps[] = [
         src: "gallery/IMG_3456_edited.jpg",
 	alt: "Food I got from the Shilin Night Market in Taipei, Taiwan. Shilin Sausage and watermelon juice!",
 	unedited_src: "gallery/IMG_3456_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_3184_edited.jpg",
+	alt: "Tree from 228 Peace Memorial Park in Taipei, Taiwan. Took picture because the outline of the tree against the sky was enticing for me.",
+        unedited_src: "gallery/IMG_3184_orig.jpg"
     }
 ];
