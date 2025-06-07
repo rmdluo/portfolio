@@ -65,5 +65,10 @@ export const images: ImageCardProps[] = [
 	src: "gallery/IMG_2972_edited.jpg",
 	alt: "Vibrantly red flowers I saw in Washington D.C.",
 	unedited_src: "gallery/IMG_2972_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_3124_edited.jpg",
+	alt: "Scenic street in Taipei, Taiwan (was there on a trip!)",
+	unedited_src: "gallery/IMG_3124_orig.jpg"
     }
 ];
