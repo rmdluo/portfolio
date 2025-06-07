@@ -70,5 +70,10 @@ export const images: ImageCardProps[] = [
         src: "gallery/IMG_3124_edited.jpg",
 	alt: "Scenic street in Taipei, Taiwan (was there on a trip!)",
 	unedited_src: "gallery/IMG_3124_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_3456_edited.jpg",
+	alt: "Food I got from the Shilin Night Market in Taipei, Taiwan. Shilin Sausage and watermelon juice!",
+	unedited_src: "gallery/IMG_3456_orig.jpg"
     }
 ];
