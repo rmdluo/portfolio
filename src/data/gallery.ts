@@ -80,5 +80,20 @@ export const images: ImageCardProps[] = [
         src: "gallery/IMG_3184_edited.jpg",
 	alt: "Tree from 228 Peace Memorial Park in Taipei, Taiwan. Took picture because the outline of the tree against the sky was enticing for me.",
         unedited_src: "gallery/IMG_3184_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_3028_edited.jpg",
+	alt: "The Great Falls Overlook! This was taken right after a bunch of rain, so the river was more powerful than usual.",
+	unedited_src: "gallery/IMG_3184_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_3410_edited.jpg",
+	alt: "Taken in Beitou of Taiwan -- just some steps up to a park across from Beitou Hot Spring Museum.",
+	unedited_src: "gallery/IMG_3410_edited.jpg"
+    },
+    {
+        src: "gallery/IMG_3530_edited.jpg",
+	alt: "Part of the lake from Daan park in Taiwan",
+	unedited_src: "gallery/IMG_3530_orig.jpg"
     }
 ];
