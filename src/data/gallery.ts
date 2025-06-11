@@ -84,7 +84,7 @@ export const images: ImageCardProps[] = [
     {
         src: "gallery/IMG_3028_edited.jpg",
 	alt: "The Great Falls Overlook! This was taken right after a bunch of rain, so the river was more powerful than usual.",
-	unedited_src: "gallery/IMG_3184_orig.jpg"
+	unedited_src: "gallery/IMG_3028_orig.jpg"
     },
     {
         src: "gallery/IMG_3410_edited.jpg",
