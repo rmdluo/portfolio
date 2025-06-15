@@ -62,38 +62,58 @@ export const images: ImageCardProps[] = [
         unedited_src: "gallery/IMG_2943_orig.jpg"
     },
     {
-	src: "gallery/IMG_2972_edited.jpg",
-	alt: "Vibrantly red flowers I saw in Washington D.C.",
-	unedited_src: "gallery/IMG_2972_orig.jpg"
+        src: "gallery/IMG_2972_edited.jpg",
+        alt: "Vibrantly red flowers I saw in Washington D.C.",
+        unedited_src: "gallery/IMG_2972_orig.jpg"
     },
     {
         src: "gallery/IMG_3124_edited.jpg",
-	alt: "Scenic street in Taipei, Taiwan (was there on a trip!)",
-	unedited_src: "gallery/IMG_3124_orig.jpg"
+        alt: "Scenic street in Taipei, Taiwan (was there on a trip!)",
+        unedited_src: "gallery/IMG_3124_orig.jpg"
     },
     {
         src: "gallery/IMG_3456_edited.jpg",
-	alt: "Food I got from the Shilin Night Market in Taipei, Taiwan. Shilin Sausage and watermelon juice!",
-	unedited_src: "gallery/IMG_3456_orig.jpg"
+        alt: "Food I got from the Shilin Night Market in Taipei, Taiwan. Shilin Sausage and watermelon juice!",
+        unedited_src: "gallery/IMG_3456_orig.jpg"
     },
     {
         src: "gallery/IMG_3184_edited.jpg",
-	alt: "Tree from 228 Peace Memorial Park in Taipei, Taiwan. Took picture because the outline of the tree against the sky was enticing for me.",
+        alt: "Tree from 228 Peace Memorial Park in Taipei, Taiwan. Took picture because the outline of the tree against the sky was enticing for me.",
         unedited_src: "gallery/IMG_3184_orig.jpg"
     },
     {
         src: "gallery/IMG_3028_edited.jpg",
-	alt: "The Great Falls Overlook! This was taken right after a bunch of rain, so the river was more powerful than usual.",
-	unedited_src: "gallery/IMG_3028_orig.jpg"
+        alt: "The Great Falls Overlook! This was taken right after a bunch of rain, so the river was more powerful than usual.",
+        unedited_src: "gallery/IMG_3028_orig.jpg"
     },
     {
         src: "gallery/IMG_3410_edited.jpg",
-	alt: "Taken in Beitou of Taiwan -- just some steps up to a park across from Beitou Hot Spring Museum.",
-	unedited_src: "gallery/IMG_3410_edited.jpg"
+        alt: "Taken in Beitou of Taiwan -- just some steps up to a park across from Beitou Hot Spring Museum.",
+        unedited_src: "gallery/IMG_3410_edited.jpg"
     },
     {
         src: "gallery/IMG_3530_edited.jpg",
-	alt: "Part of the lake from Daan park in Taiwan",
-	unedited_src: "gallery/IMG_3530_orig.jpg"
+        alt: "Part of the lake from Daan park in Taiwan",
+        unedited_src: "gallery/IMG_3530_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_3001_edited.jpg",
+        alt: "Part of the river from Great Falls",
+        unedited_src: "gallery/IMG_3001_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_3021_edited.jpg",
+        alt: "A smaller diverted stream from Great Falls",
+        unedited_src: "gallery/IMG_3021_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_3042_edited.jpg",
+        alt: "Converging waterfall that I thought was cool",
+        unedited_src: "gallery/IMG_3042_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_3164_edited.jpg",
+        alt: "Some kind of plaza area in Taipei, next to a coffee shop called Mountain Kids. I was feeling very overwhelmed and tired, but resting here made me feel a lot better.",
+        unedited_src: "gallery/IMG_3164_orig.jpg"
     }
 ];
