@@ -96,11 +96,11 @@ export const images: ImageCardProps[] = [
         alt: "Part of the lake from Daan park in Taiwan",
         unedited_src: "gallery/IMG_3530_orig.jpg"
     },
-    {
-        src: "gallery/IMG_3001_edited.jpg",
-        alt: "Part of the river from Great Falls",
-        unedited_src: "gallery/IMG_3001_orig.jpg"
-    },
+    // {
+    //     src: "gallery/IMG_3001_edited.jpg",
+    //     alt: "Part of the river from Great Falls",
+    //     unedited_src: "gallery/IMG_3001_orig.jpg"
+    // },
     {
         src: "gallery/IMG_3021_edited.jpg",
         alt: "A smaller diverted stream from Great Falls",
