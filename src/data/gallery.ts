@@ -112,9 +112,9 @@ export const images: ImageCardProps[] = [
         unedited_src: "gallery/IMG_3164_orig.jpg"
     },
     {
-        src: "gallery/IMG_3694_edited.jpg",
+        src: "gallery/IMG_3696_edited.jpg",
         alt: "Pretty purple/pink flowers! Colorblind so not sure which color it is...",
-        unedited_src: "gallery/IMG_3694_orig.jpg"
+        unedited_src: "gallery/IMG_3696_orig.jpg"
     },
     {
         src: "gallery/IMG_3717_edited.jpg",
@@ -130,5 +130,15 @@ export const images: ImageCardProps[] = [
         src: "gallery/IMG_3779_edited.jpg",
         alt: "More pretty purple flowers.",
         unedited_src: "gallery/IMG_3779_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_3859_edited.jpg",
+        alt: "Picture of the Chicago water tower! It's a lot older than the rest of the buildings around it because it survived a fire that took down a bunch of Chicago.",
+        unedited_src: "gallery/IMG_3859_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_3995_edited.jpg",
+        alt: "Hallway between concourses B and C at O'hare airport! I like the bubbles hanging in the air.",
+        unedited_src: "gallery/IMG_3995_orig.jpg"
     }
 ];
