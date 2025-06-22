@@ -96,11 +96,6 @@ export const images: ImageCardProps[] = [
         alt: "Part of the lake from Daan park in Taiwan",
         unedited_src: "gallery/IMG_3530_orig.jpg"
     },
-    // {
-    //     src: "gallery/IMG_3001_edited.jpg",
-    //     alt: "Part of the river from Great Falls",
-    //     unedited_src: "gallery/IMG_3001_orig.jpg"
-    // },
     {
         src: "gallery/IMG_3021_edited.jpg",
         alt: "A smaller diverted stream from Great Falls",
@@ -115,5 +110,25 @@ export const images: ImageCardProps[] = [
         src: "gallery/IMG_3164_edited.jpg",
         alt: "Some kind of plaza area in Taipei, next to a coffee shop called Mountain Kids. I was feeling very overwhelmed and tired, but resting here made me feel a lot better.",
         unedited_src: "gallery/IMG_3164_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_3694_edited.jpg",
+        alt: "Pretty purple/pink flowers! Colorblind so not sure which color it is...",
+        unedited_src: "gallery/IMG_3694_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_3717_edited.jpg",
+        alt: "Another set of pretty purple flowers.",
+        unedited_src: "gallery/IMG_3717_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_3777_edited.jpg",
+        alt: "Pretty pink flower! I liked the star shape and how the water droplets accentuate it.",
+        unedited_src: "gallery/IMG_3777_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_3779_edited.jpg",
+        alt: "More pretty purple flowers.",
+        unedited_src: "gallery/IMG_3779_orig.jpg"
     }
 ];
