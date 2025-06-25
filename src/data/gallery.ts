@@ -140,5 +140,10 @@ export const images: ImageCardProps[] = [
         src: "gallery/IMG_3995_edited.jpg",
         alt: "Hallway between concourses B and C at O'hare airport! I like the bubbles hanging in the air.",
         unedited_src: "gallery/IMG_3995_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_4011_edited.jpg",
+        alt: "First harvested tomatoes from my mom's tomato plant!",
+        unedited_src: "gallery/IMG_4011_orig.jpg"
     }
 ];
