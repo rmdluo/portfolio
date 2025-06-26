@@ -172,11 +172,6 @@ export const images: ImageCardProps[] = [
         unedited_src: "gallery/IMG_3370_orig.jpg"
     },
     {
-        src: "gallery/IMG_3370_edited.jpg",
-        alt: "Pretty butterfly I saw in Beitou District of Taiwan.",
-        unedited_src: "gallery/IMG_3370_orig.jpg"
-    },
-    {
         src: "gallery/IMG_3176_edited.jpg",
         alt: "二二八和平紀念公園 (228 Peace Memorial Park)! I spent a lot of time here when I was in Taiwan, made me feel calm and comfortable.",
         unedited_src: "gallery/IMG_3176_orig.jpg"
