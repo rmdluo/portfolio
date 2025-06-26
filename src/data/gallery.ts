@@ -145,5 +145,15 @@ export const images: ImageCardProps[] = [
         src: "gallery/IMG_4011_edited.jpg",
         alt: "First harvested tomatoes from my mom's tomato plant!",
         unedited_src: "gallery/IMG_4011_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_3937_edited.jpg",
+        alt: "Picture of Northwestern University Campus, as seen through binoculars from the John Hancock Tower!",
+        unedited_src: "gallery/IMG_3937_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_3868_edited.jpg",
+        alt: "Super pretty pink flowers -- I really like how the pink flares outwards, like a star.",
+        unedited_src: "gallery/IMG_3868_orig.jpg"
     }
 ];
