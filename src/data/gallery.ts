@@ -155,5 +155,10 @@ export const images: ImageCardProps[] = [
         src: "gallery/IMG_3868_edited.jpg",
         alt: "Super pretty pink flowers -- I really like how the pink flares outwards, like a star.",
         unedited_src: "gallery/IMG_3868_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_4199_edited.jpg",
+        alt: "A sewing repair I did on my pants! I was experimenting with different combinations of over/under, seems like over tends to be a bit cleaner...",
+        unedited_src: "gallery/IMG_4199_orig.jpg"
     }
 ];
