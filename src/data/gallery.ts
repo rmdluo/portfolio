@@ -158,7 +158,27 @@ export const images: ImageCardProps[] = [
     },
     {
         src: "gallery/IMG_4199_edited.jpg",
-        alt: "A sewing repair I did on my pants! I was experimenting with different combinations of over/under, seems like over tends to be a bit cleaner...",
+        alt: "A sewing repair I did on my pants! I was experimenting with different combinations of over/under, seems like over tends to be a bit cleaner, no extra fluff poking out...",
         unedited_src: "gallery/IMG_4199_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_3247_edited.jpg",
+        alt: "Water buffalo (I think) on 阳明山 (yangmingshan). Loved how comfortable they look bathing in the water.",
+        unedited_src: "gallery/IMG_3247_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_3370_edited.jpg",
+        alt: "Pretty butterfly I saw in Beitou District of Taiwan.",
+        unedited_src: "gallery/IMG_3370_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_3370_edited.jpg",
+        alt: "Pretty butterfly I saw in Beitou District of Taiwan.",
+        unedited_src: "gallery/IMG_3370_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_3176_edited.jpg",
+        alt: "二二八和平紀念公園 (228 Peace Memorial Park)! I spent a lot of time here when I was in Taiwan, made me feel calm and comfortable.",
+        unedited_src: "gallery/IMG_3176_orig.jpg"
     }
 ];
