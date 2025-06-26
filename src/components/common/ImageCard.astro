@@ -13,7 +13,8 @@ const { src, alt, caption, unedited_src } = Astro.props as ImageCardProps;
             alt={alt}
             widths={[400, 800, 1200]}
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1400px) 33vw, 25vw"
-            inferSize={true}
+            inferSize={true},
+            loading="lazy",
         />
         <div class="expand-hint">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
