@@ -4,6 +4,7 @@ const { title } = Astro.props;
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css'
+import Analytics from '@vercel/analytics/astro'
 ---
 <html lang="en">
   <head>
@@ -19,6 +20,7 @@ import '../styles/global.css'
 
     <main>
       <slot />
+      <Analytics />
     </main>
 
     <Footer />
