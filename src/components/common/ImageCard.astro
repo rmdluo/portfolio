@@ -14,7 +14,6 @@ const { src, alt, caption, unedited_src } = Astro.props as ImageCardProps;
             widths={[400, 800, 1200]}
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1400px) 33vw, 25vw"
             inferSize={true},
-            loading="lazy",
         />
         <div class="expand-hint">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -744,17 +743,12 @@ const { src, alt, caption, unedited_src } = Astro.props as ImageCardProps;
             modal?.classList.add('active');
             document.body.style.overflow = 'hidden';
             document.body.classList.add('modal-open');
-            
-            // Reset checkbox and show edited image when opening modal
-            if (toggleCheckbox) {
-                toggleCheckbox.checked = false;
-            }
-            showEdited();
-            // Wait for image to render, then check cutoff
-            setTimeout(() => checkImageCutoff(modal as HTMLElement), 50);
+            // Reset notification state when opening modal
             notificationDismissed = false;
             hideNotification();
             clearTimeout(notificationTimeout);
+            // Immediately check cutoff to set controls/notification state before modal is visible
+            checkImageCutoff(modal as HTMLElement);
         };
 
         card.addEventListener('click', openModal);
@@ -768,14 +762,14 @@ const { src, alt, caption, unedited_src } = Astro.props as ImageCardProps;
 
         // Close modal on close button click
         closeButton?.addEventListener('click', () => {
-            closeModal(modal);
+            closeModal(modal as HTMLElement);
         });
 
         // Close modal when clicking outside the image
         modal?.addEventListener('click', (e) => {
             const target = e.target as HTMLElement;
             if (target.classList.contains('fullscreen-modal') || target.classList.contains('modal-overlay')) {
-                closeModal(modal);
+                closeModal(modal as HTMLElement);
             }
         });
 
@@ -799,7 +793,7 @@ const { src, alt, caption, unedited_src } = Astro.props as ImageCardProps;
         const keyEvent = e as KeyboardEvent;
         if (keyEvent.key === 'Escape') {
             document.querySelectorAll('.fullscreen-modal.active').forEach(modal => {
-                closeModal(modal);
+                closeModal(modal as HTMLElement);
             });
         }
     });
