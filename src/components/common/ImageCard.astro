@@ -78,6 +78,14 @@ const { src, alt, caption, unedited_src } = Astro.props as ImageCardProps;
     </div>
 </div>
 
+<!-- Notification Popup for Hidden Controls -->
+<div class="modal-notification" role="alert" aria-live="assertive">
+    <span class="notification-message">
+        Click and hold the image to preview the unedited version.
+    </span>
+    <button class="notification-close" aria-label="Close notification">&times;</button>
+</div>
+
 <style>
     .image-card {
         position: relative;
@@ -507,6 +515,67 @@ const { src, alt, caption, unedited_src } = Astro.props as ImageCardProps;
             padding: 0.375rem 0.625rem;
         }
     }
+
+    .hide-controls .modal-controls {
+        display: none !important;
+    }
+
+    .modal-notification {
+        display: flex;
+        position: fixed;
+        top: 2.5rem;
+        left: 50%;
+        transform: translateX(-50%) translateY(0);
+        background: rgba(30, 30, 30, 0.97);
+        color: #fff;
+        padding: 1rem 2rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+        z-index: 2000;
+        font-size: 1rem;
+        align-items: center;
+        gap: 1rem;
+        max-width: 90vw;
+        min-width: 260px;
+        border: 1px solid rgba(255,255,255,0.15);
+        flex-direction: row;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.35s cubic-bezier(0.4,0,0.2,1), transform 0.35s cubic-bezier(0.4,0,0.2,1);
+    }
+
+    .modal-notification.active {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateX(-50%) translateY(0);
+    }
+
+    .modal-notification.hiding {
+        opacity: 0;
+        pointer-events: none;
+        transform: translateX(-50%) translateY(-10px);
+    }
+
+    .notification-message {
+        flex: 1;
+        margin-right: 1rem;
+    }
+
+    .notification-close {
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 0 0.5rem;
+        border-radius: 6px;
+        transition: background 0.2s;
+    }
+
+    .notification-close:hover, .notification-close:focus {
+        background: rgba(255,255,255,0.1);
+        outline: none;
+    }
 </style>
 
 <script>
@@ -514,6 +583,66 @@ const { src, alt, caption, unedited_src } = Astro.props as ImageCardProps;
     const cards = document.querySelectorAll('.image-card');
     const modals = document.querySelectorAll('.fullscreen-modal');
     
+    // Notification logic
+    const notification = document.querySelector('.modal-notification');
+    const notificationClose = notification?.querySelector('.notification-close');
+    let notificationDismissed = false;
+    let notificationTimeout: ReturnType<typeof setTimeout> | undefined;
+
+    function showNotification() {
+        if (notification && !notificationDismissed) {
+            notification.classList.add('active');
+            notification.classList.remove('hiding');
+            clearTimeout(notificationTimeout);
+            notificationTimeout = setTimeout(() => {
+                hideNotification();
+                notificationDismissed = true;
+            }, 3000);
+        }
+    }
+    function hideNotification() {
+        if (notification) {
+            notification.classList.remove('active');
+            notification.classList.add('hiding');
+            // Wait for transition to finish before fully hiding
+            setTimeout(() => {
+                notification.classList.remove('hiding');
+            }, 350);
+        }
+    }
+
+    function checkImageCutoff(modal: HTMLElement) {
+        const modalContent = modal.querySelector('.modal-content');
+        const modalImage = modal.querySelector('.modal-image');
+        if (!modalContent || !modalImage) return;
+        // Get computed style max sizes
+        const maxWidth = window.innerWidth * 0.8;
+        const maxHeight = window.innerHeight * 0.7;
+        // Check if image is cut off (at max width or height)
+        const isCutoff =
+            Math.abs(modalImage.clientWidth - maxWidth) < 2 ||
+            Math.abs(modalImage.clientHeight - maxHeight) < 2;
+        if (isCutoff) {
+            modalContent.classList.add('hide-controls');
+            showNotification();
+        } else {
+            modalContent.classList.remove('hide-controls');
+            hideNotification();
+        }
+    }
+
+    function closeModal(modal: HTMLElement) {
+        modal.classList.remove('active');
+        document.body.classList.remove('modal-open');
+        setTimeout(() => {
+            document.body.style.overflow = '';
+        }, 400);
+        // Hide notification with animation and reset state
+        hideNotification();
+        notificationDismissed = false;
+        clearTimeout(notificationTimeout);
+    }
+
     cards.forEach((card, index) => {
         const container = card.querySelector('.image-container');
         const img = container?.querySelector('img');
@@ -621,6 +750,11 @@ const { src, alt, caption, unedited_src } = Astro.props as ImageCardProps;
                 toggleCheckbox.checked = false;
             }
             showEdited();
+            // Wait for image to render, then check cutoff
+            setTimeout(() => checkImageCutoff(modal as HTMLElement), 50);
+            notificationDismissed = false;
+            hideNotification();
+            clearTimeout(notificationTimeout);
         };
 
         card.addEventListener('click', openModal);
@@ -634,27 +768,30 @@ const { src, alt, caption, unedited_src } = Astro.props as ImageCardProps;
 
         // Close modal on close button click
         closeButton?.addEventListener('click', () => {
-            modal?.classList.remove('active');
-            document.body.classList.remove('modal-open');
-            // Wait for transition to complete before restoring overflow
-            setTimeout(() => {
-                document.body.style.overflow = '';
-            }, 400); // Slightly longer than the transition duration
+            closeModal(modal);
         });
 
         // Close modal when clicking outside the image
         modal?.addEventListener('click', (e) => {
             const target = e.target as HTMLElement;
-            // Only close if clicking on the modal or overlay
             if (target.classList.contains('fullscreen-modal') || target.classList.contains('modal-overlay')) {
-                modal.classList.remove('active');
-                document.body.classList.remove('modal-open');
-                // Wait for transition to complete before restoring overflow
-                setTimeout(() => {
-                    document.body.style.overflow = '';
-                }, 400); // Slightly longer than the transition duration
+                closeModal(modal);
             }
         });
+
+        // Also check on window resize
+        window.addEventListener('resize', () => {
+            if (modal.classList.contains('active')) {
+                checkImageCutoff(modal as HTMLElement);
+            }
+        });
+
+        // Also check when toggling unedited/edited
+        if (toggleCheckbox) {
+            toggleCheckbox.addEventListener('change', () => {
+                setTimeout(() => checkImageCutoff(modal as HTMLElement), 50);
+            });
+        }
     });
 
     // Close modal on escape key
@@ -662,12 +799,7 @@ const { src, alt, caption, unedited_src } = Astro.props as ImageCardProps;
         const keyEvent = e as KeyboardEvent;
         if (keyEvent.key === 'Escape') {
             document.querySelectorAll('.fullscreen-modal.active').forEach(modal => {
-                modal.classList.remove('active');
-                document.body.classList.remove('modal-open');
-                // Wait for transition to complete before restoring overflow
-                setTimeout(() => {
-                    document.body.style.overflow = '';
-                }, 400); // Slightly longer than the transition duration
+                closeModal(modal);
             });
         }
     });
@@ -683,4 +815,10 @@ const { src, alt, caption, unedited_src } = Astro.props as ImageCardProps;
 
     // Update scrollbar width on window resize
     window.addEventListener('resize', setScrollbarWidth);
+
+    notificationClose?.addEventListener('click', () => {
+        hideNotification();
+        notificationDismissed = true;
+        clearTimeout(notificationTimeout);
+    });
 </script> 
