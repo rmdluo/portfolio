@@ -175,5 +175,15 @@ export const images: ImageCardProps[] = [
         src: "gallery/IMG_3176_edited.jpg",
         alt: "二二八和平紀念公園 (228 Peace Memorial Park)! I spent a lot of time here when I was in Taiwan, made me feel calm and comfortable.",
         unedited_src: "gallery/IMG_3176_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_4202_edited.jpg",
+        alt: "My first time making quesadillas! Surprisingly easy after you have everything prepped.",
+        unedited_src: "gallery/IMG_4202_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_4205_edited.jpg",
+        alt: "A Cooper's Hawk! Taken through my binoculars haha. Also didn't know what it was, so I asked the birding discord to id it, and they said it was a Cooper's Hawk! So exciting!",
+        unedited_src: "gallery/IMG_4205_orig.jpg"
     }
 ];
