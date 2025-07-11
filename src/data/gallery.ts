@@ -185,5 +185,80 @@ export const images: ImageCardProps[] = [
         src: "gallery/IMG_4205_edited.jpg",
         alt: "A Cooper's Hawk! Taken through my binoculars haha. Also didn't know what it was, so I asked the birding discord to id it, and they said it was a Cooper's Hawk! So exciting!",
         unedited_src: "gallery/IMG_4205_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_4211_edited.jpg",
+        alt: "Pretty flower, kind of reminds me of a sunflower but pink -- I also like the pastel colors (if it counts as pastel?).",
+        unedited_src: "gallery/IMG_4211_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_4214_edited.jpg",
+        alt: "Orange/yellow flower! Like the sun flaring out B) But not really? Who knows",
+        unedited_src: "gallery/IMG_4214_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_4215_edited.jpg",
+        alt: "Pair of pink Dahlias, hiding out in a bush",
+        unedited_src: "gallery/IMG_4215_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_4216_edited.jpg",
+        alt: "Lilac Dahlias! (I think? Dunno in terms of color or flower, I used an image search XD).",
+        unedited_src: "gallery/IMG_4216_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_4217_edited.jpg",
+        alt: "Pagoda at Brookside Gardens",
+        unedited_src: "gallery/IMG_4217_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_4224_edited.jpg",
+        alt: "Maybe possibly my dream home? Love how \"rustic\" it is, if that's the right term, and how it's kind of tucked away. It's on sale, but probably uber-expensive.",
+        unedited_src: "gallery/IMG_4224_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_4232_edited.jpg",
+        alt: "Overlook along the George Washington Memorial Parkway -- drove there for a sunset a while back.",
+        unedited_src: "gallery/IMG_4232_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_4242_edited.jpg",
+        alt: "Great blue heron -- super cool. Got to watch it fish.",
+        unedited_src: "gallery/IMG_4242_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_4257_edited.jpg",
+        alt: "Squirrel munching on some takis someone dropped.",
+        unedited_src: "gallery/IMG_4257_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_4263_edited.jpg",
+        alt: "First dinner I cooked during my first week of work!",
+        unedited_src: "gallery/IMG_4263_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_4266_edited.jpg",
+        alt: "Apparently these are called Culver's root. I liked how it stood against the background, like three strong pillars in a field.",
+        unedited_src: "gallery/IMG_4266_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_4267_edited.jpg",
+        alt: "Blue balloon flowers, I really like how I framed this image (although I may have messed up the editing).",
+        unedited_src: "gallery/IMG_4267_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_4269_edited.jpg",
+        alt: "I think it's some kind of gayfeather that's dying out? Not sure, but I thought it looked interesting.",
+        unedited_src: "gallery/IMG_4269_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_4270_edited.jpg",
+        alt: "Turtle on a log.",
+        unedited_src: "gallery/IMG_4270_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_4292_edited.jpg",
+        alt: "A blue cornflower (maybe)",
+        unedited_src: "gallery/IMG_4292_orig.jpg"
     }
 ];
