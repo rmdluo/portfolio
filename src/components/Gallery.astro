@@ -18,6 +18,9 @@ const allTags: string[] = [...new Set(images.flatMap((image: ImageCardProps) => 
                 ))}
             </select>
         </div>
+        <div class="note-section">
+            <p class="note-text">Click on any image to view it in full size</p>
+        </div>
     </div>
     
     <div class="gallery" id="gallery">
@@ -40,7 +43,7 @@ const allTags: string[] = [...new Set(images.flatMap((image: ImageCardProps) => 
 
     .filter-section {
         padding: clamp(1rem, 2vw, 2rem);
-        padding-bottom: 0.5rem;
+        padding-bottom: 0.25rem;
         text-align: center;
     }
 
@@ -49,12 +52,15 @@ const allTags: string[] = [...new Set(images.flatMap((image: ImageCardProps) => 
         align-items: center;
         justify-content: center;
         gap: 1rem;
+        margin-bottom: 1rem;
     }
 
     .filter-label {
         font-weight: 600;
         color: #374151;
         white-space: nowrap;
+        line-height: 1.5;
+        padding: 0.25rem 0;
     }
 
     .tag-select {
@@ -76,6 +82,17 @@ const allTags: string[] = [...new Set(images.flatMap((image: ImageCardProps) => 
         outline: none;
         border-color: #3b82f6;
         box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    }
+
+    .note-section {
+        margin-top: 0.5rem;
+    }
+
+    .note-text {
+        color: #6b7280;
+        font-size: 0.875rem;
+        margin: 0;
+        font-style: italic;
     }
 
     .gallery {
