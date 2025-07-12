@@ -260,5 +260,30 @@ export const images: ImageCardProps[] = [
         src: "gallery/IMG_4292_edited.jpg",
         alt: "A blue cornflower (maybe)",
         unedited_src: "gallery/IMG_4292_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_4275_edited.jpg",
+        alt: "Necklace I use as a bracelet that I bought from Harper's Ferry",
+        unedited_src: "gallery/IMG_4275_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_4279_edited.jpg",
+        alt: "Squirrel eating out of my birdfeeder",
+        unedited_src: "gallery/IMG_4279_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_4280_edited.jpg",
+        alt: "Sunset at Dulles airport",
+        unedited_src: "gallery/IMG_4280_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_4287_edited.jpg",
+        alt: "Pretty flower!",
+        unedited_src: "gallery/IMG_4287_orig.jpg"
+    },
+    {
+        src: "gallery/IMG_4288_edited.jpg",
+        alt: "Green Heron -- adult one, saw a juvenile one the other day",
+        unedited_src: "gallery/IMG_4288_orig.jpg"
     }
 ];
