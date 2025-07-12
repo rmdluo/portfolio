@@ -2,27 +2,9 @@
 import ImageCard from './common/ImageCard.astro';
 import type { ImageCardProps } from '../types/ImageCardProps';
 const { images } = Astro.props;
-
-// Collect all unique tags
-const allTags: string[] = [...new Set(images.flatMap((image: ImageCardProps) => image.tags || []))].sort() as string[];
 ---
 
 <div class="gallery-container">
-    <div class="filter-section">
-        <div class="filter-container">
-            <label for="tag-filter" class="filter-label">Filter by tag:</label>
-            <select id="tag-filter" class="tag-select">
-                <option value="">All images</option>
-                {allTags.map((tag: string) => (
-                    <option value={tag}>{tag}</option>
-                ))}
-            </select>
-        </div>
-        <div class="note-section">
-            <p class="note-text pb-4">Click on any image to view it in full size</p>
-        </div>
-    </div>
-    
     <div class="gallery" id="gallery">
         {images.map((image: ImageCardProps) => (
             <div class={`image-wrapper ${(image.tags || []).map((tag: string) => `tag-${tag.replace(/\s+/g, '-')}`).join(' ')}`}>
@@ -39,60 +21,6 @@ const allTags: string[] = [...new Set(images.flatMap((image: ImageCardProps) => 
         width: 100%;
         max-width: 1800px;
         margin: 0 auto;
-    }
-
-    .filter-section {
-        padding: clamp(1rem, 2vw, 2rem);
-        padding-bottom: 0.25rem;
-        text-align: center;
-    }
-
-    .filter-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-        margin-bottom: 1rem;
-    }
-
-    .filter-label {
-        font-weight: 600;
-        color: #374151;
-        white-space: nowrap;
-        line-height: 1.5;
-        padding: 0.25rem 0;
-    }
-
-    .tag-select {
-        padding: 0.5rem 1rem;
-        border: 2px solid #e5e7eb;
-        border-radius: 0.5rem;
-        background-color: white;
-        font-size: 1rem;
-        cursor: pointer;
-        transition: border-color 0.2s ease;
-        min-width: 200px;
-    }
-
-    .tag-select:hover {
-        border-color: #d1d5db;
-    }
-
-    .tag-select:focus {
-        outline: none;
-        border-color: #3b82f6;
-        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
-    }
-
-    .note-section {
-        margin-top: 0.5rem;
-    }
-
-    .note-text {
-        color: #6b7280;
-        font-size: 0.875rem;
-        margin: 0;
-        font-style: italic;
     }
 
     .gallery {
@@ -132,84 +60,5 @@ const allTags: string[] = [...new Set(images.flatMap((image: ImageCardProps) => 
         .gallery {
             column-count: 1;
         }
-        
-        .filter-container {
-            flex-direction: column;
-            align-items: stretch;
-            gap: 0.5rem;
-        }
-        
-        .tag-select {
-            min-width: auto;
-        }
     }
-</style>
-
-<script>
-    // Only run this code on the client side
-    function initGallery() {
-        const gallery = document.querySelector<HTMLElement>('#gallery');
-        const tagFilter = document.querySelector<HTMLSelectElement>('#tag-filter');
-        
-        if (!gallery || !tagFilter) return;
-
-        // Filter function
-        function filterImages() {
-            const selectedTag = tagFilter.value;
-            const imageWrappers = gallery.querySelectorAll<HTMLElement>('.image-wrapper');
-            
-            console.log('Filtering by tag:', selectedTag);
-            
-            imageWrappers.forEach(wrapper => {
-                // Get all tag classes from the wrapper
-                const wrapperClasses = Array.from(wrapper.classList);
-                const tagClasses = wrapperClasses.filter(cls => cls.startsWith('tag-'));
-                
-                console.log('Wrapper classes:', wrapperClasses);
-                console.log('Tag classes:', tagClasses);
-                
-                // Convert tag classes back to original tag names
-                const wrapperTags = tagClasses.map(cls => {
-                    const tagName = cls.replace('tag-', '');
-                    return tagName.replace(/-/g, ' ');
-                });
-                
-                console.log('Wrapper tags:', wrapperTags);
-                
-                if (!selectedTag || wrapperTags.includes(selectedTag)) {
-                    wrapper.classList.remove('hidden');
-                    console.log('Showing wrapper with tags:', wrapperTags);
-                } else {
-                    wrapper.classList.add('hidden');
-                    console.log('Hiding wrapper with tags:', wrapperTags);
-                }
-            });
-        }
-
-        // Add event listener to filter
-        tagFilter.addEventListener('change', filterImages);
-
-        // Wait for all images to load
-        const images = gallery.querySelectorAll<HTMLImageElement>('img');
-        
-        Promise.all(
-            Array.from(images).map(img => {
-                if (img.complete) return Promise.resolve();
-                return new Promise(resolve => {
-                    img.onload = resolve;
-                    img.onerror = resolve;
-                });
-            })
-        ).then(() => {
-            // All images are loaded
-            console.log('All gallery images loaded');
-        });
-    }
-
-    // Run the initialization when the DOM is ready
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initGallery);
-    } else {
-        initGallery();
-    }
-</script> 
+</style> 
