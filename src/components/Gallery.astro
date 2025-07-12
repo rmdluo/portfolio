@@ -2,29 +2,125 @@
 import ImageCard from './common/ImageCard.astro';
 import type { ImageCardProps } from '../types/ImageCardProps';
 const { images } = Astro.props;
+
+// Collect all unique tags
+const allTags: string[] = [...new Set(images.flatMap((image: ImageCardProps) => image.tags || []))].sort() as string[];
 ---
 
-<div class="gallery" id="gallery">
-    {images.map((image: ImageCardProps) => (
-        <ImageCard 
-            {...image}
-        />
-    ))}
+<div class="gallery-container">
+    <div class="floating-filter" id="floating-filter">
+        <div class="filter-button" id="filter-button">
+            <div class="filter-content">
+                <label for="tag-filter" class="filter-label">Filter:</label>
+                <select id="tag-filter" class="tag-select">
+                    <option value="">All images</option>
+                    {allTags.map((tag: string) => (
+                        <option value={tag}>{tag}</option>
+                    ))}
+                </select>
+            </div>
+        </div>
+    </div>
+    
+    <div class="gallery" id="gallery">
+        {images.map((image: ImageCardProps) => (
+            <div class={`image-wrapper ${(image.tags || []).map((tag: string) => `tag-${tag.replace(/\s+/g, '-')}`).join(' ')}`}>
+                <ImageCard 
+                    {...image}
+                />
+            </div>
+        ))}
+    </div>
 </div>
 
 <style>
+    .gallery-container {
+        width: 100%;
+        max-width: 1800px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .floating-filter {
+        position: fixed;
+        bottom: 1rem;
+        left: 1rem;
+        z-index: 1000;
+    }
+
+    .filter-button {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        transition: all 0.3s ease;
+        cursor: pointer;
+        color: #374151;
+        padding: 0.75rem 1rem;
+        min-width: 200px;
+    }
+
+    .filter-button:hover {
+        background: rgba(255, 255, 255, 0.98);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        transform: translateY(-2px);
+    }
+
+    .filter-content {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .filter-label {
+        font-weight: 600;
+        color: #374151;
+        white-space: nowrap;
+        font-size: 0.9rem;
+    }
+
+    .tag-select {
+        padding: 0.25rem 0.5rem;
+        border: 1px solid #e5e7eb;
+        border-radius: 0.375rem;
+        background-color: white;
+        font-size: 0.875rem;
+        cursor: pointer;
+        transition: border-color 0.2s ease;
+        min-width: 120px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    }
+
+    .tag-select:hover {
+        border-color: #d1d5db;
+    }
+
+    .tag-select:focus {
+        outline: none;
+        border-color: #3b82f6;
+        box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+    }
+
     .gallery {
         column-count: 4;
         column-gap: clamp(1rem, 2vw, 2rem);
         padding: clamp(1rem, 2vw, 2rem);
         width: 100%;
-        margin: 0 auto;
-        max-width: 1800px;
+        margin-top: 1rem;
+    }
+
+    .image-wrapper {
+        break-inside: avoid;
+        margin-bottom: clamp(1rem, 2vw, 2rem);
+        transition: opacity 0.3s ease;
+    }
+
+    .image-wrapper.hidden {
+        display: none;
     }
 
     .gallery :global(.image-card) {
-        break-inside: avoid;
-        margin-bottom: clamp(1rem, 2vw, 2rem);
         width: 100% !important;
     }
 
@@ -44,6 +140,31 @@ const { images } = Astro.props;
         .gallery {
             column-count: 1;
         }
+        
+        .floating-filter {
+            bottom: 0.5rem;
+            left: 0.5rem;
+            right: 0.5rem;
+        }
+        
+        .filter-button {
+            min-width: auto;
+            width: 100%;
+        }
+        
+        .filter-content {
+            flex-direction: column;
+            align-items: stretch;
+            gap: 0.5rem;
+        }
+        
+        .tag-select {
+            min-width: auto;
+        }
+        
+        .filter-label {
+            font-size: 0.8rem;
+        }
     }
 </style>
 
@@ -51,7 +172,45 @@ const { images } = Astro.props;
     // Only run this code on the client side
     function initGallery() {
         const gallery = document.querySelector<HTMLElement>('#gallery');
-        if (!gallery) return;
+        const tagFilter = document.querySelector<HTMLSelectElement>('#tag-filter');
+        
+        if (!gallery || !tagFilter) return;
+
+        // Filter function
+        function filterImages() {
+            const selectedTag = tagFilter.value;
+            const imageWrappers = gallery.querySelectorAll<HTMLElement>('.image-wrapper');
+            
+            console.log('Filtering by tag:', selectedTag);
+            
+            imageWrappers.forEach(wrapper => {
+                // Get all tag classes from the wrapper
+                const wrapperClasses = Array.from(wrapper.classList);
+                const tagClasses = wrapperClasses.filter(cls => cls.startsWith('tag-'));
+                
+                console.log('Wrapper classes:', wrapperClasses);
+                console.log('Tag classes:', tagClasses);
+                
+                // Convert tag classes back to original tag names
+                const wrapperTags = tagClasses.map(cls => {
+                    const tagName = cls.replace('tag-', '');
+                    return tagName.replace(/-/g, ' ');
+                });
+                
+                console.log('Wrapper tags:', wrapperTags);
+                
+                if (!selectedTag || wrapperTags.includes(selectedTag)) {
+                    wrapper.classList.remove('hidden');
+                    console.log('Showing wrapper with tags:', wrapperTags);
+                } else {
+                    wrapper.classList.add('hidden');
+                    console.log('Hiding wrapper with tags:', wrapperTags);
+                }
+            });
+        }
+
+        // Add event listener to filter
+        tagFilter.addEventListener('change', filterImages);
 
         // Wait for all images to load
         const images = gallery.querySelectorAll<HTMLImageElement>('img');

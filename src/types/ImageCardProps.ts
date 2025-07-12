@@ -3,4 +3,5 @@ export interface ImageCardProps {
     alt: string;
     caption?: string;
     unedited_src?: string;
+    tags?: string[];
 }
