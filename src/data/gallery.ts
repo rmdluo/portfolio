@@ -342,5 +342,23 @@ export const images: ImageCardProps[] = [
         alt: "Green Heron -- adult one, saw a juvenile one the other day",
         unedited_src: "gallery/IMG_4288_orig.jpg",
         tags: ["nature", "animals"]
+    },
+    {
+        src: "gallery/IMG_4301_edited.jpg",
+        alt: "Hairy woodpecker. These guys look a lot like downy woodpeckers, but there's a few ways you can tell them apart. First, hairy woodpeckers have longer beaks! Around the size of their heads, I think? They also don't have black spots on their tail feathers at the edges.",
+        unedited_src: "gallery/IMG_4301_orig.jpg",
+        tags: ["nature", "animals"]
+    },
+    {
+        src: "gallery/IMG_4307_edited.jpg",
+        alt: "Really pretty pink flowers -- apparently they're hydrangeas. Really love how the colors pop, especially after a bit of editing.",
+        unedited_src: "gallery/IMG_4307_orig.jpg",
+        tags: ["nature", "flowers"]
+    },
+    {
+        src: "gallery/IMG_4308_edited.jpg",
+        alt: "Set of books I bought -- two for birdwatching, one that I read for a class and really related to.",
+        unedited_src: "gallery/IMG_4308_orig.jpg",
+        tags: ["slice of life"]
     }
 ];
