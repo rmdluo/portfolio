@@ -360,5 +360,23 @@ export const images: ImageCardProps[] = [
         alt: "Set of books I bought -- two for birdwatching, one that I read for a class and really related to.",
         unedited_src: "gallery/IMG_4308_orig.jpg",
         tags: ["slice of life"]
+    },
+    {
+        src: "gallery/IMG_4316_edited.jpg",
+        alt: "I went with my mom to go look for a sunflower field. When we got there, there were no sunflowers -- just a nice field.",
+        unedited_src: "gallery/IMG_4316_orig.jpg",
+        tags: ["slice of life", "nature"]
+    },
+    {
+        src: "gallery/IMG_4320_edited.jpg",
+        alt: "Sunrise",
+        unedited_src: "gallery/IMG_4320_orig.jpg",
+        tags: ["nature", "urban"]
+    },
+    {
+        src: "gallery/IMG_4325_edited.jpg",
+        alt: "Sunset on a building.",
+        unedited_src: "gallery/IMG_4325_orig.jpg",
+        tags: ["nature", "urban"]
     }
 ];
