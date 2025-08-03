@@ -4,6 +4,7 @@ import GalleryComponent from '../components/Gallery.astro';
 import { images } from '../data/gallery';
 
 // Collect all unique tags for the filter
+const reversedImages = images.reverse();
 const allTags: string[] = [...new Set(images.flatMap((image) => image.tags || []))].sort() as string[];
 ---
 
@@ -34,7 +35,7 @@ const allTags: string[] = [...new Set(images.flatMap((image) => image.tags || []
             </div>
         </div>
         
-        <GalleryComponent images={images} />
+        <GalleryComponent images={reversedImages} />
     </div>
 </BaseLayout>
 
