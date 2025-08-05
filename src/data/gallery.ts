@@ -378,5 +378,29 @@ export const images: ImageCardProps[] = [
         alt: "Sunset on a building.",
         unedited_src: "gallery/IMG_4325_orig.jpg",
         tags: ["nature", "urban"]
+    },
+    {
+        src: "gallery/IMG_1473_edited.jpg",
+        alt: "Pink rose, was going to edit it but then decided I liked it how it was. Probably cause of the the softness.",
+        unedited_src: "gallery/IMG_1473_orig.jpg",
+        tags: ["nature", "flowers"]
+    },
+    {
+        src: "gallery/IMG_1477_edited.jpg",
+        alt: "Big yellow puffball. Also liked the softness (simlar to the pink rose nearby), edited slightly to accentuate the water droplets a tiny bit.",
+        unedited_src: "gallery/IMG_1477_orig.jpg",
+        tags: ["nature", "flowers"]
+    },
+    {
+        src: "gallery/IMG_4365_edited.jpg",
+        alt: "Big ol' red flower -- stands out and really makes a statement.",
+        unedited_src: "gallery/IMG_4365_orig.jpg",
+        tags: ["nature", "flowers"]
+    },
+    {
+        src: "gallery/IMG_4429_edited.jpg",
+        alt: "Cat",
+        unedited_src: "gallery/IMG_4429_orig.jpg",
+        tags: ["animals", "Cat"]
     }
 ];
