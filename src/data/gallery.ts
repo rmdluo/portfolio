@@ -402,5 +402,173 @@ export const images: ImageCardProps[] = [
         alt: "Cat",
         unedited_src: "gallery/IMG_4429_orig.jpg",
         tags: ["animals", "Cat"]
+    },
+    {
+        src: "gallery/IMG_1472_edited.jpg",
+        alt: "Blue flowers",
+        unedited_src: "gallery/IMG_1472_orig.jpg",
+        tags: ["nature", "flowers"]
+    },
+    {
+        src: "gallery/IMG_1476_edited.jpg",
+        alt: "Pink tulip (what is a tulip? Is this a tulip? maybe a rose? I dunno)",
+        unedited_src: "gallery/IMG_1476_orig.jpg",
+        tags: ["nature", "flowers"]
+    },
+    {
+        src: "gallery/IMG_4333_edited.jpg",
+        alt: "Some stuff I made for dinner -- crispy pork belly and stir fried pork with dried tofu",
+        unedited_src: "gallery/IMG_4333_orig.jpg",
+        tags: ["cooking", "slice of life"]
+    },
+    {
+        src: "gallery/IMG_4341_edited.jpg",
+        alt: "Sunrise on my way to work",
+        unedited_src: "gallery/IMG_4341_orig.jpg",
+        tags: ["landscape"]
+    },
+    {
+        src: "gallery/IMG_4347_edited.jpg",
+        alt: "The day I got my cat! It was real quiet on the way home... Must've been terrified.",
+        unedited_src: "gallery/IMG_4347_orig.jpg",
+        tags: ["slice of life", "cat"]
+    },
+    {
+        src: "gallery/IMG_4355_edited.jpg",
+        alt: "Little plant sticking out of a tree",
+        unedited_src: "gallery/IMG_4355_orig.jpg",
+        tags: ["nature", "flowers"]
+    },
+    {
+        src: "gallery/IMG_4357_edited.jpg",
+        alt: "Braised pork",
+        unedited_src: "gallery/IMG_4357_orig.jpg",
+        tags: ["cooking", "slice of life"]
+    },
+    {
+        src: "gallery/IMG_4367_edited.jpg",
+        alt: "Hot pink flower",
+        unedited_src: "gallery/IMG_4367_orig.jpg",
+        tags: ["nature", "flowers"]
+    },
+    {
+        src: "gallery/IMG_4368_edited.jpg",
+        alt: "Big pink flower",
+        unedited_src: "gallery/IMG_4368_orig.jpg",
+        tags: ["nature", "flowers"]
+    },
+    {
+        src: "gallery/IMG_4372_edited.jpg",
+        alt: "Bench at Brookside Gardens",
+        unedited_src: "gallery/IMG_4372_orig.jpg",
+        tags: ["slice of life"]
+    },
+    {
+        src: "gallery/IMG_4375_edited.jpg",
+        alt: "Sun through the trees -- Great Falls",
+        unedited_src: "gallery/IMG_4375_orig.jpg",
+        tags: ["nature", "Great Falls"]
+    },
+    {
+        src: "gallery/IMG_4377_edited.jpg",
+        alt: "Bridge leading to the overlook",
+        unedited_src: "gallery/IMG_4377_orig.jpg",
+        tags: ["nature", "Great Falls", "landscape"]
+    },
+    {
+        src: "gallery/IMG_4379_edited.jpg",
+        alt: "Mini waterfall at Great Falls -- repeat photo",
+        unedited_src: "gallery/IMG_4379_orig.jpg",
+        tags: ["nature", "Great Falls", "landscape"]
+    },
+    {
+        src: "gallery/IMG_4381_edited.jpg",
+        alt: "The overlook at Great Falls -- this was on a day with particularly high water levels.",
+        unedited_src: "gallery/IMG_4381_orig.jpg",
+        tags: ["nature", "Great Falls", "landscape"]
+    },
+    {
+        src: "gallery/IMG_4397_edited.jpg",
+        alt: "Different side of Great Falls -- also on a day with particularly high water levels.",
+        unedited_src: "gallery/IMG_4397_orig.jpg",
+        tags: ["nature", "Great Falls", "landscape"]
+    },
+    {
+        src: "gallery/IMG_4398_edited.jpg",
+        alt: "More overlook at Great Falls...",
+        unedited_src: "gallery/IMG_4398_orig.jpg",
+        tags: ["nature", "Great Falls", "landscape"]
+    },
+    {
+        src: "gallery/IMG_4403_edited.jpg",
+        alt: "More Great Falls.",
+        unedited_src: "gallery/IMG_4403_orig.jpg",
+        tags: ["nature", "Great Falls", "landscape"]
+    },
+    {
+        src: "gallery/IMG_4410_edited.jpg",
+        alt: "Cat! So cute!",
+        unedited_src: "gallery/IMG_4410_orig.jpg",
+        tags: ["Cat"]
+    },
+    {
+        src: "gallery/IMG_4412_edited.jpg",
+        alt: "Sunrise",
+        unedited_src: "gallery/IMG_4412_orig.jpg",
+        tags: ["nature", "landscape"]
+    },
+    {
+        src: "gallery/IMG_4419_edited.jpg",
+        alt: "Cat on scratching board",
+        unedited_src: "gallery/IMG_4419_orig.jpg",
+        tags: ["Cat"]
+    },
+    {
+        src: "gallery/IMG_4423_edited.jpg",
+        alt: "Cat looking pensively at the lamp...",
+        unedited_src: "gallery/IMG_4423_orig.jpg",
+        tags: ["Cat"]
+    },
+    {
+        src: "gallery/IMG_4439_edited.jpg",
+        alt: "Acrobatic cat!",
+        unedited_src: "gallery/IMG_4439_orig.jpg",
+        tags: ["Cat"]
+    },
+    {
+        src: "gallery/IMG_4452_edited.jpg",
+        alt: "Sleeping cat...",
+        unedited_src: "gallery/IMG_4452_orig.jpg",
+        tags: ["Cat"]
+    },
+    {
+        src: "gallery/IMG_4472_edited.jpg",
+        alt: "White flowers",
+        unedited_src: "gallery/IMG_4472_orig.jpg",
+        tags: ["nature", "flowers"]
+    },
+    {
+        src: "gallery/IMG_4473_edited.jpg",
+        alt: "Read flower",
+        unedited_src: "gallery/IMG_4473_orig.jpg",
+        tags: ["nature", "flowers"]
+    },
+    {
+        src: "gallery/IMG_4476_edited.jpg",
+        alt: "Flower with bee and ant in it",
+        unedited_src: "gallery/IMG_4476_orig.jpg",
+        tags: ["nature", "flowers"]
+    },
+    {
+        src: "gallery/IMG_4478_edited.jpg",
+        alt: "Flower without bee and ant in it",
+        unedited_src: "gallery/IMG_4478_orig.jpg",
+        tags: ["nature", "flowers"]
+    },
+    {
+        src: "gallery/IMG_4481_edited.jpg",
+        alt: "Trumpet flower!!!!!",
+        unedited_src: "gallery/IMG_4481_orig.jpg",
+        tags: ["nature", "flowers"]
     }
 ];
