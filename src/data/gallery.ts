@@ -431,7 +431,7 @@ export const images: ImageCardProps[] = [
         src: "gallery/IMG_4347_edited.jpg",
         alt: "The day I got my cat! It was real quiet on the way home... Must've been terrified.",
         unedited_src: "gallery/IMG_4347_orig.jpg",
-        tags: ["slice of life", "cat"]
+        tags: ["slice of life", "Cat"]
     },
     {
         src: "gallery/IMG_4355_edited.jpg",
