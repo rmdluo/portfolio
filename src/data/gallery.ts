@@ -549,7 +549,7 @@ export const images: ImageCardProps[] = [
     },
     {
         src: "gallery/IMG_4473_edited.jpg",
-        alt: "Read flower",
+        alt: "Red flower",
         unedited_src: "gallery/IMG_4473_orig.jpg",
         tags: ["nature", "flowers"]
     },
