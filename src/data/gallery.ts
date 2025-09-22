@@ -572,201 +572,201 @@ export const images: ImageCardProps[] = [
         tags: ["nature", "flowers"]
     },
     {
-        src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\BEBC5FBD-75C2-4EC8-B441-825656F75F82_edited.jpg",
+        src: "BEBC5FBD-75C2-4EC8-B441-825656F75F82_edited.jpg",
         alt: "zongzi with mom",
-        unedited_src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\BEBC5FBD-75C2-4EC8-B441-825656F75F82_orig.jpg",
+        unedited_src: "BEBC5FBD-75C2-4EC8-B441-825656F75F82_orig.jpg",
         tags: ["cooking", "slice of life"]
     },
     {
-        src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0001_edited.jpg",
+        src: "DSCN0001_edited.jpg",
         alt: "First picture with superzoom camera",
-        unedited_src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0001_orig.jpg",
+        unedited_src: "DSCN0001_orig.jpg",
         tags: ["nature"]
     },
     {
-        src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0002_edited.jpg",
+        src: "DSCN0002_edited.jpg",
         alt: "Second picture with superzoom camera",
-        unedited_src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0002_orig.jpg",
+        unedited_src: "DSCN0002_orig.jpg",
         tags: ["nature", "flowers"]
     },
     {
-        src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0004_edited.jpg",
+        src: "DSCN0004_edited.jpg",
         alt: "Red-shouldered Hawk",
-        unedited_src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0004_orig.jpg",
+        unedited_src: "DSCN0004_orig.jpg",
         tags: ["nature", "bird", "animals"]
     },
     {
-        src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0008_edited.jpg",
+        src: "DSCN0008_edited.jpg",
         alt: "American Robin in flight",
-        unedited_src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0008_orig.jpg",
+        unedited_src: "DSCN0008_orig.jpg",
         tags: ["nature", "bird", "animals"]
     },
     {
-        src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0015_edited.jpg",
+        src: "DSCN0015_edited.jpg",
         alt: "Turtle",
-        unedited_src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0015_orig.jpg",
+        unedited_src: "DSCN0015_orig.jpg",
         tags: ["nature", "animals"]
     },
     {
-        src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0020_edited.jpg",
+        src: "DSCN0020_edited.jpg",
         alt: "Bee landing on water",
-        unedited_src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0020_orig.jpg",
+        unedited_src: "DSCN0020_orig.jpg",
         tags: ["nature", "animals"]
     },
     {
-        src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0027_edited.jpg",
+        src: "DSCN0027_edited.jpg",
         alt: "Water skaters",
-        unedited_src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0027_orig.jpg",
+        unedited_src: "DSCN0027_orig.jpg",
         tags: ["nature", "animals"]
     },
     {
-        src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0029_edited.jpg",
+        src: "DSCN0029_edited.jpg",
         alt: "Green Heron",
-        unedited_src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0029_orig.jpg",
+        unedited_src: "DSCN0029_orig.jpg",
         tags: ["nature", "bird", "animals"]
     },
     {
-        src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0042_edited.jpg",
+        src: "DSCN0042_edited.jpg",
         alt: "Great Blue Heron",
-        unedited_src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0042_orig.jpg",
+        unedited_src: "DSCN0042_orig.jpg",
         tags: ["nature", "bird", "animals"]
     },
     {
-        src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0056_edited.jpg",
+        src: "DSCN0056_edited.jpg",
         alt: "Green Heron",
-        unedited_src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0056_orig.jpg",
+        unedited_src: "DSCN0056_orig.jpg",
         tags: ["nature", "bird", "animals"]
     },
     {
-        src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0072_edited.jpg",
+        src: "DSCN0072_edited.jpg",
         alt: "White-breasted Nuthatch -- one of my favorite birds. I love how it hops along the side of tree.",
-        unedited_src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0072_orig.jpg",
+        unedited_src: "DSCN0072_orig.jpg",
         tags: ["nature", "bird", "animals"]
     },
     {
-        src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0076_edited.jpg",
+        src: "DSCN0076_edited.jpg",
         alt: "White-breasted Nuthatch",
-        unedited_src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0076_orig.jpg",
+        unedited_src: "DSCN0076_orig.jpg",
         tags: ["nature", "bird", "animals"]
     },
     {
-        src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0081_edited.jpg",
+        src: "DSCN0081_edited.jpg",
         alt: "White-breasted Nuthatch posing majestically",
-        unedited_src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0081_orig.jpg",
+        unedited_src: "DSCN0081_orig.jpg",
         tags: ["nature", "bird", "animals"]
     },
     {
-        src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0083_edited.jpg",
+        src: "DSCN0083_edited.jpg",
         alt: "White-breasted Nuthatch pressed against the tree",
-        unedited_src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0083_orig.jpg",
+        unedited_src: "DSCN0083_orig.jpg",
         tags: ["nature", "bird", "animals"]
     },
     {
-        src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0086_edited.jpg",
+        src: "DSCN0086_edited.jpg",
         alt: "Flowers",
-        unedited_src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0086_orig.jpg",
+        unedited_src: "DSCN0086_orig.jpg",
         tags: ["nature", "flowers"]
     },
     {
-        src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0096_edited.jpg",
+        src: "DSCN0096_edited.jpg",
         alt: "European Starlings on a pole!",
-        unedited_src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0096_orig.jpg",
+        unedited_src: "DSCN0096_orig.jpg",
         tags: ["nature", "bird", "urban", "animals"]
     },
     {
-        src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0097_edited.jpg",
+        src: "DSCN0097_edited.jpg",
         alt: "European Starling up close",
-        unedited_src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0097_orig.jpg",
+        unedited_src: "DSCN0097_orig.jpg",
         tags: ["nature", "bird", "animals"]
     },
     {
-        src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0103_edited.jpg",
+        src: "DSCN0103_edited.jpg",
         alt: "Overpass at Great Falls",
-        unedited_src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0103_orig.jpg",
+        unedited_src: "DSCN0103_orig.jpg",
         tags: ["nature", "Great Falls"]
     },
     {
-        src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0106_edited.jpg",
+        src: "DSCN0106_edited.jpg",
         alt: "Turkey Vulture",
-        unedited_src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0106_orig.jpg",
+        unedited_src: "DSCN0106_orig.jpg",
         tags: ["nature", "bird", "animals"]
     },
     {
-        src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0113_edited.jpg",
+        src: "DSCN0113_edited.jpg",
         alt: "No clue what this is -- was rushing to get the picture and didn't get the focus right",
-        unedited_src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\DSCN0113_orig.jpg",
+        unedited_src: "DSCN0113_orig.jpg",
         tags: ["nature", "bird", "animals"]
     },
     {
-        src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\IMG_4487_edited.jpg",
+        src: "IMG_4487_edited.jpg",
         alt: "Cat in couch!",
-        unedited_src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\IMG_4487_orig.jpg",
+        unedited_src: "IMG_4487_orig.jpg",
         tags: ["Cat"]
     },
     {
-        src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\IMG_4496_edited.jpg",
+        src: "IMG_4496_edited.jpg",
         alt: "Sunset on the George Washington Memorial Parkway",
-        unedited_src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\IMG_4496_orig.jpg",
+        unedited_src: "IMG_4496_orig.jpg",
         tags: ["landscape"]
     },
     {
-        src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\IMG_4499_edited.jpg",
+        src: "IMG_4499_edited.jpg",
         alt: "Cat watching bird!",
-        unedited_src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\IMG_4499_orig.jpg",
+        unedited_src: "IMG_4499_orig.jpg",
         tags: ["Cat"]
     },
     {
-        src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\IMG_4502_edited.jpg",
+        src: "IMG_4502_edited.jpg",
         alt: "Room in the morning light",
-        unedited_src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\IMG_4502_orig.jpg",
+        unedited_src: "IMG_4502_orig.jpg",
         tags: ["landscape"]
     },
     {
-        src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\IMG_4509_edited.jpg",
+        src: "IMG_4509_edited.jpg",
         alt: "My first Wawa order! Went with some coworkers to the WA.",
-        unedited_src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\IMG_4509_orig.jpg",
+        unedited_src: "IMG_4509_orig.jpg",
         tags: ["slice of life"]
     },
     {
-        src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\IMG_4510_edited.jpg",
+        src: "IMG_4510_edited.jpg",
         alt: "Flower!!!!",
-        unedited_src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\IMG_4510_orig.jpg",
+        unedited_src: "IMG_4510_orig.jpg",
         tags: ["nature", "flowers"]
     },
     {
-        src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\IMG_4511_edited.jpg",
+        src: "IMG_4511_edited.jpg",
         alt: "Many flowers",
-        unedited_src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\IMG_4511_orig.jpg",
+        unedited_src: "IMG_4511_orig.jpg",
         tags: ["nature", "flowers"]
     },
     {
-        src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\IMG_4516_edited.jpg",
+        src: "IMG_4516_edited.jpg",
         alt: "Cat sniffing hand",
-        unedited_src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\IMG_4516_orig.jpg",
+        unedited_src: "IMG_4516_orig.jpg",
         tags: ["Cat"]
     },
     {
-        src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\IMG_4522_edited.jpg",
+        src: "IMG_4522_edited.jpg",
         alt: "Cat investigating from the stairwell",
-        unedited_src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\IMG_4522_orig.jpg",
+        unedited_src: "IMG_4522_orig.jpg",
         tags: ["Cat"]
     },
     {
-        src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\IMG_4529_edited.jpg",
+        src: "IMG_4529_edited.jpg",
         alt: "Some kind of woodpecker feather -- downy, hairy, or great spotted",
-        unedited_src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\IMG_4529_orig.jpg",
+        unedited_src: "IMG_4529_orig.jpg",
         tags: ["nature", "bird"]
     },
     {
-        src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\IMG_4537_edited.jpg",
+        src: "IMG_4537_edited.jpg",
         alt: "Foccacia yummy",
-        unedited_src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\IMG_4537_orig.jpg",
+        unedited_src: "IMG_4537_orig.jpg",
         tags: ["slice of life"]
     },
     {
-        src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\IMG_4539_edited.jpg",
+        src: "IMG_4539_edited.jpg",
         alt: "Eggs benedict",
-        unedited_src: "\\\\wyse-5070-1\\seagate\\Images\\Exports\\IMG_4539_orig.jpg",
+        unedited_src: "IMG_4539_orig.jpg",
         tags: ["slice of life"]
     }
 ];
