@@ -704,12 +704,6 @@ export const images: ImageCardProps[] = [
         tags: ["Cat"]
     },
     {
-        src: "gallery/IMG_4496_edited.jpg",
-        alt: "Sunset on the George Washington Memorial Parkway",
-        unedited_src: "gallery/IMG_4496_orig.jpg",
-        tags: ["landscape"]
-    },
-    {
         src: "gallery/IMG_4499_edited.jpg",
         alt: "Cat watching bird!",
         unedited_src: "gallery/IMG_4499_orig.jpg",
