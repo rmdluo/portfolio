@@ -368,12 +368,6 @@ export const images: ImageCardProps[] = [
         tags: ["slice of life", "nature"]
     },
     {
-        src: "gallery/IMG_4320_edited.jpg",
-        alt: "Sunrise",
-        unedited_src: "gallery/IMG_4320_orig.jpg",
-        tags: ["nature", "urban"]
-    },
-    {
         src: "gallery/IMG_4325_edited.jpg",
         alt: "Sunset on a building.",
         unedited_src: "gallery/IMG_4325_orig.jpg",
@@ -510,12 +504,6 @@ export const images: ImageCardProps[] = [
         alt: "Cat! So cute!",
         unedited_src: "gallery/IMG_4410_orig.jpg",
         tags: ["Cat"]
-    },
-    {
-        src: "gallery/IMG_4412_edited.jpg",
-        alt: "Sunrise",
-        unedited_src: "gallery/IMG_4412_orig.jpg",
-        tags: ["nature", "landscape"]
     },
     {
         src: "gallery/IMG_4419_edited.jpg",
