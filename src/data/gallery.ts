@@ -755,25 +755,25 @@ export const images: ImageCardProps[] = [
         src: "gallery/DSCN0117_edited.jpg",
         alt: "Playing with light",
         unedited_src: "gallery/DSCN0117_orig.jpg",
-        tags: ["Photography"]
+        tags: ["photography"]
     },
     {
         src: "gallery/DSCN0120_edited.jpg",
         alt: "Lamp! Long exposure + shadows/blacks way down + whites up + contrast up",
         unedited_src: "gallery/DSCN0120_orig.jpg",
-        tags: ["Photography"]
+        tags: ["photography"]
     },
     {
         src: "gallery/DSCN0123_edited.jpg",
         alt: "Sign at night",
         unedited_src: "gallery/DSCN0123_orig.jpg",
-        tags: ["Photography", "urban"]
+        tags: ["photography", "urban"]
     },
     {
         src: "gallery/DSCN0129_edited.jpg",
         alt: "Playing with light v2 -- long exposure + move camera down and to the left",
         unedited_src: "gallery/DSCN0129_orig.jpg",
-        tags: ["Photography"]
+        tags: ["photography"]
     },
     {
         src: "gallery/DSCN0247_edited.jpg",
@@ -851,24 +851,24 @@ export const images: ImageCardProps[] = [
         src: "gallery/IMG_4604_edited.jpg",
         alt: "Great Falls :)",
         unedited_src: "gallery/IMG_4604_orig.jpg",
-        tags: ["Nature", "Great Falls"]
+        tags: ["nature", "Great Falls"]
     },
     {
         src: "gallery/IMG_4616_edited.jpg",
         alt: "Mushrooms on a tree",
         unedited_src: "gallery/IMG_4616_orig.jpg",
-        tags: ["Nature"]
+        tags: ["nature"]
     },
     {
         src: "gallery/IMG_4631_edited.jpg",
         alt: "Eastern Tiger Swallowtail, really beautiful",
         unedited_src: "gallery/IMG_4631_orig.jpg",
-        tags: ["Nature"]
+        tags: ["nature"]
     },
     {
         src: "gallery/IMG_4635_edited.jpg",
         alt: "Interesting look plant no clue what it is",
         unedited_src: "gallery/IMG_4635_orig.jpg",
-        tags: ["Nature"]
+        tags: ["nature"]
     }
 ];
