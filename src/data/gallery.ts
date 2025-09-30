@@ -750,5 +750,125 @@ export const images: ImageCardProps[] = [
         alt: "Eggs benedict",
         unedited_src: "gallery/IMG_4539_orig.jpg",
         tags: ["slice of life"]
+    },
+    {
+        src: "gallery/DSCN0117_edited.jpg",
+        alt: "Playing with light",
+        unedited_src: "gallery/DSCN0117_orig.jpg",
+        tags: ["Photography"]
+    },
+    {
+        src: "gallery/DSCN0120_edited.jpg",
+        alt: "Lamp! Long exposure + shadows/blacks way down + whites up + contrast up",
+        unedited_src: "gallery/DSCN0120_orig.jpg",
+        tags: ["Photography"]
+    },
+    {
+        src: "gallery/DSCN0123_edited.jpg",
+        alt: "Sign at night",
+        unedited_src: "gallery/DSCN0123_orig.jpg",
+        tags: ["Photography", "urban"]
+    },
+    {
+        src: "gallery/DSCN0129_edited.jpg",
+        alt: "Playing with light v2 -- long exposure + move camera down and to the left",
+        unedited_src: "gallery/DSCN0129_orig.jpg",
+        tags: ["Photography"]
+    },
+    {
+        src: "gallery/DSCN0247_edited.jpg",
+        alt: "Sunset",
+        unedited_src: "gallery/DSCN0247_orig.jpg",
+        tags: ["sunset"]
+    },
+    {
+        src: "gallery/DSCN0248_edited.jpg",
+        alt: "Sunset",
+        unedited_src: "gallery/DSCN0248_orig.jpg",
+        tags: ["sunset"]
+    },
+    {
+        src: "gallery/IMG_4555_edited.jpg",
+        alt: "Cat sitting on desk!",
+        unedited_src: "gallery/IMG_4555_orig.jpg",
+        tags: ["Cat"]
+    },
+    {
+        src: "gallery/IMG_4555_edited.jpg",
+        alt: "Cat sitting on desk!",
+        unedited_src: "gallery/IMG_4555_orig.jpg",
+        tags: ["Cat"]
+    },
+    {
+        src: "gallery/IMG_4564_edited.jpg",
+        alt: "Pretty clouds, like a wave washing through the sky",
+        unedited_src: "gallery/IMG_4564_orig.jpg",
+        tags: ["sky"]
+    },
+    {
+        src: "gallery/IMG_4567_edited.jpg",
+        alt: "Empty cicada husk",
+        unedited_src: "gallery/IMG_4567_orig.jpg",
+        tags: ["nature"]
+    },
+    {
+        src: "gallery/IMG_4574_edited.jpg",
+        alt: "Sky, tiny moon",
+        unedited_src: "gallery/IMG_4574_orig.jpg",
+        tags: ["sky"]
+    },
+    {
+        src: "gallery/IMG_4583_edited.jpg",
+        alt: "Red berry look flowers!(?)",
+        unedited_src: "gallery/IMG_4583_orig.jpg",
+        tags: ["nature"]
+    },
+    {
+        src: "gallery/IMG_4585_edited.jpg",
+        alt: "Purple flowers",
+        unedited_src: "gallery/IMG_4585_orig.jpg",
+        tags: ["nature"]
+    },
+    {
+        src: "gallery/IMG_4589_edited.jpg",
+        alt: "Baseball game I went to with a friend -- Nationals vs Athletics (we lost XD)",
+        unedited_src: "gallery/IMG_4589_orig.jpg",
+        tags: ["slice of life"]
+    },
+    {
+        src: "gallery/IMG_4595_edited.jpg",
+        alt: "Helmet-shaped cart!!!! So cool! So funny!",
+        unedited_src: "gallery/IMG_4595_orig.jpg",
+        tags: ["slice of life"]
+    },
+    {
+        src: "gallery/IMG_4597_edited.jpg",
+        alt: "Bobble heads of Mount Rushmore. The halftime was them racing, don't remember exactly what happened but it was pretty fun.",
+        unedited_src: "gallery/IMG_4597_orig.jpg",
+        tags: ["slice of life"]
+    },
+    {
+        src: "gallery/IMG_4604_edited.jpg",
+        alt: "Great Falls :)",
+        unedited_src: "gallery/IMG_4604_orig.jpg",
+        tags: ["Nature", "Great Falls"]
+    },
+    {
+        src: "gallery/IMG_4616_edited.jpg",
+        alt: "Mushrooms on a tree",
+        unedited_src: "gallery/IMG_4616_orig.jpg",
+        tags: ["Nature"]
+    },
+    {
+        src: "gallery/IMG_4631_edited.jpg",
+        alt: "Eastern Tiger Swallowtail, really beautiful",
+        unedited_src: "gallery/IMG_4631_orig.jpg",
+        tags: ["Nature"]
+    },
+    {
+        src: "gallery/IMG_4635_edited.jpg",
+        alt: "Interesting look plant no clue what it is",
+        unedited_src: "gallery/IMG_4635_orig.jpg",
+        tags: ["Nature"]
     }
 ];
