@@ -5,7 +5,7 @@ import { images } from '../data/gallery';
 
 // Collect all unique tags for the filter
 const reversedImages = images.reverse();
-const allTags: string[] = [...new Set(images.flatMap((image) => image.tags || []))].sort() as string[];
+const allTags: Tag[] = [...new Set(images.flatMap((image) => image.tags || []))].sort();
 ---
 
 <BaseLayout title="Photo Gallery">
