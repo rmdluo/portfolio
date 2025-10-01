@@ -795,12 +795,6 @@ export const images: ImageCardProps[] = [
         tags: [Tag.cat]
     },
     {
-        src: "gallery/IMG_4555_edited.jpg",
-        alt: "Cat sitting on desk!",
-        unedited_src: "gallery/IMG_4555_orig.jpg",
-        tags: [Tag.cat]
-    },
-    {
         src: "gallery/IMG_4564_edited.jpg",
         alt: "Pretty clouds, like a wave washing through the sky",
         unedited_src: "gallery/IMG_4564_orig.jpg",
