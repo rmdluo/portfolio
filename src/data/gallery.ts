@@ -968,5 +968,35 @@ export const images: ImageCardProps[] = [
         alt: "C&O Canal Towpath",
         unedited_src: "gallery/IMG_4701_orig.jpg",
         tags: [Tag.nature, Tag.great_falls]
+    },
+    {
+        src: "gallery/DSCN0269_edited.jpg",
+        alt: "The sun!",
+        unedited_src: "gallery/DSCN0269_orig.jpg",
+        tags: [Tag.nature, Tag.sky, Tag.photography]
+    },
+    {
+        src: "gallery/DSCN0277_edited.jpg",
+        alt: "Rocks down a cliff at Dolly Sods",
+        unedited_src: "gallery/DSCN0277_orig.jpg",
+        tags: [Tag.nature, Tag.landscape, Tag.dolly_sods]
+    },
+    {
+        src: "gallery/DSCN0278_edited.jpg",
+        alt: "Turkey vulture",
+        unedited_src: "gallery/DSCN0278_orig.jpg",
+        tags: [Tag.nature, Tag.birds]
+    },
+    {
+        src: "gallery/DSCN0287_edited.jpg",
+        alt: "Crevice",
+        unedited_src: "gallery/DSCN0287_orig.jpg",
+        tags: [Tag.nature, Tag.dolly_sods]
+    },
+    {
+        src: "gallery/DSCN0313_edited.jpg",
+        alt: "European Starlings on a powerline",
+        unedited_src: "gallery/DSCN0313_orig.jpg",
+        tags: [Tag.nature, Tag.birds, Tag.photography]
     }
 ];
