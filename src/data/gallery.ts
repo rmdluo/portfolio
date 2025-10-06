@@ -866,4 +866,107 @@ export const images: ImageCardProps[] = [
         unedited_src: "gallery/IMG_4635_orig.jpg",
         tags: [Tag.nature]
     }
+    ,
+    {
+        src: "gallery/IMG_4657_edited.jpg",
+        alt: "Clouds circling the sun",
+        unedited_src: "gallery/IMG_4657_orig.jpg",
+        tags: [Tag.nature, Tag.sky]
+    },
+    {
+        src: "gallery/IMG_4659_edited.jpg",
+        alt: "Toad (or frog?)",
+        unedited_src: "gallery/IMG_4659_orig.jpg",
+        tags: [Tag.nature, Tag.animals]
+    },
+    {
+        src: "gallery/IMG_4663_edited.jpg",
+        alt: "Pensive cat!!",
+        unedited_src: "gallery/IMG_4663_orig.jpg",
+        tags: [Tag.cat, Tag.animals]
+    },
+    {
+        src: "gallery/IMG_4667_edited.jpg",
+        alt: "Fizzy drink I see all the time. Got it this time -- it was okay, but wasn't really my thing.",
+        unedited_src: "gallery/IMG_4667_orig.jpg",
+        tags: [Tag.slice_of_life]
+    },
+    {
+        src: "gallery/IMG_4673_edited.jpg",
+        alt: "Cat looking so very cute",
+        unedited_src: "gallery/IMG_4673_orig.jpg",
+        tags: [Tag.cat]
+    },
+    {
+        src: "gallery/IMG_4677_edited.jpg",
+        alt: "Flowers I bought for myself",
+        unedited_src: "gallery/IMG_4677_orig.jpg",
+        tags: [Tag.flowers]
+    },
+    {
+        src: "gallery/IMG_4679_edited.jpg",
+        alt: "Cat on bed",
+        unedited_src: "gallery/IMG_4679_orig.jpg",
+        tags: [Tag.cat]
+    },
+    {
+        src: "gallery/IMG_4683_edited.jpg",
+        alt: "Cat on bed doing some interesting stuff",
+        unedited_src: "gallery/IMG_4683_orig.jpg",
+        tags: [Tag.cat]
+    },
+    {
+        src: "gallery/IMG_4699_edited.jpg",
+        alt: "Lake Needwood",
+        unedited_src: "gallery/IMG_4699_orig.jpg",
+        tags: [Tag.nature, Tag.landscape]
+    },
+    {
+        src: "gallery/IMG_4701_edited.jpg",
+        alt: "C&O Canal Towpath",
+        unedited_src: "gallery/IMG_4701_orig.jpg",
+        tags: [Tag.nature, Tag.great_falls]
+    },
+    {
+        src: "gallery/IMG_4705_edited.jpg",
+        alt: "Rainy day",
+        unedited_src: "gallery/IMG_4705_orig.jpg",
+        tags: [Tag.landscape]
+    },
+    {
+        src: "gallery/IMG_4706_edited.jpg",
+        alt: "Green heron",
+        unedited_src: "gallery/IMG_4706_orig.jpg",
+        tags: [Tag.nature, Tag.birds]
+    },
+    {
+        src: "gallery/IMG_4713_edited.jpg",
+        alt: "Cat in box!",
+        unedited_src: "gallery/IMG_4713_orig.jpg",
+        tags: [Tag.cat]
+    },
+    {
+        src: "gallery/IMG_4742_edited.jpg",
+        alt: "Cat yawn",
+        unedited_src: "gallery/IMG_4742_orig.jpg",
+        tags: [Tag.cat]
+    },
+    {
+        src: "gallery/IMG_4743_edited.jpg",
+        alt: "Cat no yawn",
+        unedited_src: "gallery/IMG_4743_orig.jpg",
+        tags: [Tag.cat]
+    },
+    {
+        src: "gallery/IMG_4749_edited.jpg",
+        alt: "Sunset at Cabin John Park",
+        unedited_src: "gallery/IMG_4749_orig.jpg",
+        tags: [Tag.sunset]
+    },
+    {
+        src: "gallery/IMG_4701_edited.jpg",
+        alt: "C&O Canal Towpath",
+        unedited_src: "gallery/IMG_4701_orig.jpg",
+        tags: [Tag.nature, Tag.great_falls]
+    }
 ];
