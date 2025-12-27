@@ -756,25 +756,25 @@ export const images: ImageCardProps[] = [
         src: "gallery/DSCN0117_edited.jpg",
         alt: "Playing with light",
         unedited_src: "gallery/DSCN0117_orig.jpg",
-        tags: [Tag.photography]
+        tags: [Tag.misc]
     },
     {
         src: "gallery/DSCN0120_edited.jpg",
         alt: "Lamp! Long exposure + shadows/blacks way down + whites up + contrast up",
         unedited_src: "gallery/DSCN0120_orig.jpg",
-        tags: [Tag.photography]
+        tags: [Tag.misc]
     },
     {
         src: "gallery/DSCN0123_edited.jpg",
         alt: "Sign at night",
         unedited_src: "gallery/DSCN0123_orig.jpg",
-        tags: [Tag.photography, Tag.urban]
+        tags: [Tag.urban]
     },
     {
         src: "gallery/DSCN0129_edited.jpg",
         alt: "Playing with light v2 -- long exposure + move camera down and to the left",
         unedited_src: "gallery/DSCN0129_orig.jpg",
-        tags: [Tag.photography]
+        tags: [Tag.misc]
     },
     {
         src: "gallery/DSCN0247_edited.jpg",
@@ -973,7 +973,7 @@ export const images: ImageCardProps[] = [
         src: "gallery/DSCN0269_edited.jpg",
         alt: "The sun!",
         unedited_src: "gallery/DSCN0269_orig.jpg",
-        tags: [Tag.nature, Tag.sky, Tag.photography]
+        tags: [Tag.nature, Tag.sky]
     },
     {
         src: "gallery/DSCN0277_edited.jpg",
@@ -997,7 +997,7 @@ export const images: ImageCardProps[] = [
         src: "gallery/DSCN0313_edited.jpg",
         alt: "European Starlings on a powerline",
         unedited_src: "gallery/DSCN0313_orig.jpg",
-        tags: [Tag.nature, Tag.birds, Tag.photography]
+        tags: [Tag.nature, Tag.birds]
     },
     {
     src: "gallery/4585014619782454121_edited.jpg",
@@ -1009,7 +1009,7 @@ export const images: ImageCardProps[] = [
     src: "gallery/DSCN0255_edited.jpg",
     alt: "Paper wasp",
     unedited_src: "gallery/DSCN0255_orig.jpg",
-    tags: [Tag.photography, Tag.nature]
+    tags: [Tag.nature]
   },
   {
     src: "gallery/DSCN0260_edited.jpg",
@@ -1021,73 +1021,73 @@ export const images: ImageCardProps[] = [
     src: "gallery/DSCN0261_edited.jpg",
     alt: "Blue jay",
     unedited_src: "gallery/DSCN0261_orig.jpg",
-    tags: [Tag.photography, Tag.nature, Tag.birds]
+    tags: [Tag.nature, Tag.birds]
   },
   {
     src: "gallery/DSCN0265_edited.jpg",
     alt: "The moon",
     unedited_src: "gallery/DSCN0265_orig.jpg",
-    tags: [Tag.photography]
+    tags: [Tag.misc]
   },
   {
     src: "gallery/DSCN0316_edited.jpg",
     alt: "Great Blue Heron",
     unedited_src: "gallery/DSCN0316_orig.jpg",
-    tags: [Tag.photography, Tag.nature, Tag.birds]
+    tags: [Tag.nature, Tag.birds]
   },
   {
     src: "gallery/DSCN0325_edited.jpg",
     alt: "Canadian Geese during the golden hour",
     unedited_src: "gallery/DSCN0325_orig.jpg",
-    tags: [Tag.nature, Tag.birds, Tag.photography]
+    tags: [Tag.nature, Tag.birds]
   },
   {
     src: "gallery/DSCN0355_edited.jpg",
     alt: "Great Blue Heron extended outwards",
     unedited_src: "gallery/DSCN0355_orig.jpg",
-    tags: [Tag.photography, Tag.nature, Tag.birds]
+    tags: [Tag.nature, Tag.birds]
   },
   {
     src: "gallery/DSCN0373_edited.jpg",
     alt: "Moon covered by some clouds -- don't zoom in too close, otherwise you'll see how low resolution it is xd",
     unedited_src: "gallery/DSCN0373_orig.jpg",
-    tags: [Tag.photography]
+    tags: [Tag.misc]
   },
   {
     src: "gallery/DSCN0377_edited.jpg",
     alt: "Moon photo",
     unedited_src: "gallery/DSCN0377_orig.jpg",
-    tags: [Tag.photography]
+    tags: [Tag.misc]
   },
   {
     src: "gallery/DSCN0383_edited.jpg",
     alt: "Moon photo but with extra landscape",
     unedited_src: "gallery/DSCN0383_orig.jpg",
-    tags: [Tag.photography, Tag.landscape]
+    tags: [Tag.landscape]
   },
   {
     src: "gallery/DSCN0428_edited.jpg",
     alt: "Moon, close cropped and clear -- October 2025 Harvest Moon",
     unedited_src: "gallery/DSCN0428_orig.jpg",
-    tags: [Tag.photography]
+    tags: [Tag.misc]
   },
   {
     src: "gallery/DSCN0482_edited.jpg",
     alt: "Moon through some leaves -- October 2025 Harvest Moon",
     unedited_src: "gallery/DSCN0482_orig.jpg",
-    tags: [Tag.nature, Tag.photography]
+    tags: [Tag.nature]
   },
   {
     src: "gallery/DSCN0490_edited.jpg",
     alt: "Moon over some water -- October 2025 Harvest Moon",
     unedited_src: "gallery/DSCN0490_orig.jpg",
-    tags: [Tag.photography, Tag.landscape]
+    tags: [Tag.landscape]
   },
   {
     src: "gallery/DSCN0511_edited.jpg",
     alt: "Moon over a bridge -- October 2025 Harvest Moon",
     unedited_src: "gallery/DSCN0511_orig.jpg",
-    tags: [Tag.landscape, Tag.photography]
+    tags: [Tag.landscape]
   },
   {
     src: "gallery/DSCN0517_edited.jpg",
@@ -1099,25 +1099,25 @@ export const images: ImageCardProps[] = [
     src: "gallery/DSCN0520_edited.jpg",
     alt: "Panda at the national zoo!",
     unedited_src: "gallery/DSCN0520_orig.jpg",
-    tags: [Tag.photography, Tag.nature]
+    tags: [Tag.nature]
   },
   {
     src: "gallery/DSCN0525_edited.jpg",
     alt: "Panda mouth wide big...",
     unedited_src: "gallery/DSCN0525_orig.jpg",
-    tags: [Tag.photography, Tag.nature]
+    tags: [Tag.nature]
   },
   {
     src: "gallery/DSCN0528_edited.jpg",
     alt: "House sparrow giving the staredown",
     unedited_src: "gallery/DSCN0528_orig.jpg",
-    tags: [Tag.nature, Tag.birds, Tag.photography]
+    tags: [Tag.nature, Tag.birds]
   },
   {
     src: "gallery/DSCN0529_edited.jpg",
     alt: "House finch chilling at the elephant house",
     unedited_src: "gallery/DSCN0529_orig.jpg",
-    tags: [Tag.nature, Tag.birds, Tag.photography]
+    tags: [Tag.nature, Tag.birds]
   },
   {
     src: "gallery/DSCN0532_edited.jpg",
@@ -1129,61 +1129,61 @@ export const images: ImageCardProps[] = [
     src: "gallery/DSCN0533_edited.jpg",
     alt: "European Starling -- you can see the dots more clearly in this image.",
     unedited_src: "gallery/DSCN0533_orig.jpg",
-    tags: [Tag.nature, Tag.birds, Tag.photography]
+    tags: [Tag.nature, Tag.birds]
   },
   {
     src: "gallery/DSCN0535_edited.jpg",
     alt: "House sparrow eating something (M&M? Corn? Skittle? Who knows)",
     unedited_src: "gallery/DSCN0535_orig.jpg",
-    tags: [Tag.nature, Tag.birds, Tag.photography]
+    tags: [Tag.nature, Tag.birds]
   },
   {
     src: "gallery/DSCN0538_edited.jpg",
     alt: "Parking lot",
     unedited_src: "gallery/DSCN0540_orig.jpg",
-    tags: [Tag.photography, Tag.landscape]
+    tags: [Tag.landscape]
   },
   {
     src: "gallery/DSCN0540_edited.jpg",
     alt: "Explorer European Starling!",
     unedited_src: "gallery/DSCN0540_orig.jpg",
-    tags: [Tag.photography, Tag.birds, Tag.nature]
+    tags: [Tag.birds, Tag.nature]
   },
   {
     src: "gallery/DSCN0543_edited.jpg",
     alt: "Downy woodpecker -- identify by the beck that is about half the lengthof the head",
     unedited_src: "gallery/DSCN0543_orig.jpg",
-    tags: [Tag.photography, Tag.birds, Tag.nature]
+    tags: [Tag.birds, Tag.nature]
   },
   {
     src: "gallery/DSCN0565_edited.jpg",
     alt: "Bench at Blackwater National Wildlife Refuge",
     unedited_src: "gallery/DSCN0565_orig.jpg",
-    tags: [Tag.photography]
+    tags: [Tag.misc]
   },
   {
     src: "gallery/DSCN0581_edited.jpg",
     alt: "Bench at Blackwater National Wildlife Refuge -- waterside walk section",
     unedited_src: "gallery/DSCN0581_orig.jpg",
-    tags: [Tag.photography]
+    tags: [Tag.misc]
   },
   {
     src: "gallery/DSCN0584_edited.jpg",
     alt: "Turkey Vulture",
     unedited_src: "gallery/DSCN0584_orig.jpg",
-    tags: [Tag.photography, Tag.birds, Tag.nature]
+    tags: [Tag.birds, Tag.nature]
   },
   {
     src: "gallery/DSCN0588_edited.jpg",
     alt: "Leaf under a branch. I got another one of a leaf dropping on the water, but there was something else in frame so I didn't edit it.",
     unedited_src: "gallery/DSCN0588_orig.jpg",
-    tags: [Tag.photography, Tag.nature]
+    tags: [Tag.nature]
   },
   {
     src: "gallery/DSCN0594_edited.jpg",
     alt: "Northern Harrier -- Interesting hunting pattern. They fly, stay in place, then fly again. Could've also just been the really strong wind that day.",
     unedited_src: "gallery/DSCN0594_orig.jpg",
-    tags: [Tag.photography, Tag.birds, Tag.nature]
+    tags: [Tag.birds, Tag.nature]
   },
   {
     src: "gallery/DSCN0595_edited.jpg",
@@ -1201,67 +1201,67 @@ export const images: ImageCardProps[] = [
     src: "gallery/DSCN0607_edited.jpg",
     alt: "Great Blue Heron in hiding",
     unedited_src: "gallery/DSCN0607_orig.jpg",
-    tags: [Tag.photography, Tag.birds, Tag.nature]
+    tags: [Tag.birds, Tag.nature]
   },
   {
     src: "gallery/DSCN0615_edited.jpg",
     alt: "Weird red mushrooms...",
     unedited_src: "gallery/DSCN0615_orig.jpg",
-    tags: [Tag.photography, Tag.nature]
+    tags: [Tag.nature]
   },
   {
     src: "gallery/DSCN0616_edited.jpg",
     alt: "Another weird red mushroom... Separately, saw an pleated inkcap at work one time -- it was so cool. Went back to check on it throughout the day, watched it melt away. This wasn't taken at my workplace.",
     unedited_src: "gallery/DSCN0616_orig.jpg",
-    tags: [Tag.photography, Tag.nature]
+    tags: [Tag.nature]
   },
   {
     src: "gallery/DSCN0622_edited.jpg",
     alt: "Common gull with its feet in the sand.",
     unedited_src: "gallery/DSCN0622_orig.jpg",
-    tags: [Tag.photography, Tag.birds, Tag.nature]
+    tags: [Tag.birds, Tag.nature]
   },
   {
     src: "gallery/DSCN0625_edited.jpg",
     alt: "Killdeer! Much cuter in person, I didn't get such good photos.",
     unedited_src: "gallery/DSCN0625_orig.jpg",
-    tags: [Tag.photography, Tag.birds, Tag.nature]
+    tags: [Tag.birds, Tag.nature]
   },
   {
     src: "gallery/DSCN0626_edited.jpg",
     alt: "Laughing gull. Much sharper features.",
     unedited_src: "gallery/DSCN0626_orig.jpg",
-    tags: [Tag.photography, Tag.birds, Tag.nature]
+    tags: [Tag.birds, Tag.nature]
   },
   {
     src: "gallery/DSCN0630_edited.jpg",
     alt: "Laughing gull again.",
     unedited_src: "gallery/DSCN0630_orig.jpg",
-    tags: [Tag.photography, Tag.birds, Tag.nature]
+    tags: [Tag.birds, Tag.nature]
   },
   {
     src: "gallery/DSCN0639_edited.jpg",
     alt: "Brown Creeper",
     unedited_src: "gallery/DSCN0639_orig.jpg",
-    tags: [Tag.photography, Tag.birds, Tag.nature]
+    tags: [Tag.birds, Tag.nature]
   },
   {
     src: "gallery/DSCN0642_edited.jpg",
     alt: "Tufted Titmouse",
     unedited_src: "gallery/DSCN0642_orig.jpg",
-    tags: [Tag.photography, Tag.birds, Tag.nature, Tag.great_falls]
+    tags: [Tag.birds, Tag.nature, Tag.great_falls]
   },
   {
     src: "gallery/DSCN0643_edited.jpg",
     alt: "Gold-crowned Kinglet. I was looking for these a lot, but couldn't spot them. Just happened to get a photo of one, didn't even realize it was a gold-crowned kinglet until I checked with merlin.",
     unedited_src: "gallery/DSCN0643_orig.jpg",
-    tags: [Tag.photography, Tag.birds, Tag.nature, Tag.great_falls]
+    tags: [Tag.birds, Tag.nature, Tag.great_falls]
   },
   {
     src: "gallery/DSCN0645_edited.jpg",
     alt: "Majestic Robin",
     unedited_src: "gallery/DSCN0645_orig.jpg",
-    tags: [Tag.photography, Tag.birds, Tag.nature, Tag.great_falls]
+    tags: [Tag.birds, Tag.nature, Tag.great_falls]
   },
   {
     src: "gallery/DSCN0647_edited.jpg",
@@ -1303,61 +1303,61 @@ export const images: ImageCardProps[] = [
     src: "gallery/DSCN0662_edited.jpg",
     alt: "White-throated Sparrow. You can see the little yellow spots above its eyes.",
     unedited_src: "gallery/DSCN0662_orig.jpg",
-    tags: [Tag.photography, Tag.birds, Tag.nature]
+    tags: [Tag.birds, Tag.nature]
   },
   {
     src: "gallery/DSCN0672_edited.jpg",
     alt: "Cooper's Hawk",
     unedited_src: "gallery/DSCN0672_orig.jpg",
-    tags: [Tag.photography, Tag.birds, Tag.nature]
+    tags: [Tag.birds, Tag.nature]
   },
   {
     src: "gallery/DSCN0673_edited.jpg",
     alt: "Cooper's Hawk",
     unedited_src: "gallery/DSCN0673_orig.jpg",
-    tags: [Tag.photography, Tag.birds, Tag.nature]
+    tags: [Tag.birds, Tag.nature]
   },
   {
     src: "gallery/DSCN0674_edited.jpg",
     alt: "Cool fluffy seed pod looking thing",
     unedited_src: "gallery/DSCN0674_orig.jpg",
-    tags: [Tag.photography, Tag.nature]
+    tags: [Tag.nature]
   },
   {
     src: "gallery/DSCN0675_edited.jpg",
     alt: "Berry!",
     unedited_src: "gallery/DSCN0675_orig.jpg",
-    tags: [Tag.photography, Tag.nature]
+    tags: [Tag.nature]
   },
   {
     src: "gallery/DSCN0677_edited.jpg",
     alt: "Bird's nest",
     unedited_src: "gallery/DSCN0677_orig.jpg",
-    tags: [Tag.photography, Tag.birds, Tag.nature]
+    tags: [Tag.birds, Tag.nature]
   },
   {
     src: "gallery/DSCN0678_edited.jpg",
     alt: "Weird stem tumor thing... I thought the color looked really cool. Looks kinda yummy too.",
     unedited_src: "gallery/DSCN0678_orig.jpg",
-    tags: [Tag.photography, Tag.nature]
+    tags: [Tag.nature]
   },
   {
     src: "gallery/DSCN0679_edited.jpg",
     alt: "Not sure what the white stuff is, it's pretty common though.",
     unedited_src: "gallery/DSCN0679_orig.jpg",
-    tags: [Tag.photography, Tag.nature]
+    tags: [Tag.nature]
   },
   {
     src: "gallery/DSCN0680_edited.jpg",
     alt: "White-throated sparrow",
     unedited_src: "gallery/DSCN0680_orig.jpg",
-    tags: [Tag.photography, Tag.birds, Tag.nature]
+    tags: [Tag.birds, Tag.nature]
   },
   {
     src: "gallery/DSCN0683_edited.jpg",
     alt: "Kind of like the other stem that pulsated out, but this one is still intact.",
     unedited_src: "gallery/DSCN0683_orig.jpg",
-    tags: [Tag.photography, Tag.nature]
+    tags: [Tag.nature]
   },
   {
     src: "gallery/DSCN0685_edited.jpg",
@@ -1375,7 +1375,7 @@ export const images: ImageCardProps[] = [
     src: "gallery/DSCN0687_edited.jpg",
     alt: "Weird pineapple cactus looking thing",
     unedited_src: "gallery/DSCN0687_orig.jpg",
-    tags: [Tag.photography, Tag.nature]
+    tags: [Tag.nature]
   },
   {
     src: "gallery/DSCN0689_edited.jpg",
@@ -1423,7 +1423,7 @@ export const images: ImageCardProps[] = [
     src: "gallery/DSCN0736_edited.jpg",
     alt: "Tufted Titmouse on a snowy day.",
     unedited_src: "gallery/DSCN0736_orig.jpg",
-    tags: [Tag.photography, Tag.birds, Tag.nature]
+    tags: [Tag.birds, Tag.nature]
   },
   {
     src: "gallery/DSCN0741_edited.jpg",
@@ -1495,19 +1495,19 @@ export const images: ImageCardProps[] = [
     src: "gallery/DSCN0771_edited.jpg",
     alt: "House finch in a tree",
     unedited_src: "gallery/DSCN0771_orig.jpg",
-    tags: [Tag.photography, Tag.birds, Tag.nature]
+    tags: [Tag.birds, Tag.nature]
   },
   {
     src: "gallery/DSCN0777_edited.jpg",
     alt: "Male Bufflehead -- my first diving duck. They disappear for a while, and then pop back up suddenly. Almost like when you pull a toy boat down in a bathtub.",
     unedited_src: "gallery/DSCN0777_orig.jpg",
-    tags: [Tag.photography, Tag.birds, Tag.nature]
+    tags: [Tag.birds, Tag.nature]
   },
   {
     src: "gallery/DSCN0778_edited.jpg",
     alt: "Female Bufflehead",
     unedited_src: "gallery/DSCN0778_orig.jpg",
-    tags: [Tag.photography, Tag.birds, Tag.nature]
+    tags: [Tag.birds, Tag.nature]
   },
   {
     src: "gallery/DSCN0782_edited.jpg",
@@ -1519,13 +1519,13 @@ export const images: ImageCardProps[] = [
     src: "gallery/DSCN0784_edited.jpg",
     alt: "Bottle on a log",
     unedited_src: "gallery/DSCN0784_orig.jpg",
-    tags: [Tag.photography, Tag.great_falls]
+    tags: [Tag.great_falls]
   },
   {
     src: "gallery/DSCN0789_edited.jpg",
     alt: "Bottle at Great Falls",
     unedited_src: "gallery/DSCN0789_orig.jpg",
-    tags: [Tag.photography, Tag.great_falls]
+    tags: [Tag.great_falls]
   },
   {
     src: "gallery/DSCN0794_edited.jpg",
