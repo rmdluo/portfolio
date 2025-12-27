@@ -1491,4 +1491,70 @@ export const images: ImageCardProps[] = [
     unedited_src: "gallery/IMG_5093_orig.jpg",
     tags: [Tag.nature]
   }
+  {
+    src: "gallery/DSCN0771_edited.jpg",
+    alt: "House finch in a tree",
+    unedited_src: "gallery/DSCN0771_orig.jpg",
+    tags: [Tag.photography, Tag.birds, Tag.nature]
+  },
+  {
+    src: "gallery/DSCN0777_edited.jpg",
+    alt: "Male Bufflehead -- my first diving duck. They disappear for a while, and then pop back up suddenly. Almost like when you pull a toy boat down in a bathtub.",
+    unedited_src: "gallery/DSCN0777_orig.jpg",
+    tags: [Tag.photography, Tag.birds, Tag.nature]
+  },
+  {
+    src: "gallery/DSCN0778_edited.jpg",
+    alt: "Female Bufflehead",
+    unedited_src: "gallery/DSCN0778_orig.jpg",
+    tags: [Tag.photography, Tag.birds, Tag.nature]
+  },
+  {
+    src: "gallery/DSCN0782_edited.jpg",
+    alt: "Sunset at Great Falls",
+    unedited_src: "gallery/DSCN0782_orig.jpg",
+    tags: [Tag.great_falls, Tag.landscape]
+  },
+  {
+    src: "gallery/DSCN0784_edited.jpg",
+    alt: "Bottle on a log",
+    unedited_src: "gallery/DSCN0784_orig.jpg",
+    tags: [Tag.photography, Tag.great_falls]
+  },
+  {
+    src: "gallery/DSCN0789_edited.jpg",
+    alt: "Bottle at Great Falls",
+    unedited_src: "gallery/DSCN0789_orig.jpg",
+    tags: [Tag.photography, Tag.great_falls]
+  },
+  {
+    src: "gallery/DSCN0794_edited.jpg",
+    alt: "Female Hooded Mergansers",
+    unedited_src: "gallery/DSCN0794_orig.jpg",
+    tags: [Tag.birds, Tag.nature]
+  },
+  {
+    src: "gallery/DSCN0797_edited.jpg",
+    alt: "Male Hooded Merganser",
+    unedited_src: "gallery/DSCN0797_orig.jpg",
+    tags: [Tag.birds, Tag.nature]
+  },
+  {
+    src: "gallery/DSCN0799_edited.jpg",
+    alt: "Group of Mergansers",
+    unedited_src: "gallery/DSCN0799_orig.jpg",
+    tags: [Tag.birds, Tag.nature]
+  },
+  {
+    src: "gallery/DSCN0802_edited.jpg",
+    alt: "Geese by a trash pile",
+    unedited_src: "gallery/DSCN0802_orig.jpg",
+    tags: [Tag.birds, Tag.nature]
+  },
+  {
+    src: "gallery/DSCN0803_edited.jpg",
+    alt: "European Starling",
+    unedited_src: "gallery/DSCN0803_orig.jpg",
+    tags: [Tag.birds, Tag.nature]
+  }
 ];

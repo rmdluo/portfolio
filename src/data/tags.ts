@@ -14,5 +14,6 @@ export enum Tag {
   sunset = "Sunset",
   sky = "Sky",
   photography = "Photography",
-  dolly_sods = "Dolly Sods"
+  dolly_sods = "Dolly Sods",
+  default = "Default",
 }
