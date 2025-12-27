@@ -1490,7 +1490,7 @@ export const images: ImageCardProps[] = [
     alt: "Cattail",
     unedited_src: "gallery/IMG_5093_orig.jpg",
     tags: [Tag.nature]
-  }
+  },
   {
     src: "gallery/DSCN0771_edited.jpg",
     alt: "House finch in a tree",
