@@ -1556,5 +1556,41 @@ export const images: ImageCardProps[] = [
     alt: "European Starling",
     unedited_src: "gallery/DSCN0803_orig.jpg",
     tags: [Tag.birds, Tag.nature]
+  },
+  {
+    src: "gallery/DSCN0728_edited.jpg",
+    alt: "The moon",
+    unedited_src: "gallery/DSCN0728_orig.jpg",
+    tags: [Tag.misc]
+  },
+  {
+    src: "gallery/DSCN0752_edited.jpg",
+    alt: "Squirrel eating nut",
+    unedited_src: "gallery/DSCN0752_orig.jpg",
+    tags: [Tag.animals]
+  },
+  {
+    src: "gallery/DSCN0757_edited.jpg",
+    alt: "Eastern Bluebird",
+    unedited_src: "gallery/DSCN0757_orig.jpg",
+    tags: [Tag.animals, Tag.birds]
+  },
+  {
+    src: "gallery/DSCN0759_edited.jpg",
+    alt: "Great Falls view",
+    unedited_src: "gallery/DSCN0759_orig.jpg",
+    tags: [Tag.landscape, Tag.great_falls]
+  },
+  {
+    src: "gallery/DSCN0766_edited.jpg",
+    alt: "Eastern Bluebird",
+    unedited_src: "gallery/DSCN0766_orig.jpg",
+    tags: [Tag.animals, Tag.birds]
+  },
+  {
+    src: "gallery/DSCN0769_edited.jpg",
+    alt: "Some facades on a building I saw with a friend -- national academy or something? Has a statue of Albert Einstein in front.",
+    unedited_src: "gallery/DSCN0769_orig.jpg",
+    tags: [Tag.urban]
   }
 ];
