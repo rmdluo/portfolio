@@ -13,8 +13,8 @@ export enum Tag {
   urban = "Urban",
   sunset = "Sunset",
   sky = "Sky",
-  photography = "Photography",
   dolly_sods = "Dolly Sods",
   misc = "Miscellaneous",
+  wisc = "Wisconsin",
   default = "Default",
 }

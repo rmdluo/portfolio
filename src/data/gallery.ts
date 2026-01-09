@@ -1592,5 +1592,71 @@ export const images: ImageCardProps[] = [
     alt: "Some facades on a building I saw with a friend -- national academy or something? Has a statue of Albert Einstein in front.",
     unedited_src: "gallery/DSCN0769_orig.jpg",
     tags: [Tag.urban]
+  },
+  {
+    "src": "gallery/IMG_4780_edited.jpg",
+    "alt": "DCA airport -- oddly nice, maybe even nicer than IAD.",
+    "unedited_src": "gallery/IMG_4780_orig.jpg",
+    "tags": [Tag.wisc, Tag.urban]
+  },
+  {
+    "src": "gallery/IMG_4788_edited.jpg",
+    "alt": "Bug",
+    "unedited_src": "gallery/IMG_4788_orig.jpg",
+    "tags": [Tag.wisc, Tag.nature]
+  },
+  {
+    "src": "gallery/IMG_4789_edited.jpg",
+    "alt": "Instructions for how to cook mushrooms. Was at a farmer's market with my friend, we bought some to go with some stir fry.",
+    "unedited_src": "gallery/IMG_4789_orig.jpg",
+    "tags": [Tag.wisc]
+  },
+  {
+    "src": "gallery/IMG_4791_edited.jpg",
+    "alt": "Cheesecake from the farmer's market. I don't remember what flavor it was, but I remember it was pretty good.",
+    "unedited_src": "gallery/IMG_4791_orig.jpg",
+    "tags": [Tag.wisc]
+  },
+  {
+    "src": "gallery/IMG_4793_edited.jpg",
+    "alt": "Railroad crossing. My friend and I took some funny pictures here.",
+    "unedited_src": "gallery/IMG_4793_orig.jpg",
+    "tags": [Tag.wisc]
+  },
+  {
+    "src": "gallery/IMG_4808_edited.jpg",
+    "alt": "Flower peeking out.",
+    "unedited_src": "gallery/IMG_4808_orig.jpg",
+    "tags": [Tag.wisc, Tag.nature]
+  },
+  {
+    "src": "gallery/IMG_4816_edited.jpg",
+    "alt": "Big red flower.",
+    "unedited_src": "gallery/IMG_4816_orig.jpg",
+    "tags": [Tag.wisc, Tag.nature]
+  },
+  {
+    "src": "gallery/IMG_4827_edited.jpg",
+    "alt": "Big lake!",
+    "unedited_src": "gallery/IMG_4827_orig.jpg",
+    "tags": [Tag.wisc, Tag.landscape, Tag.nature]
+  },
+  {
+    "src": "gallery/IMG_4884_edited.jpg",
+    "alt": "Picture of a path at sunset, framed using binoculars.",
+    "unedited_src": "gallery/IMG_4884_orig.jpg",
+    "tags": [Tag.wisc, Tag.landscape]
+  },
+  {
+    "src": "gallery/IMG_4889_edited.jpg",
+    "alt": "Pasta we (mostly I >:)) cooked",
+    "unedited_src": "gallery/IMG_4889_orig.jpg",
+    "tags": [Tag.wisc]
+  },
+  {
+    "src": "gallery/IMG_4896_edited.jpg",
+    "alt": "Lonely fluff ball at the airport...",
+    "unedited_src": "gallery/IMG_4896_orig.jpg",
+    "tags": [Tag.wisc]
   }
 ];
