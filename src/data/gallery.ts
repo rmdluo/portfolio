@@ -1660,75 +1660,147 @@ export const images: ImageCardProps[] = [
     "tags": [Tag.wisc]
   },
   {
-      "src": "gallery/DSCN0805_edited.jpg",
-      "alt": "Belted Kingfisher. Their call is quite distinctive, making a lot of rapid low-pitched clicking sounds.",
-      "unedited_src": "gallery/DSCN0805_orig.jpg",
-      "tags": [Tag.birds, Tag.animals]
+    "src": "gallery/DSCN0805_edited.jpg",
+    "alt": "Belted Kingfisher. Their call is quite distinctive, making a lot of rapid low-pitched clicking sounds.",
+    "unedited_src": "gallery/DSCN0805_orig.jpg",
+    "tags": [Tag.birds, Tag.animals]
   },
   {
-      "src": "gallery/DSCN0806_edited.jpg",
-      "alt": "American Coot.",
-      "unedited_src": "gallery/DSCN0806_orig.jpg",
-      "tags": [Tag.birds, Tag.animals]
+    "src": "gallery/DSCN0806_edited.jpg",
+    "alt": "American Coot.",
+    "unedited_src": "gallery/DSCN0806_orig.jpg",
+    "tags": [Tag.birds, Tag.animals]
   },
   {
-      "src": "gallery/DSCN0820_edited.jpg",
-      "alt": "Bald Eagle.",
-      "unedited_src": "gallery/DSCN0820_orig.jpg",
-      "tags": [Tag.birds, Tag.animals]
+    "src": "gallery/DSCN0820_edited.jpg",
+    "alt": "Bald Eagle.",
+    "unedited_src": "gallery/DSCN0820_orig.jpg",
+    "tags": [Tag.birds, Tag.animals]
   },
   {
-      "src": "gallery/DSCN0830_edited.jpg",
-      "alt": "Yellow-bellied Sapsucker. Main way of IDing it for me right now is contrastive -- it doesn't look like a downy, hairy, red-bellied, or pilated.",
-      "unedited_src": "gallery/DSCN0830_orig.jpg",
-      "tags": [Tag.birds, Tag.animals]
+    "src": "gallery/DSCN0830_edited.jpg",
+    "alt": "Yellow-bellied Sapsucker. Main way of IDing it for me right now is contrastive -- it doesn't look like a downy, hairy, red-bellied, or pilated.",
+    "unedited_src": "gallery/DSCN0830_orig.jpg",
+    "tags": [Tag.birds, Tag.animals]
   },
   {
-      "src": "gallery/DSCN0852_edited.jpg",
-      "alt": "Black Vultures",
-      "unedited_src": "gallery/DSCN0852_orig.jpg",
-      "tags": [Tag.birds, Tag.animals]
+    "src": "gallery/DSCN0852_edited.jpg",
+    "alt": "Black Vultures",
+    "unedited_src": "gallery/DSCN0852_orig.jpg",
+    "tags": [Tag.birds, Tag.animals]
   },
   {
-      "src": "gallery/DSCN0864_edited.jpg",
-      "alt": "Yellow-rumped Warbler (my first warbler)",
-      "unedited_src": "gallery/DSCN0864_orig.jpg",
-      "tags": [Tag.birds, Tag.animals]
+    "src": "gallery/DSCN0864_edited.jpg",
+    "alt": "Yellow-rumped Warbler (my first warbler)",
+    "unedited_src": "gallery/DSCN0864_orig.jpg",
+    "tags": [Tag.birds, Tag.animals]
   },
   {
-      "src": "gallery/DSCN0870_edited.jpg",
-      "alt": "A nuclear power plant off the coast of Delaware. You can see it for miles.",
-      "unedited_src": "gallery/DSCN0870_orig.jpg",
-      "tags": [Tag.urban]
+    "src": "gallery/DSCN0870_edited.jpg",
+    "alt": "A nuclear power plant off the coast of Delaware. You can see it for miles.",
+    "unedited_src": "gallery/DSCN0870_orig.jpg",
+    "tags": [Tag.urban]
   },
   {
-      "src": "gallery/DSCN0872_edited.jpg",
-      "alt": "Ring-billed Gull.",
-      "unedited_src": "gallery/DSCN0872_orig.jpg",
-      "tags": [Tag.birds, Tag.animals]
+    "src": "gallery/DSCN0872_edited.jpg",
+    "alt": "Ring-billed Gull.",
+    "unedited_src": "gallery/DSCN0872_orig.jpg",
+    "tags": [Tag.birds, Tag.animals]
   },
   {
-      "src": "gallery/DSCN0875_edited.jpg",
-      "alt": "Ring-billed gulls in a line.",
-      "unedited_src": "gallery/DSCN0875_orig.jpg",
-      "tags": [Tag.birds, Tag.animals]
+    "src": "gallery/DSCN0875_edited.jpg",
+    "alt": "Ring-billed gulls in a line.",
+    "unedited_src": "gallery/DSCN0875_orig.jpg",
+    "tags": [Tag.birds, Tag.animals]
   },
   {
-      "src": "gallery/DSCN0881_edited.jpg",
-      "alt": "Sunset.",
-      "unedited_src": "gallery/DSCN0881_orig.jpg",
-      "tags": [Tag.sunset, Tag.sky]
+    "src": "gallery/DSCN0881_edited.jpg",
+    "alt": "Sunset.",
+    "unedited_src": "gallery/DSCN0881_orig.jpg",
+    "tags": [Tag.sunset, Tag.sky]
   },
   {
-      "src": "gallery/DSCN0882_edited.jpg",
-      "alt": "Sunset through some grass.",
-      "unedited_src": "gallery/DSCN0882_orig.jpg",
-      "tags": [Tag.sunset, Tag.landscape, Tag.nature]
+    "src": "gallery/DSCN0882_edited.jpg",
+    "alt": "Sunset through some grass.",
+    "unedited_src": "gallery/DSCN0882_orig.jpg",
+    "tags": [Tag.sunset, Tag.landscape, Tag.nature]
   },
   {
-      "src": "gallery/DSCN0890_edited.jpg",
-      "alt": "Icy brr",
-      "unedited_src": "gallery/DSCN0890_orig.jpg",
-      "tags": [Tag.nature, Tag.misc]
+    "src": "gallery/DSCN0890_edited.jpg",
+    "alt": "Icy brr",
+    "unedited_src": "gallery/DSCN0890_orig.jpg",
+    "tags": [Tag.nature, Tag.misc]
+  },
+  {
+    "src": "gallery/DSCN0893_edited.jpg",
+    "alt": "Flock of Northern Shovelers",
+    "unedited_src": "gallery/DSCN0893_orig.jpg",
+    "tags": [Tag.birds, Tag.animals, Tag.nature]
+  },
+  {
+    "src": "gallery/DSCN0897_edited.jpg",
+    "alt": "Couple of Mute Swans (id based on the color of the bills)",
+    "unedited_src": "gallery/DSCN0897_orig.jpg",
+    "tags": [Tag.birds, Tag.animals, Tag.nature]
+  },
+  {
+    "src": "gallery/DSCN0904_edited.jpg",
+    "alt": "",
+    "unedited_src": "gallery/DSCN0904_orig.jpg",
+    "tags": [Tag.default]
+  },
+  {
+    "src": "gallery/DSCN0908_edited.jpg",
+    "alt": "Observation deck",
+    "unedited_src": "gallery/DSCN0908_orig.jpg",
+    "tags": [Tag.landscape, Tag.nature]
+  },
+  {
+    "src": "gallery/DSCN0913_edited.jpg",
+    "alt": "Tundra swans. ID is based on the bill being black, and the connection to the base being more of a u rather than a v (which would indicate trumpeter).",
+    "unedited_src": "gallery/DSCN0913_orig.jpg",
+    "tags": [Tag.birds, Tag.animals, Tag.nature]
+  },
+  {
+    "src": "gallery/DSCN0915_edited.jpg",
+    "alt": "Northern Pintails",
+    "unedited_src": "gallery/DSCN0915_orig.jpg",
+    "tags": [Tag.birds, Tag.animals, Tag.nature]
+  },
+  {
+    "src": "gallery/DSCN0917_edited.jpg",
+    "alt": "Snow Goose -- looks kinda interesting, doesn't it?",
+    "unedited_src": "gallery/DSCN0917_orig.jpg",
+    "tags": [Tag.birds, Tag.animals, Tag.nature]
+  },
+  {
+    "src": "gallery/DSCN0920_edited.jpg",
+    "alt": "Northern Pintails -- what are they looking for?",
+    "unedited_src": "gallery/DSCN0920_orig.jpg",
+    "tags": [Tag.birds, Tag.animals, Tag.nature]
+  },
+  {
+    "src": "gallery/DSCN0925_edited.jpg",
+    "alt": "White-throated sparrow",
+    "unedited_src": "gallery/DSCN0925_orig.jpg",
+    "tags": [Tag.birds, Tag.animals, Tag.nature]
+  },
+  {
+    "src": "gallery/DSCN0928_edited.jpg",
+    "alt": "Little observation deck",
+    "unedited_src": "gallery/DSCN0928_orig.jpg",
+    "tags": [Tag.landscape, Tag.nature]
+  },
+  {
+    "src": "gallery/DSCN0943_edited.jpg",
+    "alt": "Juvenile Bald Eagle",
+    "unedited_src": "gallery/DSCN0943_orig.jpg",
+    "tags": [Tag.birds, Tag.animals, Tag.nature]
+  },
+  {
+    "src": "gallery/DSCN0964_edited.jpg",
+    "alt": "Greater Yellowlegs",
+    "unedited_src": "gallery/DSCN0964_orig.jpg",
+    "tags": [Tag.birds, Tag.animals, Tag.nature]
   }
 ];
