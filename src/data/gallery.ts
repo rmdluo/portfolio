@@ -1807,60 +1807,60 @@ export const images: ImageCardProps[] = [
     "src": "gallery/DSCN0980_edited.jpg",
     "alt": "Winter wren",
     "unedited_src": "gallery/DSCN0980_orig.jpg",
-    "tags": []
-  },
-  {
+    "tags": [Tag.birds, Tag.nature]
+},
+{
     "src": "gallery/DSCN0987_edited.jpg",
     "alt": "Carolina wren",
     "unedited_src": "gallery/DSCN0987_orig.jpg",
-    "tags": []
-  },
-  {
+    "tags": [Tag.birds, Tag.nature]
+},
+{
     "src": "gallery/DSCN0989_edited.jpg",
     "alt": "Herring gull",
     "unedited_src": "gallery/DSCN0989_orig.jpg",
-    "tags": []
-  },
-  {
+    "tags": [Tag.birds, Tag.animals, Tag.nature]
+},
+{
     "src": "gallery/DSCN1007_edited.jpg",
     "alt": "Pair of Greater Yellowlegs",
     "unedited_src": "gallery/DSCN1007_orig.jpg",
-    "tags": []
-  },
-  {
+    "tags": [Tag.birds, Tag.nature]
+},
+{
     "src": "gallery/DSCN1008_edited.jpg",
     "alt": "Greater Yellowlegs again",
     "unedited_src": "gallery/DSCN1008_orig.jpg",
-    "tags": []
-  },
-  {
+    "tags": [Tag.birds, Tag.nature]
+},
+{
     "src": "gallery/DSCN1023_edited.jpg",
     "alt": "Semipalmated Plover",
     "unedited_src": "gallery/DSCN1023_orig.jpg",
-    "tags": []
-  },
-  {
+    "tags": [Tag.birds, Tag.nature]
+},
+{
     "src": "gallery/DSCN1024_edited.jpg",
     "alt": "Pair of Semipalmated Plovers",
     "unedited_src": "gallery/DSCN1024_orig.jpg",
-    "tags": []
-  },
-  {
+    "tags": [Tag.birds, Tag.nature]
+},
+{
     "src": "gallery/DSCN1031_edited.jpg",
     "alt": "Black Vulture",
     "unedited_src": "gallery/DSCN1031_orig.jpg",
-    "tags": []
-  },
-  {
+    "tags": [Tag.birds, Tag.animals, Tag.nature]
+},
+{
     "src": "gallery/DSCN1038_edited.jpg",
     "alt": "Cedar Waxwing",
     "unedited_src": "gallery/DSCN1038_orig.jpg",
-    "tags": []
-  },
-  {
+    "tags": [Tag.birds, Tag.nature]
+},
+{
     "src": "gallery/DSCN1041_edited.jpg",
     "alt": "Lighthouse",
     "unedited_src": "gallery/DSCN1041_orig.jpg",
-    "tags": []
-  }
+    "tags": [Tag.landscape]
+}
 ];
