@@ -1862,5 +1862,23 @@ export const images: ImageCardProps[] = [
     "alt": "Lighthouse",
     "unedited_src": "gallery/DSCN1041_orig.jpg",
     "tags": [Tag.landscape]
+  },
+  {
+    "src": "gallery/DSCN1044_edited.jpg",
+    "alt": "Goldfinch",
+    "unedited_src": "gallery/DSCN1044_orig.jpg",
+    "tags": [Tag.animals, Tag.birds]
+  },
+  {
+    "src": "gallery/DSCN1095_edited.jpg",
+    "alt": "Bird feeder",
+    "unedited_src": "gallery/DSCN1095_orig.jpg",
+    "tags": [Tag.animals]
+  },
+  {
+    "src": "gallery/IMG_6052_edited.jpg",
+    "alt": "Cat on chair",
+    "unedited_src": "gallery/IMG_6052_orig.jpg",
+    "tags": [Tag.cat]
   }
 ];
