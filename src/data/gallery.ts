@@ -1880,5 +1880,29 @@ export const images: ImageCardProps[] = [
     "alt": "Cat on chair",
     "unedited_src": "gallery/IMG_6052_orig.jpg",
     "tags": [Tag.cat]
-  }
+  },
+  {
+    "src": "gallery/DSCN1113_edited.jpg",
+    "alt": "Lime bike, stuck on a frozen lake/pond",
+    "unedited_src": "gallery/DSCN1113_orig.jpg",
+    "tags": [Tag.urban]
+  },
+  {
+    "src": "gallery/DSCN1098_edited.jpg",
+    "alt": "European Starling in the snow",
+    "unedited_src": "gallery/DSCN1098_orig.jpg",
+    "tags": [Tag.nature, Tag.birds]
+  },
+  {
+    "src": "gallery/DSCN1106_edited.jpg",
+    "alt": "Pigeon",
+    "unedited_src": "gallery/DSCN1106_orig.jpg",
+    "tags": [Tag.nature, Tag.birds]
+  },
+  {
+    "src": "gallery/DSCN1109_edited.jpg",
+    "alt": "House Sparrow landing",
+    "unedited_src": "gallery/DSCN1109_orig.jpg",
+    "tags": [Tag.nature, Tag.birds]
+  },
 ];
