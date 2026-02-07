@@ -1,0 +1,82 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import GalleryComponent from '../../components/Gallery.astro';
+import { imagesReversed as images } from '../../data/gallery';
+
+export function getStaticPaths() {
+  const PER_PAGE = 24;
+
+  const pageCount = Math.ceil(images.length / PER_PAGE);
+
+  return Array.from({ length: pageCount }).map((_, i) => {
+    const page = i + 1;
+    const start = i * PER_PAGE;
+    const end = start + PER_PAGE;
+
+    return {
+      params: { page: page.toString() },
+      props: {
+        page,
+        pageCount,
+        pageImages: images.slice(start, end),
+      },
+    };
+  });
+}
+
+const { page, pageCount, pageImages } = Astro.props;
+
+const tag = Astro.url.searchParams.get('tag');
+
+const filteredImages = tag
+  ? pageImages.filter(img => img.tags?.includes(tag))
+  : pageImages;
+---
+
+<BaseLayout title="Photo Gallery">
+  <div class="container mx-auto my-5">
+    <GalleryComponent images={filteredImages} />
+
+    <!-- Pagination -->
+    <nav class="pagination">
+      {page > 1 && (
+        <a href={`/gallery/${page - 1}${tag ? `?tag=${tag}` : ''}`}>
+          ← Prev
+        </a>
+      )}
+
+      <span>
+        Page {page} of {pageCount}
+        {tag && ` • filtered by "${tag}"`}
+      </span>
+
+      {page < pageCount && (
+        <a href={`/gallery/${page + 1}${tag ? `?tag=${tag}` : ''}`}>
+          Next →
+        </a>
+      )}
+    </nav>
+  </div>
+</BaseLayout>
+
+<style>
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+    font-weight: 500;
+  }
+
+  .pagination a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+  }
+
+  .pagination a:hover {
+    background: #f3f4f6;
+  }
+</style>
