@@ -46,17 +46,6 @@ const allTags = getAllTags();
       <h1 class="text-4xl font-bold text-center my-4 py-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
         Photo Gallery
       </h1>
-
-      <button
-        class="filter-toggle mb-4 py-4"
-        id="filter-toggle"
-        aria-expanded="false"
-      >
-        <span class="toggle-text">Show Filters</span>
-        <svg class="toggle-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-          <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
     </div>
 
     <!-- Filter Panel -->
@@ -102,54 +91,13 @@ const allTags = getAllTags();
     padding: 0 1rem;
   }
 
-  .filter-toggle {
-    position: absolute;
-    right: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
-    background-color: #f3f4f6;
-    border: 2px solid #e5e7eb;
-    border-radius: 0.5rem;
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: #374151;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    min-width: 120px;
-  }
-
-  .filter-toggle:hover {
-    background-color: #e5e7eb;
-  }
-
-  .toggle-icon {
-    transition: transform 0.2s ease;
-  }
-
-  .filter-toggle[aria-expanded="false"] .toggle-icon {
-    transform: rotate(-90deg);
-  }
-
   .filter-content {
     overflow: hidden;
     transition: max-height 0.3s ease, opacity 0.3s ease, margin-bottom 0.3s ease;
-    max-height: 0;
-    opacity: 0;
-    margin-bottom: 0;
     text-align: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
-  }
-
-  .filter-content.expanded {
-    max-height: 200px;
-    opacity: 1;
-    margin-bottom: 1rem;
   }
 
   .filter-container {
@@ -226,15 +174,8 @@ const allTags = getAllTags();
       text-align: center;
     }
 
-    .filter-toggle {
-      position: static;
-      transform: none;
-      margin: 1rem auto 0;
-    }
-
     .filter-container {
       flex-direction: column;
-      align-items: stretch;
       gap: 0.5rem;
     }
 
@@ -251,29 +192,26 @@ const allTags = getAllTags();
 
   const wrappers = [...document.querySelectorAll('.image-wrapper')];
 
-  // Toggle filter panel
-  toggle?.addEventListener('click', () => {
-    const expanded = toggle.getAttribute('aria-expanded') === 'true';
-    toggle.setAttribute('aria-expanded', String(!expanded));
-    content?.classList.toggle('expanded', !expanded);
-
-    const text = toggle.querySelector('.toggle-text');
-    if (text) text.textContent = expanded ? 'Show Filters' : 'Hide Filters';
-  });
-
   // Update URL when tag changes
-  select?.addEventListener('change', (e) => {
-    const value = e.target.value;
-    const url = new URL(window.location.href);
+  select?.addEventListener('change', async (e) => {
+    const url = e.target.value; // e.g. "/gallery/tag/nature/1"
+  
+    // Fetch the new page HTML
+    const res = await fetch(url);
+    const text = await res.text();
+    
+    // Parse and extract the gallery part
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(text, 'text/html');
+    const newGallery = doc.querySelector('.gallery-container');
+    const newPagination = doc.querySelector('.pagination');
+    
+    // Replace gallery and pagination
+    galleryContainer.innerHTML = newGallery.innerHTML;
+    document.querySelector('.pagination').innerHTML = newPagination.innerHTML;
 
-    if (value) {
-      url.searchParams.set('tag', value);
-    } else {
-      url.searchParams.delete('tag');
-    }
-
+    // Update browser URL without reload
     history.pushState({}, '', url);
-    applyTagFilter();
   });
 
   // Handle back / forward
