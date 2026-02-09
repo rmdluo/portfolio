@@ -5,7 +5,6 @@ import { imagesReversed as images } from '../../data/gallery';
 
 export function getStaticPaths() {
   const PER_PAGE = 24;
-
   const pageCount = Math.ceil(images.length / PER_PAGE);
 
   return Array.from({ length: pageCount }).map((_, i) => {
@@ -26,44 +25,187 @@ export function getStaticPaths() {
 
 const { page, pageCount, pageImages } = Astro.props;
 
-const tag = Astro.url.searchParams.get('tag');
-
-const filteredImages = tag
-  ? pageImages.filter(img => img.tags?.includes(tag))
-  : pageImages;
+// Collect all unique tags (global list)
+const allTags = [
+  ...new Set(images.flatMap(img => img.tags ?? []))
+].sort();
 ---
 
 <BaseLayout title="Photo Gallery">
   <div class="container mx-auto my-5">
-    <GalleryComponent images={filteredImages} />
+
+    <!-- Header -->
+    <div class="header-section">
+      <h1 class="text-4xl font-bold text-center my-4 py-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+        Photo Gallery
+      </h1>
+
+      <button
+        class="filter-toggle mb-4 py-4"
+        id="filter-toggle"
+        aria-expanded="false"
+      >
+        <span class="toggle-text">Show Filters</span>
+        <svg class="toggle-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Filter Panel -->
+    <div class="filter-content" id="filter-content">
+      <div class="filter-container">
+        <label for="tag-filter" class="filter-label">Filter by tag:</label>
+        <select id="tag-filter" class="tag-select">
+          <option value="">All images</option>
+          {allTags.map((tag) => (
+            <option value={tag}>{tag}</option>
+          ))}
+        </select>
+      </div>
+      <div class="note-section">
+        <p class="note-text">Click on any image to view it in full size</p>
+      </div>
+    </div>
+
+    <!-- Gallery -->
+    <GalleryComponent images={pageImages} />
 
     <!-- Pagination -->
     <nav class="pagination">
       {page > 1 && (
-        <a href={`/gallery/${page - 1}${tag ? `?tag=${tag}` : ''}`}>
+        <a href={`/gallery/${page - 1}${Astro.url.search}`}>
           ← Prev
         </a>
       )}
 
       <span>
         Page {page} of {pageCount}
-        {tag && ` • filtered by "${tag}"`}
       </span>
 
       {page < pageCount && (
-        <a href={`/gallery/${page + 1}${tag ? `?tag=${tag}` : ''}`}>
+        <a href={`/gallery/${page + 1}${Astro.url.search}`}>
           Next →
         </a>
       )}
     </nav>
+
   </div>
 </BaseLayout>
 
 <style>
+  /* ---------- Original filter styles ---------- */
+
+  .header-section {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .filter-toggle {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #f3f4f6;
+    border: 2px solid #e5e7eb;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 120px;
+  }
+
+  .filter-toggle:hover {
+    background-color: #e5e7eb;
+  }
+
+  .toggle-icon {
+    transition: transform 0.2s ease;
+  }
+
+  .filter-toggle[aria-expanded="false"] .toggle-icon {
+    transform: rotate(-90deg);
+  }
+
+  .filter-content {
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease, margin-bottom 0.3s ease;
+    max-height: 0;
+    opacity: 0;
+    margin-bottom: 0;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .filter-content.expanded {
+    max-height: 200px;
+    opacity: 1;
+    margin-bottom: 1rem;
+  }
+
+  .filter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .filter-label {
+    font-weight: 600;
+    color: #374151;
+    white-space: nowrap;
+    line-height: 1.5;
+    padding: 0.25rem 0;
+  }
+
+  .tag-select {
+    padding: 0.5rem 1rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 0.5rem;
+    background-color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+    min-width: 200px;
+  }
+
+  .tag-select:hover {
+    border-color: #d1d5db;
+  }
+
+  .tag-select:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  }
+
+  .note-section {
+    margin-top: 0.5rem;
+  }
+
+  .note-text {
+    color: #6b7280;
+    font-size: 0.875rem;
+    margin: 0;
+    font-style: italic;
+  }
+
+  /* ---------- Pagination ---------- */
+
   .pagination {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 1.5rem;
     margin: 2rem 0;
     font-weight: 500;
@@ -79,4 +221,88 @@ const filteredImages = tag
   .pagination a:hover {
     background: #f3f4f6;
   }
+
+  @media (max-width: 768px) {
+    .header-section {
+      text-align: center;
+    }
+
+    .filter-toggle {
+      position: static;
+      transform: none;
+      margin: 1rem auto 0;
+    }
+
+    .filter-container {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0.5rem;
+    }
+
+    .tag-select {
+      min-width: auto;
+    }
+  }
 </style>
+
+<script>
+  const toggle = document.getElementById('filter-toggle');
+  const content = document.getElementById('filter-content');
+  const select = document.getElementById('tag-filter');
+
+  const wrappers = [...document.querySelectorAll('.image-wrapper')];
+
+  function normalizeTag(tag) {
+    return `tag-${tag.replace(/\s+/g, '-')}`;
+  }
+
+  function applyTagFilter() {
+    const params = new URLSearchParams(window.location.search);
+    const tag = params.get('tag');
+
+    wrappers.forEach(wrapper => {
+      if (!tag) {
+        wrapper.style.display = '';
+        return;
+      }
+
+      const className = normalizeTag(tag);
+      wrapper.style.display = wrapper.classList.contains(className)
+        ? ''
+        : 'none';
+    });
+
+    if (select) select.value = tag ?? '';
+  }
+
+  // Toggle filter panel
+  toggle?.addEventListener('click', () => {
+    const expanded = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!expanded));
+    content?.classList.toggle('expanded', !expanded);
+
+    const text = toggle.querySelector('.toggle-text');
+    if (text) text.textContent = expanded ? 'Show Filters' : 'Hide Filters';
+  });
+
+  // Update URL when tag changes
+  select?.addEventListener('change', (e) => {
+    const value = e.target.value;
+    const url = new URL(window.location.href);
+
+    if (value) {
+      url.searchParams.set('tag', value);
+    } else {
+      url.searchParams.delete('tag');
+    }
+
+    history.pushState({}, '', url);
+    applyTagFilter();
+  });
+
+  // Handle back / forward
+  window.addEventListener('popstate', applyTagFilter);
+
+  // Initial run
+  applyTagFilter();
+</script>

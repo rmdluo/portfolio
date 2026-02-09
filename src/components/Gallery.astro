@@ -6,7 +6,7 @@ const { images } = Astro.props;
 ---
 
 <div class="gallery-container">
-  <div class="gallery" id="gallery">
+  <div class="gallery" id="gallery" data-gallery>
     {images.map((image: ImageCardProps) => (
       <div
         class={`image-wrapper ${(image.tags || [])
