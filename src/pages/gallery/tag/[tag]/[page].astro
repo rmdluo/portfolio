@@ -1,28 +1,40 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import GalleryComponent from '../../components/Gallery.astro';
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import GalleryComponent from '../../../../components/Gallery.astro';
 import {
   paginateImages,
   getImagesByTag,
   getAllTags,
-} from '../../lib/galleryPagination';
+} from '../../../../lib/galleryPagination';
 
 export function getStaticPaths() {
-  const images = getImagesByTag();
-  const pages = paginateImages(images);
+  const tags = getAllTags();
+  const paths = [];
 
-  return pages.map(({ page, pageCount, pageImages }) => ({
-    params: { page: page.toString() },
-    props: {
-      page,
-      pageCount,
-      pageImages,
-      tag: null,
-    },
-  }));
+  for (const tag of tags) {
+    const images = getImagesByTag(tag);
+    const pages = paginateImages(images);
+
+    pages.forEach(({ page, pageCount, pageImages }) => {
+      paths.push({
+        params: {
+          tag,
+          page: page.toString(),
+        },
+        props: {
+          tag,
+          page,
+          pageCount,
+          pageImages,
+        },
+      });
+    });
+  }
+
+  return paths;
 }
 
-const { page, pageCount, pageImages } = Astro.props;
+const { tag, page, pageCount, pageImages } = Astro.props;
 const allTags = getAllTags();
 ---
 
@@ -51,10 +63,14 @@ const allTags = getAllTags();
     <div class="filter-content" id="filter-content">
       <div class="filter-container">
         <label for="tag-filter" class="filter-label">Filter by tag:</label>
-        <select id="tag-filter" class="tag-select" onchange="location.href = this.value">>
-          <option value="/gallery/1">All images</option>
-          {allTags.map((tag) => (
-            <option value={`/gallery/tag/${tag}/1`}>{tag}</option>
+        <select
+            id="tag-filter"
+            class="tag-select"
+            onchange="location.href = this.value"
+        >
+          <option value="/gallery/1" selected={tag === null}>All images</option>
+          {allTags.map((tag_item) => (
+            <option value={`/gallery/tag/${tag_item}/1`} selected={tag_item === tag}>{tag_item}</option>
           ))}
         </select>
       </div>
@@ -68,9 +84,9 @@ const allTags = getAllTags();
 
     <!-- Pagination -->
     <nav class="pagination">
-      {page > 1 && <a href={`/gallery/${page - 1}`}>← Prev</a>}
+      {page > 1 && <a href={`/gallery/tag/${tag}/${page - 1}`}>← Prev</a>}
       <span>Page {page} of {pageCount}</span>
-      {page < pageCount && <a href={`/gallery/${page + 1}`}>Next →</a>}
+      {page < pageCount && <a href={`/gallery/tag/${tag}/${page + 1}`}>Next →</a>}
     </nav>
 
   </div>
