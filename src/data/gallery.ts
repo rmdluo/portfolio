@@ -1905,6 +1905,66 @@ export const images: ImageCardProps[] = [
     "unedited_src": "gallery/DSCN1113_orig.jpg",
     "tags": [Tag.nature, Tag.birds]
   },
+  {
+    "src": "gallery/DSCN1146_edited.jpg",
+    "alt": "Canadian goose",
+    "unedited_src": "gallery/DSCN1146_orig.jpg",
+    "tags": [Tag.animals, Tag.birds]
+  },
+  {
+    "src": "gallery/DSCN1148_edited.jpg",
+    "alt": "Sunset at Brookside Gardens",
+    "unedited_src": "gallery/DSCN1148_orig.jpg",
+    "tags": [Tag.sunset, Tag.landscape]
+  },
+  {
+    "src": "gallery/DSCN1158_edited.jpg",
+    "alt": "Please stay on walk",
+    "unedited_src": "gallery/DSCN1158_orig.jpg",
+    "tags": [Tag.urban]
+  },
+  {
+    "src": "gallery/DSCN1180_edited.jpg",
+    "alt": "Birds in the snow",
+    "unedited_src": "gallery/DSCN1180_orig.jpg",
+    "tags": [Tag.birds, Tag.animals]
+  },
+  {
+    "src": "gallery/DSCN1188_edited.jpg",
+    "alt": "Overlooking Harper's Ferry",
+    "unedited_src": "gallery/DSCN1188_orig.jpg",
+    "tags": [Tag.urban, Tag.landscape]
+  },
+  {
+    "src": "gallery/DSCN1197_edited.jpg",
+    "alt": "Eastern Bluebird",
+    "unedited_src": "gallery/DSCN1197_orig.jpg",
+    "tags": [Tag.animals, Tag.birds]
+  },
+  {
+    "src": "gallery/DSCN1207_edited.jpg",
+    "alt": "Sharp-shinned Hawk",
+    "unedited_src": "gallery/DSCN1207_orig.jpg",
+    "tags": [Tag.animals, Tag.birds]
+  },
+  {
+    "src": "gallery/DSCN1214_edited.jpg",
+    "alt": "Some kind of fluffy ball",
+    "unedited_src": "gallery/DSCN1214_orig.jpg",
+    "tags": [Tag.nature]
+  },
+  {
+    "src": "gallery/DSCN1215_edited.jpg",
+    "alt": "Goose standing at attention",
+    "unedited_src": "gallery/DSCN1215_orig.jpg",
+    "tags": [Tag.animals, Tag.birds]
+  },
+    {
+    "src": "gallery/DSCN1219_edited.jpg",
+    "alt": "Yellow-bellied Sapsucker climbing a tree",
+    "unedited_src": "gallery/DSCN1219_orig.jpg",
+    "tags": [Tag.animals, Tag.birds]
+  }
 ];
 
 export const imagesReversed: ImageCardProps[] = [...images].reverse()
