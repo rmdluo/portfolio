@@ -1964,6 +1964,24 @@ export const images: ImageCardProps[] = [
     "alt": "Yellow-bellied Sapsucker climbing a tree",
     "unedited_src": "gallery/DSCN1219_orig.jpg",
     "tags": [Tag.animals, Tag.birds]
+  },
+  {
+    "src": "gallery/DSCN1242_edited.jpg",
+    "alt": "Wasp on a book",
+    "unedited_src": "gallery/DSCN1242_orig.jpg",
+    "tags": [Tag.nature]
+  },
+  {
+    "src": "gallery/DSCN1477_edited.jpg",
+    "alt": "Carolina Wren on a fence",
+    "unedited_src": "gallery/DSCN1477_orig.jpg",
+    "tags": [Tag.birds, Tag.nature]
+  },
+  {
+    "src": "gallery/DSCN1497_edited.jpg",
+    "alt": "Grackle in a cherry blossom tree",
+    "unedited_src": "gallery/DSCN1497_orig.jpg",
+    "tags": [Tag.birds, Tag.flowers, Tag.nature]
   }
 ];
 
