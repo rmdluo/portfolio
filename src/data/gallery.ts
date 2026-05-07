@@ -1982,6 +1982,36 @@ export const images: ImageCardProps[] = [
     "alt": "Grackle in a cherry blossom tree",
     "unedited_src": "gallery/DSCN1497_orig.jpg",
     "tags": [Tag.birds, Tag.flowers, Tag.nature]
+  },
+  {
+    src: "gallery/DSCN1224_edited.jpg",
+    alt: "Cat",
+    unedited_src: "gallery/DSCN1224_orig.jpg",
+    tags: [Tag.cat, Tag.animals]
+  },
+  {
+    src: "gallery/DSCN1258_edited.jpg",
+    alt: "Geese",
+    unedited_src: "gallery/DSCN1258_orig.jpg",
+    tags: [Tag.birds, Tag.animals]
+  },
+  {
+    src: "gallery/DSCN1281_edited.jpg",
+    alt: "Eastern Towhee",
+    unedited_src: "gallery/DSCN1281_orig.jpg",
+    tags: [Tag.birds, Tag.animals]
+  },
+  {
+    src: "gallery/DSCN1355_edited.jpg",
+    alt: "House Sparrow",
+    unedited_src: "gallery/DSCN1355_orig.jpg",
+    tags: [Tag.birds, Tag.animals]
+  },
+  {
+    src: "gallery/DSCN1617_edited.jpg",
+    alt: "Carolina Wren",
+    unedited_src: "gallery/DSCN1617_orig.jpg",
+    tags: [Tag.birds, Tag.animals]
   }
 ];
 
