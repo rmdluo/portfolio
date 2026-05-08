@@ -16,5 +16,6 @@ export enum Tag {
   dolly_sods = "Dolly Sods",
   misc = "Miscellaneous",
   wisc = "Wisconsin",
+  cherry_blossoms = "Cherry Blossoms",
   default = "Default",
 }

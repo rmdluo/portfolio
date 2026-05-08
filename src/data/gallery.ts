@@ -2012,6 +2012,72 @@ export const images: ImageCardProps[] = [
     alt: "Carolina Wren",
     unedited_src: "gallery/DSCN1617_orig.jpg",
     tags: [Tag.birds, Tag.animals]
+  },
+  {
+    "src": "gallery/DSCN1508_edited.jpg",
+    "alt": "Sunrise over the Tidal Basin",
+    "unedited_src": "gallery/DSCN1508_orig.jpg",
+    "tags": [Tag.sunset, Tag.sky]
+  },
+  {
+    "src": "gallery/DSCN1537_edited.jpg",
+    "alt": "Cherry blossoms",
+    "unedited_src": "gallery/DSCN1537_orig.jpg",
+    "tags": [Tag.cherry_blossoms, Tag.flowers]
+  },
+  {
+    "src": "gallery/DSCN1549_edited.jpg",
+    "alt": "Cherry blossoms",
+    "unedited_src": "gallery/DSCN1549_orig.jpg",
+    "tags": [Tag.cherry_blossoms, Tag.flowers]
+  },
+  {
+    "src": "gallery/DSCN1558_edited.jpg",
+    "alt": "Tidal Basin with Cherry Blossoms",
+    "unedited_src": "gallery/DSCN1558_orig.jpg",
+    "tags": [Tag.cherry_blossoms, Tag.nature]
+  },
+  {
+    "src": "gallery/DSCN1568_edited.jpg",
+    "alt": "Goose",
+    "unedited_src": "gallery/DSCN1568_orig.jpg",
+    "tags": [Tag.birds, Tag.animals]
+  },
+  {
+    "src": "gallery/DSCN1584_edited.jpg",
+    "alt": "Cherry Blossoms",
+    "unedited_src": "gallery/DSCN1584_orig.jpg",
+    "tags": [Tag.cherry_blossoms, Tag.flowers]
+  },
+  {
+    "src": "gallery/DSCN1606_edited.jpg",
+    "alt": "DC overlook from the spike",
+    "unedited_src": "gallery/DSCN1606_orig.jpg",
+    "tags": [Tag.urban, Tag.landscape]
+  },
+  {
+    "src": "gallery/DSCN1636_edited.jpg",
+    "alt": "Cardinal",
+    "unedited_src": "gallery/DSCN1636_orig.jpg",
+    "tags": [Tag.birds]
+  },
+  {
+    "src": "gallery/DSCN1638_edited.jpg",
+    "alt": "Eastern Towhee chilling in the leaves",
+    "unedited_src": "gallery/DSCN1638_orig.jpg",
+    "tags": [Tag.birds]
+  },
+  {
+    "src": "gallery/DSCN1640_edited.jpg",
+    "alt": "Flowers!",
+    "unedited_src": "gallery/DSCN1640_orig.jpg",
+    "tags": [Tag.flowers]
+  },
+  {
+    "src": "gallery/DSCN1643_edited.jpg",
+    "alt": "Goldfinch",
+    "unedited_src": "gallery/DSCN1643_orig.jpg",
+    "tags": [Tag.birds]
   }
 ];
 
