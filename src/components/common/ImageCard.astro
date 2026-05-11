@@ -34,21 +34,20 @@ const { src, alt, caption, unedited_src } = Astro.props as ImageCardProps;
     <div class="modal-content">
         <div class="modal-image-container">
             <div class="edited-image">
-                <Picture 
-                    src={`${import.meta.env.VITE_GALLERY_LINK}/${src}`} 
-                    alt={alt} 
+                <img
+                    src={`${import.meta.env.VITE_GALLERY_LINK}/${src}`}
+                    alt={alt}
                     class="modal-image"
-                    inferSize={true}
                     loading="lazy"
                 />
             </div>
             {unedited_src && (
                 <div class="unedited-image">
-                    <Picture 
-                        src={`${import.meta.env.VITE_GALLERY_LINK}/${unedited_src}`} 
-                        alt={`Unedited version of ${alt}`} 
+                    <img
+                        src={`${import.meta.env.VITE_GALLERY_LINK}/${unedited_src}`}
+                        alt={`Unedited version of ${alt}`}
                         class="modal-image"
-                        inferSize={true}
+                        loading="lazy"
                     />
                 </div>
             )}
@@ -653,19 +652,6 @@ const { src, alt, caption, unedited_src } = Astro.props as ImageCardProps;
         const uneditedImage = modal?.querySelector('.unedited-image') as HTMLElement;
         const toggleCheckbox = modal?.querySelector('.toggle-unedited') as HTMLInputElement;
 
-        // Preload unedited image
-        if (uneditedImage) {
-            const uneditedImg = uneditedImage.querySelector('img');
-            if (uneditedImg) {
-                // Force the browser to load the image
-                const tempImg = new Image();
-                tempImg.src = uneditedImg.src;
-                tempImg.onload = () => {
-                    console.log('Unedited image preloaded');
-                };
-            }
-        }
-        
         if (img) {
             // When image loads
             img.onload = () => {

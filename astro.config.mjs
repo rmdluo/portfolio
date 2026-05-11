@@ -8,8 +8,13 @@ export default defineConfig({
   },
 
   image: {
-    // remotePatterns: [{ protocol: "https" }],
-    // domains: ['astro.build']
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'd37tlrz1dk8bz4.cloudfront.net',
+        pathname: '/gallery/**',
+      },
+    ],
   },
 
   adapter: vercel()
