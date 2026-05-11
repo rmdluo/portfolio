@@ -1,27 +1,20 @@
 ---
 import type { ImageCardProps } from '../../types/ImageCardProps';
 
+import { Picture } from 'astro:assets';
+
 const { src, alt, caption, unedited_src } = Astro.props as ImageCardProps;
-
-const imgixBase = `${import.meta.env.VITE_IMGIX_LINK}`;
-
-const sizes = '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1400px) 33vw, 25vw';
-
-const widths = [400, 800, 1200];
-const srcset = widths
-  .map(w => `${imgixBase}/${src}?w=${w}&q=75&auto=format ${w}w`)
-  .join(', ');
 ---
 
 <div class="image-card" tabindex="0" role="button" aria-label={`View ${alt} in full screen`}>
     <div class="image-container" data-unedited-src={unedited_src}>
-        <img
-            src={`${imgixBase}/${src}?w=800&q=75&auto=format`}
-            srcset={srcset}
-            sizes={sizes}
+        <Picture  
+            src=`${import.meta.env.VITE_GALLERY_LINK}/${src}`
             alt={alt}
+            widths={[400, 800, 1200]}
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1400px) 33vw, 25vw"
+            inferSize={true}
             loading="lazy"
-            decoding="async"
         />
         <div class="expand-hint">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -42,7 +35,7 @@ const srcset = widths
         <div class="modal-image-container">
             <div class="edited-image">
                 <img
-                    src={`${imgixBase}/${src}?w=1600&q=90&auto=format`}
+                    src={`${import.meta.env.VITE_GALLERY_LINK}/${src}`}
                     alt={alt}
                     class="modal-image"
                     loading="lazy"
@@ -51,7 +44,7 @@ const srcset = widths
             {unedited_src && (
                 <div class="unedited-image">
                     <img
-                        src={`${imgixBase}/${unedited_src}?w=1600&q=90&auto=format`}
+                        src={`${import.meta.env.VITE_GALLERY_LINK}/${unedited_src}`}
                         alt={`Unedited version of ${alt}`}
                         class="modal-image"
                         loading="lazy"
