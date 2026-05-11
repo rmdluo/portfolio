@@ -2078,6 +2078,66 @@ export const images: ImageCardProps[] = [
     "alt": "Goldfinch",
     "unedited_src": "gallery/DSCN1643_orig.jpg",
     "tags": [Tag.birds]
+  },
+  {
+    src: "gallery/DSCN1647_edited.jpg",
+    alt: "Dark-eye Junco",
+    unedited_src: "gallery/DSCN1647_orig.jpg",
+    tags: [Tag.birds]
+  },
+  {
+    src: "gallery/DSCN1652_edited.jpg",
+    alt: "Osprey landing in nest",
+    unedited_src: "gallery/DSCN1652_orig.jpg",
+    tags: [Tag.birds]
+  },
+  {
+    src: "gallery/DSCN1655_edited.jpg",
+    alt: "Osprey nesting",
+    unedited_src: "gallery/DSCN1655_orig.jpg",
+    tags: [Tag.birds]
+  },
+  {
+    src: "gallery/DSCN1661_edited.jpg",
+    alt: "Double-crested Cormorant posing",
+    unedited_src: "gallery/DSCN1661_orig.jpg",
+    tags: [Tag.birds]
+  },
+  {
+    src: "gallery/DSCN1710_edited.jpg",
+    alt: "Osprey with fish underfoot and turtles",
+    unedited_src: "gallery/DSCN1710_orig.jpg",
+    tags: [Tag.birds, Tag.animals]
+  },
+  {
+    src: "gallery/DSCN1719_edited.jpg",
+    alt: "Fish Crow",
+    unedited_src: "gallery/DSCN1719_orig.jpg",
+    tags: [Tag.birds]
+  },
+  {
+    src: "gallery/DSCN1729_edited.jpg",
+    alt: "Swamp Sparrow",
+    unedited_src: "gallery/DSCN1729_orig.jpg",
+    tags: [Tag.birds]
+  },
+  {
+    src: "gallery/DSCN1736_edited.jpg",
+    alt: "White-throated Sparrow",
+    unedited_src: "gallery/DSCN1736_orig.jpg",
+    tags: [Tag.birds]
+  },
+  {
+    src: "gallery/DSCN1740_edited.jpg",
+    alt: "Tree Swallow",
+    unedited_src: "gallery/DSCN1740_orig.jpg",
+    tags: [Tag.birds]
+  },
+  {
+    src: "gallery/DSCN1748_edited.jpg",
+    alt: "Wooden path",
+    unedited_src: "gallery/DSCN1748_orig.jpg",
+    tags: [Tag.nature]
   }
 ];
 
