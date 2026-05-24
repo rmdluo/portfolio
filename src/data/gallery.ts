@@ -2138,6 +2138,90 @@ export const images: ImageCardProps[] = [
     alt: "Wooden path",
     unedited_src: "gallery/DSCN1748_orig.jpg",
     tags: [Tag.nature]
+  },
+  {
+    "src": "gallery/DSCN1761_edited.jpg",
+    "alt": "Raccoon",
+    "unedited_src": "gallery/DSCN1761_orig.jpg",
+    "tags": [Tag.animals, Tag.nyc]
+  },
+  {
+    "src": "gallery/DSCN1765_edited.jpg",
+    "alt": "Bluejay eating Nut",
+    "unedited_src": "gallery/DSCN1765_orig.jpg",
+    "tags": [Tag.birds, Tag.nyc]
+  },
+  {
+    "src": "gallery/DSCN1767_edited.jpg",
+    "alt": "Survellience Sparrow",
+    "unedited_src": "gallery/DSCN1767_orig.jpg",
+    "tags": [Tag.birds, Tag.nyc]
+  },
+  {
+    "src": "gallery/DSCN1786_edited.jpg",
+    "alt": "Double Crested Cormourant and Turtles",
+    "unedited_src": "gallery/DSCN1786_orig.jpg",
+    "tags": [Tag.animals, Tag.nyc]
+  },
+  {
+    "src": "gallery/DSCN1797_edited.jpg",
+    "alt": "Hermit Thrush",
+    "unedited_src": "gallery/DSCN1797_orig.jpg",
+    "tags": [Tag.birds, Tag.nyc]
+  },
+  {
+    "src": "gallery/DSCN1799_edited.jpg",
+    "alt": "Nesting Robin",
+    "unedited_src": "gallery/DSCN1799_orig.jpg",
+    "tags": [Tag.birds, Tag.nyc]
+  },
+  {
+    "src": "gallery/DSCN1803_edited.jpg",
+    "alt": "Flowers",
+    "unedited_src": "gallery/DSCN1803_orig.jpg",
+    "tags": [Tag.flowers]
+  },
+  {
+    "src": "gallery/DSCN1808_edited.jpg",
+    "alt": "Flowers",
+    "unedited_src": "gallery/DSCN1808_orig.jpg",
+    "tags": [Tag.flowers]
+  },
+  {
+    "src": "gallery/DSCN1810_edited.jpg",
+    "alt": "Preening Robin",
+    "unedited_src": "gallery/DSCN1810_orig.jpg",
+    "tags": [Tag.birds]
+  },
+  {
+    "src": "gallery/DSCN1813_edited.jpg",
+    "alt": "Barn Swallow and Eastern Phoebe",
+    "unedited_src": "gallery/DSCN1813_orig.jpg",
+    "tags": [Tag.birds]
+  },
+  {
+    "src": "gallery/DSCN1818_edited.jpg",
+    "alt": "Robin by the Lakeside",
+    "unedited_src": "gallery/DSCN1818_orig.jpg",
+    "tags": [Tag.birds]
+  },
+  {
+    "src": "gallery/DSCN1820_edited.jpg",
+    "alt": "Robin with a Cape",
+    "unedited_src": "gallery/DSCN1820_orig.jpg",
+    "tags": [Tag.birds]
+  },
+  {
+    "src": "gallery/DSCN1833_edited.jpg",
+    "alt": "Pretty flowers",
+    "unedited_src": "gallery/DSCN1833_orig.jpg",
+    "tags": [Tag.flowers]
+  },
+  {
+    "src": "gallery/DSCN1843_edited.jpg",
+    "alt": "Baltimore Oriole",
+    "unedited_src": "gallery/DSCN1843_orig.jpg",
+    "tags": [Tag.birds]
   }
 ];
 
