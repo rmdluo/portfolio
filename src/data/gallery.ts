@@ -2223,383 +2223,96 @@ export const images: ImageCardProps[] = [
     "unedited_src": "gallery/DSCN1843_orig.jpg",
     "tags": [Tag.birds]
   },
-  {
-    src: "gallery/DSCN1761_edited.jpg",
-    alt: "Racoon in Tree",
-    unedited_src: "gallery/DSCN1761_orig.jpg",
-    tags: [Tag.nyc]
-  },
-  {
-    src: "gallery/DSCN1765_edited.jpg",
-    alt: "Blue Jay",
-    unedited_src: "gallery/DSCN1765_orig.jpg",
-    tags: [Tag.nyc]
-  },
-  {
-    src: "gallery/DSCN1767_edited.jpg",
-    alt: "House Sparrow",
-    unedited_src: "gallery/DSCN1767_orig.jpg",
-    tags: [Tag.nyc]
-  },
-  {
-    src: "gallery/DSCN1786_edited.jpg",
-    alt: "Double-crested Cormorant",
-    unedited_src: "gallery/DSCN1786_orig.jpg",
-    tags: [Tag.nyc]
-  },
-  {
-    src: "gallery/DSCN1797_edited.jpg",
-    alt: "Hermit Thrush",
-    unedited_src: "gallery/DSCN1797_orig.jpg",
-    tags: [Tag.nyc]
-  },
-  {
-    src: "gallery/DSCN1799_edited.jpg",
-    alt: "Nesting Robin",
-    unedited_src: "gallery/DSCN1799_orig.jpg",
-    tags: [Tag.nyc]
-  },
-  {
-    src: "gallery/DSCN1803_edited.jpg",
-    alt: "Flowers",
-    unedited_src: "gallery/DSCN1803_orig.jpg",
-    tags: []
-  },
-  {
-    src: "gallery/DSCN1808_edited.jpg",
-    alt: "Flowers",
-    unedited_src: "gallery/DSCN1808_orig.jpg",
-    tags: []
-  },
-  {
-    src: "gallery/DSCN1810_edited.jpg",
-    alt: "Preening Robin",
-    unedited_src: "gallery/DSCN1810_orig.jpg",
-    tags: []
-  },
-  {
-    src: "gallery/DSCN1813_edited.jpg",
-    alt: "Barn Swallow and Phoebe(?)",
-    unedited_src: "gallery/DSCN1813_orig.jpg",
-    tags: []
-  },
-  {
-    src: "gallery/DSCN1818_edited.jpg",
-    alt: "Robin",
-    unedited_src: "gallery/DSCN1818_orig.jpg",
-    tags: []
-  },
-  {
-    src: "gallery/DSCN1820_edited.jpg",
-    alt: "Robin",
-    unedited_src: "gallery/DSCN1820_orig.jpg",
-    tags: []
-  },
-  {
-    src: "gallery/DSCN1833_edited.jpg",
-    alt: "Flowers",
-    unedited_src: "gallery/DSCN1833_orig.jpg",
-    tags: []
-  },
-  {
-    src: "gallery/DSCN1843_edited.jpg",
-    alt: "Baltimore Oriole",
-    unedited_src: "gallery/DSCN1843_orig.jpg",
-    tags: []
-  },
-  {
-    src: "gallery/DSCN1876_edited.jpg",
-    alt: "Mt. Rainier View",
-    unedited_src: "gallery/DSCN1876_orig.jpg",
-    tags: [Tag.washington]
-  },
-  {
-    src: "gallery/DSCN1878_edited.jpg",
-    alt: "Rampart Ridge, Mt. Rainier",
-    unedited_src: "gallery/DSCN1878_orig.jpg",
-    tags: [Tag.washington]
-  },
-  {
-    src: "gallery/DSCN1890_edited.jpg",
-    alt: "Forest in Washington",
-    unedited_src: "gallery/DSCN1890_orig.jpg",
-    tags: [Tag.washington]
-  },
-  {
-    src: "gallery/DSCN1929_edited.jpg",
-    alt: "Stellar Jay",
-    unedited_src: "gallery/DSCN1929_orig.jpg",
-    tags: [Tag.washington]
-  },
-  {
-    src: "gallery/DSCN1932_edited.jpg",
-    alt: "Pine Siskin",
-    unedited_src: "gallery/DSCN1932_orig.jpg",
-    tags: [Tag.washington]
-  },
-  {
-    src: "gallery/DSCN1935_edited.jpg",
-    alt: "Cassin's Finch",
-    unedited_src: "gallery/DSCN1935_orig.jpg",
-    tags: [Tag.washington]
-  },
-  {
-    src: "gallery/DSCN1937_edited.jpg",
-    alt: "Ladybug in Snow",
-    unedited_src: "gallery/DSCN1937_orig.jpg",
-    tags: [Tag.washington]
-  },
-  {
-    src: "gallery/DSCN1953_edited.jpg",
-    alt: "Bug in snow",
-    unedited_src: "gallery/DSCN1953_orig.jpg",
-    tags: [Tag.washington]
-  },
-  {
-    src: "gallery/DSCN1954_edited.jpg",
-    alt: "Song Sparrow",
-    unedited_src: "gallery/DSCN1954_orig.jpg",
-    tags: [Tag.washington]
-  },
-  {
-    src: "gallery/DSCN1968_edited.jpg",
-    alt: "Raven",
-    unedited_src: "gallery/DSCN1968_orig.jpg",
-    tags: [Tag.washington]
-  },
-  {
-    src: "gallery/DSCN1988_edited.jpg",
-    alt: "Flower",
-    unedited_src: "gallery/DSCN1988_orig.jpg",
-    tags: [Tag.washington]
-  },
-  {
-    src: "gallery/DSCN1992_edited.jpg",
-    alt: "Ray of light",
-    unedited_src: "gallery/DSCN1992_orig.jpg",
-    tags: [Tag.washington]
-  },
-  {
-    src: "gallery/DSCN1994_edited.jpg",
-    alt: "Creek",
-    unedited_src: "gallery/DSCN1994_orig.jpg",
-    tags: [Tag.washington]
-  },
-  {
-    src: "gallery/DSCN1997_edited.jpg",
-    alt: "Bug",
-    unedited_src: "gallery/DSCN1997_orig.jpg",
-    tags: [Tag.washington]
-  },
-  {
-    src: "gallery/DSCN2003_edited.jpg",
-    alt: "Glacious-winged Gull",
-    unedited_src: "gallery/DSCN2003_orig.jpg",
-    tags: [Tag.washington]
-  },
-  {
-    src: "gallery/DSCN2012_edited.jpg",
-    alt: "Seattle Airport",
-    unedited_src: "gallery/DSCN2012_orig.jpg",
-    tags: [Tag.washington]
-  },
-  {
-    src: "gallery/DSCN2017_edited.jpg",
-    alt: "Dark-eye Junco",
-    unedited_src: "gallery/DSCN2017_orig.jpg",
-    tags: [Tag.washington]
-  },
-  {
-    src: "gallery/DSCN2025_edited.jpg",
-    alt: "Duck",
-    unedited_src: "gallery/DSCN2025_orig.jpg",
-    tags: [Tag.washington]
-  },
-  {
-    src: "gallery/DSCN2032_edited.jpg",
-    alt: "Duckling",
-    unedited_src: "gallery/DSCN2032_orig.jpg",
-    tags: [Tag.washington]
-  },
-  {
-    src: "gallery/DSCN2040_edited.jpg",
-    alt: "Mt. Olympic",
-    unedited_src: "gallery/DSCN2040_orig.jpg",
-    tags: [Tag.washington]
-  },
-  {
-    src: "gallery/DSCN2043_edited.jpg",
-    alt: "Pelagic Cormorant",
-    unedited_src: "gallery/DSCN2043_orig.jpg",
-    tags: [Tag.washington]
-  },
-  {
-    src: "gallery/DSCN2046_edited.jpg",
-    alt: "Pelagic Cormorant in flight",
-    unedited_src: "gallery/DSCN2046_orig.jpg",
-    tags: [Tag.washington]
-  },
-  {
-    src: "gallery/DSCN2050_edited.jpg",
-    alt: "Pigeon Guillemot eating",
-    unedited_src: "gallery/DSCN2050_orig.jpg",
-    tags: [Tag.washington]
-  },
-  {
-    src: "gallery/DSCN2062_edited.jpg",
-    alt: "Red-winged Blackbird",
-    unedited_src: "gallery/DSCN2062_orig.jpg",
-    tags: []
-  },
-  {
-    src: "gallery/DSCN2076_edited.jpg",
-    alt: "Female Red-winged Blackbird",
-    unedited_src: "gallery/DSCN2076_orig.jpg",
-    tags: []
-  },
-  {
-    src: "gallery/DSCN2078_edited.jpg",
-    alt: "Black Vulture",
-    unedited_src: "gallery/DSCN2078_orig.jpg",
-    tags: []
-  },
-  {
-    src: "gallery/DSCN2090_edited.jpg",
-    alt: "Chickadee",
-    unedited_src: "gallery/DSCN2090_orig.jpg",
-    tags: []
-  },
-  {
-    src: "gallery/DSCN2093_edited.jpg",
-    alt: "Tree swallow",
-    unedited_src: "gallery/DSCN2093_orig.jpg",
-    tags: []
-  },
-  {
-    src: "gallery/DSCN2102_edited.jpg",
-    alt: "Tree swallows",
-    unedited_src: "gallery/DSCN2102_orig.jpg",
-    tags: []
-  },
-  {
-    src: "gallery/DSCN2122_edited.jpg",
-    alt: "Eastern Bluebird",
-    unedited_src: "gallery/DSCN2122_orig.jpg",
-    tags: []
-  },
-  {
-    src: "gallery/DSCN2128_edited.jpg",
-    alt: "Dragonfly",
-    unedited_src: "gallery/DSCN2128_orig.jpg",
-    tags: []
-  },
-  {
-    src: "gallery/DSCN2131_edited.jpg",
-    alt: "Green Heron Perching",
-    unedited_src: "gallery/DSCN2131_orig.jpg",
-    tags: []
-  },
-  {
-    src: "gallery/DSCN2133_edited.jpg",
-    alt: "Frog.",
-    unedited_src: "gallery/DSCN2133_orig.jpg",
-    tags: []
-  },
-  {
-    src: "gallery/DSCN2138_edited.jpg",
-    alt: "Orchard Oriole",
-    unedited_src: "gallery/DSCN2138_orig.jpg",
-    tags: []
-  },
+{
   {
     src: "gallery/DSCN2141_edited.jpg",
     alt: "Doritos",
     unedited_src: "gallery/DSCN2141_orig.jpg",
-    tags: []
+    tags: [Tag.misc]
   },
   {
     src: "gallery/DSCN2143_edited.jpg",
     alt: "Muskrat?",
     unedited_src: "gallery/DSCN2143_orig.jpg",
-    tags: []
+    tags: [Tag.animals]
   },
   {
     src: "gallery/DSCN2167_edited.jpg",
     alt: "Grackle",
     unedited_src: "gallery/DSCN2167_orig.jpg",
-    tags: []
+    tags: [Tag.birds]
   },
   {
     src: "gallery/DSCN2170_edited.jpg",
     alt: "Great Egret",
     unedited_src: "gallery/DSCN2170_orig.jpg",
-    tags: []
+    tags: [Tag.birds]
   },
   {
     src: "gallery/DSCN2172_edited.jpg",
     alt: "Great Egret",
     unedited_src: "gallery/DSCN2172_orig.jpg",
-    tags: []
+    tags: [Tag.birds]
   },
   {
     src: "gallery/DSCN2173_edited.jpg",
     alt: "Flowers",
     unedited_src: "gallery/DSCN2173_orig.jpg",
-    tags: []
+    tags: [Tag.flowers]
   },
   {
     src: "gallery/DSCN2176_edited.jpg",
     alt: "Red-bellied Woodpecker",
     unedited_src: "gallery/DSCN2176_orig.jpg",
-    tags: []
+    tags: [Tag.birds]
   },
   {
     src: "gallery/DSCN2177_edited.jpg",
     alt: "Tree Swallow",
     unedited_src: "gallery/DSCN2177_orig.jpg",
-    tags: []
+    tags: [Tag.birds]
   },
   {
     src: "gallery/DSCN2179_edited.jpg",
     alt: "Lotus",
     unedited_src: "gallery/DSCN2179_orig.jpg",
-    tags: []
+    tags: [Tag.flowers, Tag.nature]
   },
   {
     src: "gallery/DSCN2183_edited.jpg",
     alt: "Tree Swallow nesting (kudos for a friend taking this picture, I had a few but they were worse)",
     unedited_src: "gallery/DSCN2183_orig.jpg",
-    tags: []
+    tags: [Tag.birds]
   },
   {
     src: "gallery/DSCN2200_edited.jpg",
     alt: "Lotus",
     unedited_src: "gallery/DSCN2200_orig.jpg",
-    tags: []
+    tags: [Tag.flowers, Tag.nature]
   },
   {
     src: "gallery/DSCN2219_edited.jpg",
     alt: "Yellow flower",
     unedited_src: "gallery/DSCN2219_orig.jpg",
-    tags: []
+    tags: [Tag.flowers]
   },
   {
     src: "gallery/DSCN2220_edited.jpg",
     alt: "Pink(?) flower",
     unedited_src: "gallery/DSCN2220_orig.jpg",
-    tags: []
+    tags: [Tag.flowers]
   },
   {
     src: "gallery/DSCN2223_edited.jpg",
     alt: "Wood Ducks",
     unedited_src: "gallery/DSCN2223_orig.jpg",
-    tags: []
+    tags: [Tag.birds]
   },
   {
     src: "gallery/DSCN2229_edited.jpg",
     alt: "Goldfinch",
     unedited_src: "gallery/DSCN2229_orig.jpg",
-    tags: []
+    tags: [Tag.birds]
   }
 ];
 
