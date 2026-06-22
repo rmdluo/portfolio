@@ -18,5 +18,6 @@ export enum Tag {
   wisc = "Wisconsin",
   cherry_blossoms = "Cherry Blossoms",
   nyc = "New York City",
+  washington = "Washington",
   default = "Default",
 }
