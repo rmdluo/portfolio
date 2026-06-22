@@ -2223,7 +2223,6 @@ export const images: ImageCardProps[] = [
     "unedited_src": "gallery/DSCN1843_orig.jpg",
     "tags": [Tag.birds]
   },
-{
   {
     src: "gallery/DSCN2141_edited.jpg",
     alt: "Doritos",
