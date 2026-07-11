@@ -2279,7 +2279,7 @@ export const images: ImageCardProps[] = [
   },
   {
     src: "gallery/DSCN2183_edited.jpg",
-    alt: "Tree Swallow nesting (kudos for a friend taking this picture, I had a few but they were worse)",
+    alt: "Barn Swallow nesting (kudos for a friend taking this picture, I had a few but they were worse)",
     unedited_src: "gallery/DSCN2183_orig.jpg",
     tags: [Tag.birds]
   },
