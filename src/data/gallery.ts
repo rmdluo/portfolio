@@ -2312,7 +2312,205 @@ export const images: ImageCardProps[] = [
     alt: "Goldfinch",
     unedited_src: "gallery/DSCN2229_orig.jpg",
     tags: [Tag.birds]
-  }
+  },
+  {
+    src: "gallery/DSCN2234_edited.jpg",
+    alt: "Fireworks",
+    unedited_src: "gallery/DSCN2234_orig.jpg",
+    tags: [Tag.chicago, Tag.misc]
+  },
+  {
+    src: "gallery/DSCN2237_edited.jpg",
+    alt: "Fireworks -- the small ones look like little guys jumping",
+    unedited_src: "gallery/DSCN2237_orig.jpg",
+    tags: [Tag.chicago, Tag.misc]
+  },
+  {
+    src: "gallery/DSCN2240_edited.jpg",
+    alt: "Fireworks",
+    unedited_src: "gallery/DSCN2240_orig.jpg",
+    tags: [Tag.chicago, Tag.misc]
+  },
+  {
+    src: "gallery/DSCN2246_edited.jpg",
+    alt: "Bird feeder in a park",
+    unedited_src: "gallery/DSCN2246_orig.jpg",
+    tags: [Tag.chicago, Tag.misc]
+  },
+  {
+    src: "gallery/DSCN2267_edited.jpg",
+    alt: "House sparrow on the roof",
+    unedited_src: "gallery/DSCN2267_orig.jpg",
+    tags: [Tag.chicago, Tag.birds, Tag.animals]
+  },
+  {
+    src: "gallery/DSCN2277_edited.jpg",
+    alt: "House sparrow on the fish",
+    unedited_src: "gallery/DSCN2277_orig.jpg",
+    tags: [Tag.chicago, Tag.birds, Tag.animals]
+  },
+  {
+    src: "gallery/DSCN2280_edited.jpg",
+    alt: "Chicago skyline",
+    unedited_src: "gallery/DSCN2280_orig.jpg",
+    tags: [Tag.chicago, Tag.urban]
+  },
+  {
+    src: "gallery/DSCN2293_edited.jpg",
+    alt: "Sea gull (ring billed?)",
+    unedited_src: "gallery/DSCN2293_orig.jpg",
+    tags: [Tag.chicago, Tag.birds]
+  },
+  {
+    src: "gallery/DSCN2298_edited.jpg",
+    alt: "Advertisement plane",
+    unedited_src: "gallery/DSCN2298_orig.jpg",
+    tags: [Tag.chicago, Tag.misc]
+  },
+  {
+    src: "gallery/DSCN2299_edited.jpg",
+    alt: "Cigarette",
+    unedited_src: "gallery/DSCN2299_orig.jpg",
+    tags: [Tag.chicago, Tag.misc]
+  },
+  {
+    src: "gallery/DSCN2300_edited.jpg",
+    alt: "Beer cap",
+    unedited_src: "gallery/DSCN2300_orig.jpg",
+    tags: [Tag.chicago, Tag.misc]
+  },
+  {
+    src: "gallery/DSCN2305_edited.jpg",
+    alt: "Train",
+    unedited_src: "gallery/DSCN2305_orig.jpg",
+    tags: [Tag.chicago, Tag.misc]
+  },
+  {
+    src: "gallery/DSCN2310_edited.jpg",
+    alt: "Sunset",
+    unedited_src: "gallery/DSCN2310_orig.jpg",
+    tags: [Tag.chicago, Tag.sunset]
+  },
+  {
+    src: "gallery/DSCN2316_edited.jpg",
+    alt: "Beetle on plant",
+    unedited_src: "gallery/DSCN2316_orig.jpg",
+    tags: [Tag.animals, Tag.nature]
+  },
+  {
+    src: "gallery/DSCN2333_edited.jpg",
+    alt: "Sunflower Field",
+    unedited_src: "gallery/DSCN2333_orig.jpg",
+    tags: [Tag.flowers, Tag.nature, Tag.landscape]
+  },
+  {
+    src: "gallery/DSCN2341_edited.jpg",
+    alt: "Red-winged Blackbird in a sunflower field",
+    unedited_src: "gallery/DSCN2341_orig.jpg",
+    tags: [Tag.birds, Tag.flowers]
+  },
+  {
+    src: "gallery/DSCN2347_edited.jpg",
+    alt: "Red-winged Blackbird looking for a snack",
+    unedited_src: "gallery/DSCN2347_orig.jpg",
+    tags: [Tag.birds]
+  },
+  {
+    src: "gallery/DSCN2352_edited.jpg",
+    alt: "Tall sunflower",
+    unedited_src: "gallery/DSCN2352_orig.jpg",
+    tags: [Tag.flowers]
+  },
+  {
+    src: "gallery/DSCN2359_edited.jpg",
+    alt: "Sunflowers",
+    unedited_src: "gallery/DSCN2359_orig.jpg",
+    tags: [Tag.flowers]
+  },
+  {
+    src: "gallery/DSCN2362_edited.jpg",
+    alt: "Indigo Bunting",
+    unedited_src: "gallery/DSCN2362_orig.jpg",
+    tags: [Tag.birds]
+  },
+  {
+    src: "gallery/DSCN2373_edited.jpg",
+    alt: "Northern Rough-winged Swallows",
+    unedited_src: "gallery/DSCN2373_orig.jpg",
+    tags: [Tag.birds]
+  },
+  {
+    src: "gallery/DSCN2386_edited.jpg",
+    alt: "Red Dragonfly",
+    unedited_src: "gallery/DSCN2386_orig.jpg",
+    tags: [Tag.animals]
+  },
+  {
+    src: "gallery/DSCN2405_edited.jpg",
+    alt: "Osprey",
+    unedited_src: "gallery/DSCN2405_orig.jpg",
+    tags: [Tag.birds]
+  },
+  {
+    src: "gallery/DSCN2409_edited.jpg",
+    alt: "Wood Duck",
+    unedited_src: "gallery/DSCN2409_orig.jpg",
+    tags: [Tag.birds]
+  },
+  {
+    src: "gallery/DSCN2421_edited.jpg",
+    alt: "Butterflies on a flower",
+    unedited_src: "gallery/DSCN2421_orig.jpg",
+    tags: [Tag.animals, Tag.flowers]
+  },
+  {
+    src: "gallery/DSCN2427_edited.jpg",
+    alt: "Osprey",
+    unedited_src: "gallery/DSCN2427_orig.jpg",
+    tags: [Tag.birds]
+  },
+  {
+    src: "gallery/DSCN2429_edited.jpg",
+    alt: "Pond",
+    unedited_src: "gallery/DSCN2429_orig.jpg",
+    tags: [Tag.nature, Tag.landscape]
+  },
+  {
+    src: "gallery/DSCN2433_edited.jpg",
+    alt: "Osprey",
+    unedited_src: "gallery/DSCN2433_orig.jpg",
+    tags: [Tag.birds]
+  },
+  {
+    src: "gallery/DSCN2434_edited.jpg",
+    alt: "Turtles",
+    unedited_src: "gallery/DSCN2434_orig.jpg",
+    tags: [Tag.animals]
+  },
+  {
+    src: "gallery/DSCN2440_edited.jpg",
+    alt: "Belted Kingfisher",
+    unedited_src: "gallery/DSCN2440_orig.jpg",
+    tags: [Tag.birds]
+  },
+  {
+    src: "gallery/DSCN2448_edited.jpg",
+    alt: "Flower",
+    unedited_src: "gallery/DSCN2448_orig.jpg",
+    tags: [Tag.flowers]
+  },
+  {
+    src: "gallery/DSCN2452_edited.jpg",
+    alt: "Osprey",
+    unedited_src: "gallery/DSCN2452_orig.jpg",
+    tags: [Tag.birds]
+  },
+  {
+    src: "gallery/DSCN2453_edited.jpg",
+    alt: "Can",
+    unedited_src: "gallery/DSCN2453_orig.jpg",
+    tags: [Tag.misc]
+  },
 ];
 
 export const imagesReversed: ImageCardProps[] = [...images].reverse()
