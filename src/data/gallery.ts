@@ -2511,6 +2511,276 @@ export const images: ImageCardProps[] = [
     unedited_src: "gallery/DSCN2453_orig.jpg",
     tags: [Tag.misc]
   },
+  {
+    src: "gallery/DSCN2455_edited.jpg",
+    alt: "Park",
+    unedited_src: "gallery/DSCN2455_orig.jpg",
+    tags: [Tag.landscape, Tag.nature]
+  },
+  {
+    src: "gallery/DSCN2456_edited.jpg",
+    alt: "Tennis court",
+    unedited_src: "gallery/DSCN2456_orig.jpg",
+    tags: [Tag.misc]
+  },
+  {
+    src: "gallery/DSCN2458_edited.jpg",
+    alt: "Deer",
+    unedited_src: "gallery/DSCN2458_orig.jpg",
+    tags: [Tag.animals, Tag.nature]
+  },
+  {
+    src: "gallery/DSCN2467_edited.jpg",
+    alt: "Black-eyed Susan",
+    unedited_src: "gallery/DSCN2467_orig.jpg",
+    tags: [Tag.flowers, Tag.nature]
+  },
+  {
+    src: "gallery/DSCN2469_edited.jpg",
+    alt: "White flowers",
+    unedited_src: "gallery/DSCN2469_orig.jpg",
+    tags: [Tag.flowers, Tag.nature]
+  },
+  {
+    src: "gallery/DSCN2472_edited.jpg",
+    alt: "Red Shouldered Hawk Feathers (juvenile)",
+    unedited_src: "gallery/DSCN2472_orig.jpg",
+    tags: [Tag.birds, Tag.animals]
+  },
+  {
+    src: "gallery/DSCN2474_edited.jpg",
+    alt: "Really long street",
+    unedited_src: "gallery/DSCN2474_orig.jpg",
+    tags: [Tag.urban]
+  },
+  {
+    src: "gallery/DSCN2498_edited.jpg",
+    alt: "Ring-billed Gull (?)",
+    unedited_src: "gallery/DSCN2498_orig.jpg",
+    tags: [Tag.birds, Tag.animals]
+  },
+  {
+    src: "gallery/DSCN2501_edited.jpg",
+    alt: "Juvenile American Herring Gull",
+    unedited_src: "gallery/DSCN2501_orig.jpg",
+    tags: [Tag.birds, Tag.animals]
+  },
+  {
+    src: "gallery/DSCN2502_edited.jpg",
+    alt: "Bear Crowd",
+    unedited_src: "gallery/DSCN2502_orig.jpg",
+    tags: [Tag.animals]
+  },
+  {
+    src: "gallery/DSCN2513_edited.jpg",
+    alt: "Brooklyn Bridge Sign",
+    unedited_src: "gallery/DSCN2513_orig.jpg",
+    tags: [Tag.nyc, Tag.urban]
+  },
+  {
+    src: "gallery/DSCN2521_edited.jpg",
+    alt: "Mute Swan",
+    unedited_src: "gallery/DSCN2521_orig.jpg",
+    tags: [Tag.birds, Tag.animals]
+  },
+  {
+    src: "gallery/DSCN2524_edited.jpg",
+    alt: "Red Tailed Hawk",
+    unedited_src: "gallery/DSCN2524_orig.jpg",
+    tags: [Tag.birds, Tag.animals]
+  },
+  {
+    src: "gallery/DSCN2531_edited.jpg",
+    alt: "Red Tailed Hawk",
+    unedited_src: "gallery/DSCN2531_orig.jpg",
+    tags: [Tag.birds, Tag.animals]
+  },
+  {
+    src: "gallery/DSCN2550_edited.jpg",
+    alt: "Wood Duck",
+    unedited_src: "gallery/DSCN2550_orig.jpg",
+    tags: [Tag.birds, Tag.animals]
+  },
+  {
+    src: "gallery/DSCN2554_edited.jpg",
+    alt: "Mallard",
+    unedited_src: "gallery/DSCN2554_orig.jpg",
+    tags: [Tag.birds, Tag.animals]
+  },
+  {
+    src: "gallery/DSCN2557_edited.jpg",
+    alt: "New York corn cob building",
+    unedited_src: "gallery/DSCN2557_orig.jpg",
+    tags: [Tag.nyc, Tag.urban]
+  },
+  {
+    src: "gallery/DSCN2558_edited.jpg",
+    alt: "Amtrak",
+    unedited_src: "gallery/DSCN2558_orig.jpg",
+    tags: [Tag.misc]
+  },
+  {
+    src: "gallery/DSCN2609_edited.jpg",
+    alt: "Statue of Liberty",
+    unedited_src: "gallery/DSCN2609_orig.jpg",
+    tags: [Tag.nyc]
+  },
+  {
+    src: "gallery/DSCN2615_edited.jpg",
+    alt: "Prism",
+    unedited_src: "gallery/DSCN2615_orig.jpg",
+    tags: [Tag.misc]
+  },
+  {
+    src: "gallery/DSCN2624_edited.jpg",
+    alt: "Helicopter",
+    unedited_src: "gallery/DSCN2624_orig.jpg",
+    tags: [Tag.misc]
+  },
+  {
+    src: "gallery/DSCN2627_edited.jpg",
+    alt: "Subway",
+    unedited_src: "gallery/DSCN2627_orig.jpg",
+    tags: [Tag.nyc, Tag.urban]
+  },
+  {
+    src: "gallery/DSCN2678_edited.jpg",
+    alt: "Catbird",
+    unedited_src: "gallery/DSCN2678_orig.jpg",
+    tags: [Tag.birds, Tag.animals]
+  },
+  {
+    src: "gallery/DSCN2716_edited.jpg",
+    alt: "Moth",
+    unedited_src: "gallery/DSCN2716_orig.jpg",
+    tags: [Tag.animals]
+  },
+  {
+    src: "gallery/DSCN2717_edited.jpg",
+    alt: "Red-eyed Vireo",
+    unedited_src: "gallery/DSCN2717_orig.jpg",
+    tags: [Tag.birds, Tag.animals]
+  },
+  {
+    src: "gallery/DSCN2735_edited.jpg",
+    alt: "Chips and Arizona Tea",
+    unedited_src: "gallery/DSCN2735_orig.jpg",
+    tags: [Tag.misc]
+  },
+  {
+    src: "gallery/DSCN2745_edited.jpg",
+    alt: "Moth/Butterfly (?)",
+    unedited_src: "gallery/DSCN2745_orig.jpg",
+    tags: [Tag.animals]
+  },
+  {
+    src: "gallery/DSCN2819_edited.jpg",
+    alt: "Dragonfly",
+    unedited_src: "gallery/DSCN2819_orig.jpg",
+    tags: [Tag.animals, Tag.nature]
+  },
+  {
+    src: "gallery/DSCN2829_edited.jpg",
+    alt: "Flowers",
+    unedited_src: "gallery/DSCN2829_orig.jpg",
+    tags: [Tag.flowers, Tag.nature]
+  },
+  {
+    src: "gallery/DSCN2845_edited.jpg",
+    alt: "Swift/Swallow",
+    unedited_src: "gallery/DSCN2845_orig.jpg",
+    tags: [Tag.birds, Tag.animals]
+  },
+  {
+    src: "gallery/DSCN2970_edited.jpg",
+    alt: "Canadian Goose",
+    unedited_src: "gallery/DSCN2970_orig.jpg",
+    tags: [Tag.birds, Tag.animals]
+  },
+  {
+    src: "gallery/DSCN2984_edited.jpg",
+    alt: "Double-crested Cormorant",
+    unedited_src: "gallery/DSCN2984_orig.jpg",
+    tags: [Tag.birds, Tag.animals]
+  },
+  {
+    src: "gallery/DSCN2991_edited.jpg",
+    alt: "Small mushroom",
+    unedited_src: "gallery/DSCN2991_orig.jpg",
+    tags: [Tag.nature]
+  },
+  {
+    src: "gallery/DSCN3022_edited.jpg",
+    alt: "Cormorants chilling",
+    unedited_src: "gallery/DSCN3022_orig.jpg",
+    tags: [Tag.birds, Tag.animals]
+  },
+  {
+    src: "gallery/DSCN3038_edited.jpg",
+    alt: "Great Blue Heron",
+    unedited_src: "gallery/DSCN3038_orig.jpg",
+    tags: [Tag.birds, Tag.animals]
+  },
+  {
+    src: "gallery/DSCN3047_edited.jpg",
+    alt: "Great Blue Heron",
+    unedited_src: "gallery/DSCN3047_orig.jpg",
+    tags: [Tag.birds, Tag.animals]
+  },
+  {
+    src: "gallery/DSCN3084_edited.jpg",
+    alt: "Flowers",
+    unedited_src: "gallery/DSCN3084_orig.jpg",
+    tags: [Tag.flowers, Tag.nature]
+  },
+  {
+    src: "gallery/DSCN3111_edited.jpg",
+    alt: "Eclipse Plummage Mallard",
+    unedited_src: "gallery/DSCN3111_orig.jpg",
+    tags: [Tag.birds, Tag.animals]
+  },
+  {
+    src: "gallery/DSCN3112_edited.jpg",
+    alt: "Flower",
+    unedited_src: "gallery/DSCN3112_orig.jpg",
+    tags: [Tag.flowers, Tag.nature]
+  },
+  {
+    src: "gallery/DSCN3119_edited.jpg",
+    alt: "Drink cup",
+    unedited_src: "gallery/DSCN3119_orig.jpg",
+    tags: [Tag.misc]
+  },
+  {
+    src: "gallery/DSCN3125_edited.jpg",
+    alt: "Deer",
+    unedited_src: "gallery/DSCN3125_orig.jpg",
+    tags: [Tag.animals, Tag.nature]
+  },
+  {
+    src: "gallery/DSCN3140_edited.jpg",
+    alt: "Red-headed Woodpecker",
+    unedited_src: "gallery/DSCN3140_orig.jpg",
+    tags: [Tag.birds, Tag.animals]
+  },
+  {
+    src: "gallery/DSCN3153_edited.jpg",
+    alt: "Eastern Phoebe",
+    unedited_src: "gallery/DSCN3153_orig.jpg",
+    tags: [Tag.birds, Tag.animals]
+  },
+  {
+    src: "gallery/DSCN3164_edited.jpg",
+    alt: "Eastern Phoebe taking off",
+    unedited_src: "gallery/DSCN3164_orig.jpg",
+    tags: [Tag.birds, Tag.animals]
+  },
+  {
+    src: "gallery/DSCN3176_edited.jpg",
+    alt: "Juvenile Bluebird",
+    unedited_src: "gallery/DSCN3176_orig.jpg",
+    tags: [Tag.birds, Tag.animals]
+  }
 ];
 
 export const imagesReversed: ImageCardProps[] = [...images].reverse()
