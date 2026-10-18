@@ -1781,7 +1781,7 @@ export const images: ImageCardProps[] = [
   },
   {
     "src": "gallery/DSCN0925_edited.jpg",
-    "alt": "White-throated sparrow",
+    "alt": "Yellow-rumped Warbler",
     "unedited_src": "gallery/DSCN0925_orig.jpg",
     "tags": [Tag.birds, Tag.animals, Tag.nature]
   },
@@ -2783,87 +2783,87 @@ export const images: ImageCardProps[] = [
   },
   {
     src: "gallery/DSCN3200_edited.jpg",
-    alt: "",
+    alt: "Some kind of tern",
     unedited_src: "gallery/DSCN3200_orig.jpg",
-    tags: []
+    tags: [Tag.birds]
   },
   {
     src: "gallery/DSCN3224_edited.jpg",
-    alt: "",
+    alt: "Eastern Phoebe?",
     unedited_src: "gallery/DSCN3224_orig.jpg",
-    tags: []
+    tags: [Tag.birds]
   },
   {
     src: "gallery/DSCN3230_edited.jpg",
-    alt: "",
+    alt: "Blue Jay",
     unedited_src: "gallery/DSCN3230_orig.jpg",
-    tags: []
+    tags: [Tag.birds]
   },
   {
     src: "gallery/DSCN3239_edited.jpg",
-    alt: "",
+    alt: "Mockingbird",
     unedited_src: "gallery/DSCN3239_orig.jpg",
-    tags: []
+    tags: [Tag.birds]
   },
   {
     src: "gallery/DSCN3246_edited.jpg",
-    alt: "",
+    alt: "Tufted Titmouse",
     unedited_src: "gallery/DSCN3246_orig.jpg",
-    tags: []
+    tags: [Tag.birds]
   },
   {
     src: "gallery/DSCN3248_edited.jpg",
-    alt: "",
+    alt: "Spider",
     unedited_src: "gallery/DSCN3248_orig.jpg",
-    tags: []
+    tags: [Tag.animals]
   },
   {
     src: "gallery/DSCN3260_edited.jpg",
-    alt: "",
+    alt: "Purple(?) flower",
     unedited_src: "gallery/DSCN3260_orig.jpg",
-    tags: []
+    tags: [Tag.flowers]
   },
   {
     src: "gallery/DSCN3272_edited.jpg",
     alt: "",
     unedited_src: "gallery/DSCN3272_orig.jpg",
-    tags: []
+    tags: [Tag.default]
   },
   {
     src: "gallery/DSCN3288_edited.jpg",
-    alt: "",
+    alt: "Flower and Great Falls",
     unedited_src: "gallery/DSCN3288_orig.jpg",
-    tags: []
+    tags: [Tag.flowers, Tag.great_falls]
   },
   {
     src: "gallery/DSCN3292_edited.jpg",
-    alt: "",
+    alt: "Great Falls water",
     unedited_src: "gallery/DSCN3292_orig.jpg",
-    tags: []
+    tags: [Tag.great_falls]
   },
   {
     src: "gallery/DSCN3299_edited.jpg",
-    alt: "",
+    alt: "More Great Falls water",
     unedited_src: "gallery/DSCN3299_orig.jpg",
-    tags: []
+    tags: [Tag.great_falls]
   },
   {
     src: "gallery/DSCN3301_edited.jpg",
-    alt: "",
+    alt: "Purple Flowers",
     unedited_src: "gallery/DSCN3301_orig.jpg",
-    tags: []
+    tags: [Tag.flowers]
   },
   {
     src: "gallery/DSCN3304_edited.jpg",
-    alt: "",
+    alt: "Daddy Long Legs",
     unedited_src: "gallery/DSCN3304_orig.jpg",
-    tags: []
+    tags: [Tag.animals]
   },
   {
     src: "gallery/DSCN3310_edited.jpg",
-    alt: "",
+    alt: "Fraser Preserve",
     unedited_src: "gallery/DSCN3310_orig.jpg",
-    tags: []
+    tags: [Tag.nature]
   }
 ];
 
