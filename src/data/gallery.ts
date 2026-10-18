@@ -2825,43 +2825,43 @@ export const images: ImageCardProps[] = [
   },
   {
     src: "gallery/DSCN3272_edited.jpg",
-    alt: "",
+    alt: "Flower and Great Falls",
     unedited_src: "gallery/DSCN3272_orig.jpg",
     tags: [Tag.default]
   },
   {
     src: "gallery/DSCN3288_edited.jpg",
-    alt: "Flower and Great Falls",
+    alt: "Great Falls water",
     unedited_src: "gallery/DSCN3288_orig.jpg",
     tags: [Tag.flowers, Tag.great_falls]
   },
   {
     src: "gallery/DSCN3292_edited.jpg",
-    alt: "Great Falls water",
+    alt: "More Great Falls water",
     unedited_src: "gallery/DSCN3292_orig.jpg",
     tags: [Tag.great_falls]
   },
   {
     src: "gallery/DSCN3299_edited.jpg",
-    alt: "More Great Falls water",
+    alt: "Purple Flowers",
     unedited_src: "gallery/DSCN3299_orig.jpg",
     tags: [Tag.great_falls]
   },
   {
     src: "gallery/DSCN3301_edited.jpg",
-    alt: "Purple Flowers",
+    alt: "Daddy Long Lets",
     unedited_src: "gallery/DSCN3301_orig.jpg",
     tags: [Tag.flowers]
   },
   {
     src: "gallery/DSCN3304_edited.jpg",
-    alt: "Daddy Long Legs",
+    alt: "Fraser Preserve",
     unedited_src: "gallery/DSCN3304_orig.jpg",
     tags: [Tag.animals]
   },
   {
     src: "gallery/DSCN3310_edited.jpg",
-    alt: "Fraser Preserve",
+    alt: "Yellow-bellied Sapsucker",
     unedited_src: "gallery/DSCN3310_orig.jpg",
     tags: [Tag.nature]
   }
