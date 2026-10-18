@@ -2780,6 +2780,90 @@ export const images: ImageCardProps[] = [
     alt: "Juvenile Bluebird",
     unedited_src: "gallery/DSCN3176_orig.jpg",
     tags: [Tag.birds, Tag.animals]
+  },
+  {
+    src: "gallery/DSCN3200_edited.jpg",
+    alt: "",
+    unedited_src: "gallery/DSCN3200_orig.jpg",
+    tags: []
+  },
+  {
+    src: "gallery/DSCN3224_edited.jpg",
+    alt: "",
+    unedited_src: "gallery/DSCN3224_orig.jpg",
+    tags: []
+  },
+  {
+    src: "gallery/DSCN3230_edited.jpg",
+    alt: "",
+    unedited_src: "gallery/DSCN3230_orig.jpg",
+    tags: []
+  },
+  {
+    src: "gallery/DSCN3239_edited.jpg",
+    alt: "",
+    unedited_src: "gallery/DSCN3239_orig.jpg",
+    tags: []
+  },
+  {
+    src: "gallery/DSCN3246_edited.jpg",
+    alt: "",
+    unedited_src: "gallery/DSCN3246_orig.jpg",
+    tags: []
+  },
+  {
+    src: "gallery/DSCN3248_edited.jpg",
+    alt: "",
+    unedited_src: "gallery/DSCN3248_orig.jpg",
+    tags: []
+  },
+  {
+    src: "gallery/DSCN3260_edited.jpg",
+    alt: "",
+    unedited_src: "gallery/DSCN3260_orig.jpg",
+    tags: []
+  },
+  {
+    src: "gallery/DSCN3272_edited.jpg",
+    alt: "",
+    unedited_src: "gallery/DSCN3272_orig.jpg",
+    tags: []
+  },
+  {
+    src: "gallery/DSCN3288_edited.jpg",
+    alt: "",
+    unedited_src: "gallery/DSCN3288_orig.jpg",
+    tags: []
+  },
+  {
+    src: "gallery/DSCN3292_edited.jpg",
+    alt: "",
+    unedited_src: "gallery/DSCN3292_orig.jpg",
+    tags: []
+  },
+  {
+    src: "gallery/DSCN3299_edited.jpg",
+    alt: "",
+    unedited_src: "gallery/DSCN3299_orig.jpg",
+    tags: []
+  },
+  {
+    src: "gallery/DSCN3301_edited.jpg",
+    alt: "",
+    unedited_src: "gallery/DSCN3301_orig.jpg",
+    tags: []
+  },
+  {
+    src: "gallery/DSCN3304_edited.jpg",
+    alt: "",
+    unedited_src: "gallery/DSCN3304_orig.jpg",
+    tags: []
+  },
+  {
+    src: "gallery/DSCN3310_edited.jpg",
+    alt: "",
+    unedited_src: "gallery/DSCN3310_orig.jpg",
+    tags: []
   }
 ];
 
