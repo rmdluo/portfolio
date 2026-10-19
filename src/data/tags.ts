@@ -19,5 +19,6 @@ export enum Tag {
   cherry_blossoms = "Cherry Blossoms",
   nyc = "New York City",
   washington = "Washington",
+  blackwater_wv = "Blackwater Falls",
   default = "Default",
 }

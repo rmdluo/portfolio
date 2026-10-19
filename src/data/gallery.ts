@@ -2864,7 +2864,67 @@ export const images: ImageCardProps[] = [
     alt: "Yellow-bellied Sapsucker",
     unedited_src: "gallery/DSCN3310_orig.jpg",
     tags: [Tag.nature]
-  }
+  },
+    {
+    src: "gallery/DSCN3331_edited.jpg",
+    alt: "Pile of rocks with lots of trees in the background! Some guy was saying that there's no way that pile of rocks is natural, which I find amusing.",
+    unedited_src: "gallery/DSCN3331_orig.jpg",
+    tags: [Tag.blackwater_wv, Tag.nature, Tag.landscape]
+  },
+  {
+    src: "gallery/DSCN3341_edited.jpg",
+    alt: "Plants growing out of the rocks with trees down below.",
+    unedited_src: "gallery/DSCN3341_orig.jpg",
+    tags: [Tag.blackwater_wv, Tag.nature, Tag.flowers]
+  },
+  {
+    src: "gallery/DSCN3356_edited.jpg",
+    alt: "Red water",
+    unedited_src: "gallery/DSCN3356_orig.jpg",
+    tags: [Tag.blackwater_wv, Tag.nature]
+  },
+  {
+    src: "gallery/DSCN3358_edited.jpg",
+    alt: "Water flowing",
+    unedited_src: "gallery/DSCN3358_orig.jpg",
+    tags: [Tag.blackwater_wv, Tag.nature]
+  },
+  {
+    src: "gallery/DSCN3376_edited.jpg",
+    alt: "Overlook on the other side of the Blackwater Lodge",
+    unedited_src: "gallery/DSCN3376_orig.jpg",
+    tags: [Tag.blackwater_wv, Tag.landscape]
+  },
+  {
+    src: "gallery/DSCN3392_edited.jpg",
+    alt: "Blackwater Falls",
+    unedited_src: "gallery/DSCN3392_orig.jpg",
+    tags: [Tag.blackwater_wv, Tag.nature]
+  },
+  {
+    src: "gallery/DSCN3396_edited.jpg",
+    alt: "Close up on the spray from Blackwater Falls!",
+    unedited_src: "gallery/DSCN3396_orig.jpg",
+    tags: [Tag.blackwater_wv, Tag.nature]
+  },
+  {
+    src: "gallery/DSCN3409_edited.jpg",
+    alt: "Blackwater Falls -- funny color at the top",
+    unedited_src: "gallery/DSCN3409_orig.jpg",
+    tags: [Tag.blackwater_wv, Tag.nature]
+  },
+  {
+    src: "gallery/DSCN3422_edited.jpg",
+    alt: "Trash",
+    unedited_src: "gallery/DSCN3422_orig.jpg",
+    tags: [Tag.blackwater_wv, Tag.misc]
+  },
+  {
+    src: "gallery/DSCN3432_edited.jpg",
+    alt: "Stairs to the Blackwater Falls overlook",
+    unedited_src: "gallery/DSCN3432_orig.jpg",
+    tags: [Tag.blackwater_wv, Tag.landscape, Tag.misc]
+  },
 ];
 
 export const imagesReversed: ImageCardProps[] = [...images].reverse()
